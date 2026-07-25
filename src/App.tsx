@@ -20,8 +20,10 @@ const COACHING_SERVICES = [
 ];
 
 const TESTIMONIALS = [
-  { text: "Ludo heeft me enorm geholpen om complexe bedrijfskundige theorieën om te zetten in de praktijk. Zijn coaching is direct, inzichtelijk en zeer waardevol.", author: "Jan D., CEO" },
-  { text: "De sessies over Situationeel Leiderschap waren een eye-opener voor ons hele managementteam.", author: "Marie P., HR Director" }
+  { text: "Ludo heeft me enorm geholpen om complexe theorieën om te zetten in de praktijk. Zijn coaching bracht me het strategisch inzicht dat ik nodig had voor mijn volgende carrièrestap.", author: "Jan Peeters, CEO TechSolutions" },
+  { text: "De sessies over Situationeel Leiderschap waren een absolute eye-opener voor ons hele managementteam. Prof. Poelaert weet feilloos academische kennis aan praktische bedrijfsvoering te koppelen.", author: "Marie Dupont, HR Director" },
+  { text: "Zijn vermogen om snel tot de kern van een organisatieprobleem te komen is indrukwekkend. Ludo's coaching bracht precies de rust en richting die ons veranderingstraject nodig had.", author: "Tom Vandevelde, Managing Partner" },
+  { text: "Dankzij het advies van Ludo hebben we onze interne communicatiestructuren fundamenteel kunnen verbeteren. Een uitzonderlijk klankbord voor elke ondernemer die vooruit wil.", author: "Sarah Martens, Operations Manager" }
 ];
 
 function App() {
@@ -63,6 +65,7 @@ function App() {
           <nav>
             <ul className={`nav ${isMenuOpen ? 'open' : ''}`}>
               <li><a href="#over" className="nav-link">Over</a></li>
+              <li><a href="#boek" className="nav-link">Boek</a></li>
               <li><a href="#modellen" className="nav-link">Modellen</a></li>
               <li><a href="#coaching" className="nav-link">Coaching Aanvragen</a></li>
               <li><a href="#referenties" className="nav-link">Referenties</a></li>
@@ -136,6 +139,30 @@ function App() {
               <div style={{ width: '100%', paddingBottom: '120%', backgroundColor: '#f0f0f0', position: 'relative', overflow: 'hidden', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
                  <img src="/Papa_Photo.png" alt="Ludo Poelaert" style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Boek Section */}
+        <section id="boek" className="section container" style={{ paddingTop: '0' }}>
+          <div className="grid-2" style={{ alignItems: 'center' }}>
+            <div>
+              <div style={{ backgroundColor: '#f0f0f0', padding: '3rem', borderRadius: '8px', textAlign: 'center' }}>
+                <h3 style={{ marginBottom: '1rem' }}>Bedrijfskunde de essentie</h3>
+                <p className="text-muted" style={{ marginBottom: '2rem' }}>Vierde druk</p>
+                <div style={{ height: '300px', backgroundColor: '#e2e2e2', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '4px', border: '1px dashed #999' }}>
+                  <span style={{ color: '#666' }}>[Plaats hier je boekcover afbeelding]</span>
+                </div>
+              </div>
+            </div>
+            <div style={{ paddingLeft: '2rem' }}>
+              <h2>Het Standaardwerk</h2>
+              <p style={{ marginTop: '1rem' }}>
+                In de vierde, geactualiseerde druk van <strong>"Bedrijfskunde de essentie"</strong> biedt Prof. Ludo Poelaert een ongeëvenaard helder overzicht van de fundamenten van modern management en organisatie.
+              </p>
+              <p style={{ marginTop: '1rem' }}>
+                Het boek slaat een stevige brug tussen theorie en praktijk, en behandelt cruciale thema's zoals strategisch management, financiële sturing, leiderschap, en veranderingsprocessen. Het is een onmisbaar handvat voor zowel studenten als doorgewinterde professionals die hun organisatie naar een hoger niveau willen tillen.
+              </p>
             </div>
           </div>
         </section>
