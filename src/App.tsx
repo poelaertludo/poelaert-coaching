@@ -179,8 +179,8 @@ function App() {
               <div style={{ backgroundColor: '#f0f0f0', padding: '3rem', borderRadius: '8px', textAlign: 'center' }}>
                 <h3 style={{ marginBottom: '1rem' }}>Bedrijfskunde de essentie</h3>
                 <p className="text-muted" style={{ marginBottom: '2rem' }}>Vierde druk</p>
-                <div style={{ height: '300px', backgroundColor: '#e2e2e2', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '4px', border: '1px dashed #999' }}>
-                  <span style={{ color: '#666' }}>[Plaats hier je boekcover afbeelding]</span>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  <img src="/CoverBoekPapa.png" alt="Bedrijfskunde de essentie - Vierde druk" style={{ maxHeight: '380px', maxWidth: '100%', objectFit: 'contain', borderRadius: '6px', boxShadow: '0 10px 25px rgba(0,0,0,0.18)' }} />
                 </div>
               </div>
             </div>
