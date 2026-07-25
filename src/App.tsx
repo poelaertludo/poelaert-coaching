@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ShoppingCart, X } from 'lucide-react';
 import coverBoek from './assets/CoverBoekPapa.png';
-import papaPhoto from './assets/Papa_Photo.jpg';
+import papaPhoto from './assets/Papa_Photo.png';
 
 const BOOK_REVIEWS = [
   { text: "Dit boek lijkt dik, maar leest als een trein...", author: "Robin Demeeter, ondernemer pur sang" },
@@ -209,7 +209,7 @@ function App() {
               </div>
             </div>
             <div>
-              <img src={papaPhoto} alt="Ludo Poelaert" style={{ width: '100%', height: 'auto', display: 'block' }} />
+              <img src={papaPhoto} alt="Ludo Poelaert" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px' }} />
             </div>
           </div>
         </section>
