@@ -243,7 +243,7 @@ function App() {
         </section>
 
         {/* Boek Section */}
-        <section id="boek" className="section container" style={{ paddingTop: '0' }}>
+        <section id="boek" className="section container">
           <div className="grid-2" style={{ alignItems: 'center' }}>
             <div>
               <div style={{ backgroundColor: '#f0f0f0', padding: '3rem', borderRadius: '8px', textAlign: 'center' }}>
