@@ -90,9 +90,9 @@ function App() {
 
   const handleCheckout = () => {
     const items = getCartItems().map(i => i.title).join(', ');
-    const subject = encodeURIComponent('Aanvraag Coaching: ' + items);
+    const subject = encodeURIComponent('Aanvraag Coaching Prof. Poelaert: ' + items);
     const body = encodeURIComponent(`Beste Prof. Poelaert,\n\nGraag kom ik met u in contact voor de volgende coaching diensten:\n- ${items}\n\nMet vriendelijke groet,`);
-    window.location.href = `mailto:ludopoelaert@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:ludo.poelaert@ugent.be?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -154,26 +154,57 @@ function App() {
                   Contact Prof Poelaert for: Aanvraag
                 </button>
               </div>
+
+              <div style={{ marginTop: '1.5rem', fontSize: '0.85rem', color: '#666', borderTop: '1px solid #eee', paddingTop: '1rem' }}>
+                <p style={{ marginBottom: '0.4rem' }}><strong>Direct Contact:</strong></p>
+                <p style={{ marginBottom: '0.2rem' }}>✉️ <a href="mailto:ludo.poelaert@ugent.be" style={{ color: 'var(--color-accent)' }}>ludo.poelaert@ugent.be</a></p>
+                <p>📞 <a href="tel:+32477992597" style={{ color: 'var(--color-accent)' }}>+32 477 99 25 97</a></p>
+              </div>
             </>
           )}
         </div>
       )}
 
       <main>
-        {/* Hero Section */}
+        {/* Hero / Over Section */}
         <section id="over" className="section container">
           <div className="grid-2">
             <div className="hero-text" style={{ textAlign: 'left' }}>
-              <h2 style={{ textAlign: 'left', color: 'var(--color-text)' }}>Bedrijfskunde, de essentie</h2>
-              <h3 className="text-accent" style={{ marginBottom: '1rem', fontWeight: 400 }}>Door Ludo Poelaert</h3>
-              <p>
-                Ludo Poelaert, Professor Emeritus aan de UGent, deelt zijn jarenlange academische en praktische expertise in zijn veelgeprezen boek <strong>"Bedrijfskunde, de essentie"</strong>. 
-              </p>
-              <p>
-                Met een scherp inzicht in zowel theorie als de dagelijkse realiteit van organisaties, biedt hij coaching en begeleiding aan leidinggevenden en teams die streven naar excellentie, verandering en duurzame groei.
-              </p>
-              <div style={{ marginTop: '2rem' }}>
+              <h2 style={{ textAlign: 'left', color: 'var(--color-text)', marginBottom: '0.3rem' }}>Ludo Poelaert</h2>
+              <h3 className="text-accent" style={{ marginBottom: '1.5rem', fontWeight: 400, fontSize: '1.15rem', lineHeight: '1.4' }}>
+                Professor Emeritus bedrijfseconomie, bedrijfsmanagement en ondernemerschap, UGent
+              </h3>
+
+              <div style={{ marginBottom: '1.5rem', fontSize: '0.95rem', lineHeight: '1.6', color: '#444' }}>
+                <p style={{ marginBottom: '0.5rem' }}>
+                  <strong>Faculteit Ingenieurswetenschappen en Architectuur (FEA)</strong><br />
+                  Vakgroep Industriële Systemen en Productontwerp (EA18)
+                </p>
+                <p style={{ marginBottom: '0.5rem' }}>
+                  🎓 <strong>Wetenschappelijk coördinator</strong> van de post-academische opleiding:<br />
+                  <em>“Effectief leiderschap: Essentiële toolkit voor ambitieuze managers”</em> aan de UGent (<a href="https://www.ugain.ugent.be/leiderschap2026.htm" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent)', textDecoration: 'underline' }}>Bekijk UGent opleiding</a>)
+                </p>
+                <p style={{ marginBottom: '0.5rem' }}>
+                  💼 Coach voor zelfstandigen, overheden en bedrijfsleiders.
+                </p>
+                <p style={{ marginBottom: '0.5rem' }}>
+                  🏆 Certified Partner Management Drives.
+                </p>
+                <p style={{ marginTop: '1rem' }}>
+                  📖 Inmiddels verscheen de 4de druk van het handboek <strong>“Bedrijfskunde, de essentie”</strong>.
+                </p>
+              </div>
+
+              <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap', marginTop: '2rem' }}>
                 <a href="#coaching" className="btn btn-accent">Vraag Coaching Aan</a>
+                <a href="https://www.linkedin.com/in/poelaert" target="_blank" rel="noopener noreferrer" className="btn" style={{ border: '1px solid #0077b5', color: '#0077b5' }}>
+                  LinkedIn Profiel
+                </a>
+              </div>
+
+              <div style={{ marginTop: '1.5rem', fontSize: '0.9rem', color: '#555', display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
+                <span>📞 <strong>Mobiel:</strong> <a href="tel:+32477992597" style={{ color: '#222' }}>(+32) 477 99 25 97</a></span>
+                <span>✉️ <strong>E-mail:</strong> <a href="mailto:ludo.poelaert@ugent.be" style={{ color: '#222' }}>ludo.poelaert@ugent.be</a></span>
               </div>
             </div>
             <div>
@@ -326,8 +357,10 @@ function App() {
       <footer className="footer">
         <div className="container">
           <p>&copy; {new Date().getFullYear()} Ludo Poelaert. Alle rechten voorbehouden.</p>
-          <p style={{ marginTop: '1rem', fontSize: '0.85rem', color: '#999' }}>
-            Contact: <a href="mailto:ludopoelaert@example.com">ludopoelaert@example.com</a>
+          <p style={{ marginTop: '0.8rem', fontSize: '0.88rem', color: '#aaa' }}>
+            E-mail: <a href="mailto:ludo.poelaert@ugent.be" style={{ color: '#fff', textDecoration: 'underline' }}>ludo.poelaert@ugent.be</a> | 
+            Mobiel: <a href="tel:+32477992597" style={{ color: '#fff', textDecoration: 'underline' }}>+32 477 99 25 97</a> | 
+            LinkedIn: <a href="https://www.linkedin.com/in/poelaert" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline' }}>in/poelaert</a>
           </p>
         </div>
       </footer>
