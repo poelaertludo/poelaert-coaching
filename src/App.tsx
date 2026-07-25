@@ -2,6 +2,18 @@ import { useState } from 'react';
 import { ShoppingCart, X } from 'lucide-react';
 import coverBoek from './assets/CoverBoekPapa.png';
 
+const BOOK_REVIEWS = [
+  { text: "Dit boek lijkt dik, maar leest als een trein...", author: "Robin Demeeter, ondernemer pur sang" },
+  { text: "Als je het reilen en zeilen van een onderneming wil kennen, is dit boek echt de moeite.", author: "Prof. dr. Ronald Buyl" },
+  { text: "Poelaert verstaat de kunst om concrete zaken in verband met de onderneming aan te brengen. Geen overbodige ballast ... alleen de kern van bedrijfseconomie wordt toegelicht. Het hoofdstuk over boekhouden en kostprijscalculatie is een juweeltje van pedagogische aanpak. Eerst kort de theorie en dan onmiddellijk toegepast in realistische cases.", author: "Francis Cornelis, boekhouder" },
+  { text: "Dit boek puilt uit van concrete en toepasbare bedrijfskundige concepten. De opbouw van het boek is zodanig dat de lezer stap voor stap inzicht krijgt in de operationele en financiële werking van de onderneming. Kostprijscalculatie wordt vaak gezien als een moeilijke opdracht. Met dit boek krijgt de lezer tools in handen die het berekenen van kostprijzen van producten plots eenvoudig maken...", author: "Karel van den Berghe, bedrijfsleider Globis" },
+  { text: "Een must voor elke verantwoordelijke manager...", author: "Lode Degeyter, algemeen directeur van de Hogeschool West-Vlaanderen" },
+  { text: "Als ingenieursstudent uit een niet economische richting gaf dit boek mij een prima inzicht in bedrijfseconomie.", author: "Yasmine Beulque, student biochemie aan de Ugent" },
+  { text: "Beschouw dit werk maar als een referentie in de beginselen van bedrijfseconomie. De verdienste is vooral dat het boek elke ondernemer en manager zal weten te prikkelen: van economische concepten tot vennootschapsvormen over kostprijscalculatie en financiële analyse van de onderneming. Alles wordt in een bevattelijke taal concreet en helder gebracht. Een aanrader...", author: "Kurt Coffyn, Global Operations Director Cargill Animal" },
+  { text: "Ondernemen is risico durven nemen. Ondernemen is durven buiten de lijntjes kleuren. Ondernemen vereist daarnaast ook grondige kennis van de economische context waarbinnen men opereert. Verder is men het aan zichzelf verplicht om een minimum aan financiële bagage te hebben. Dit vlot geschreven boek helpt je moeiteloos op weg...", author: "Pol Descamps, oud-directeur-beheerder eigenaar Barco Industries" },
+  { text: "Bedrijfskunde is een breed studiegebied. Poelaert is erin geslaagd om de 5 kernaspecten ervan duidelijk en helder te belichten. De cases geven duidelijk inzicht in soms complexe vraagstukken.", author: "Dirk Laverge, docent economie aan de Hogeschool West-Vlaanderen" }
+];
+
 const MODELS = [
   { name: 'Process Communicatie', desc: 'Inzicht in persoonlijkheidsstructuren en communicatiestijlen om effectiever samen te werken.' },
   { name: 'JoHari Venster', desc: 'Een model om de communicatie en het bewustzijn tussen individuen in een groep te verbeteren.' },
@@ -192,6 +204,33 @@ function App() {
               <p style={{ marginTop: '1rem' }}>
                 Het boek slaat een stevige brug tussen theorie en praktijk, en behandelt cruciale thema's zoals strategisch management, financiële sturing, leiderschap, en veranderingsprocessen. Het is een onmisbaar handvat voor zowel studenten als doorgewinterde professionals die hun organisatie naar een hoger niveau willen tillen.
               </p>
+            </div>
+          </div>
+
+          {/* Book Reviews Sub-section */}
+          <div style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '1px solid var(--color-border)' }}>
+            <h3 style={{ textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1.1rem', color: '#888', marginBottom: '2rem', textAlign: 'center' }}>
+              Wat lezers & experts zeggen over het boek
+            </h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.5rem' }}>
+              {BOOK_REVIEWS.map((review, idx) => (
+                <div key={idx} style={{ 
+                  backgroundColor: '#f9f9fb', 
+                  padding: '1.5rem', 
+                  borderRadius: '8px', 
+                  border: '1px solid #eaeaef',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justify: 'space-between'
+                }}>
+                  <p style={{ fontStyle: 'italic', color: '#444', fontSize: '0.98rem', marginBottom: '1rem', lineHeight: '1.6' }}>
+                    "{review.text}"
+                  </p>
+                  <cite style={{ fontWeight: 600, color: 'var(--color-primary)', fontStyle: 'normal', fontSize: '0.9rem' }}>
+                    — {review.author}
+                  </cite>
+                </div>
+              ))}
             </div>
           </div>
         </section>
