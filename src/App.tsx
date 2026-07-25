@@ -19,11 +19,40 @@ const COACHING_SERVICES = [
   { id: 4, title: 'Veranderingsmanagement Sessies', image: 'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' }
 ];
 
+const CLIENTS = [
+  "Bpost", "Proximus", "Adecco (BeNeLux)", "Apple Computer BeNeLux", "Barry Callebaut",
+  "UGent", "Vrije Universiteit Brussel", "De Vlaamse Gemeenschap", "Stad Gent",
+  "AZ Delta (Roeselare)", "Sonaca", "Denys (Bouwfirma)", "Air Belgium International",
+  "Christelijke Mutualiteiten (CM)", "KLAV", "Howest", "Veronove", "Causamatics",
+  "Flanders International College for Osteopathy", "VVT", "UGain", "Timmermans",
+  "IZIDOC", "OsteoSoft", "Albintra", "Sunair", "Team Consult"
+];
+
 const TESTIMONIALS = [
-  { text: "Ludo heeft me enorm geholpen om complexe theorieën om te zetten in de praktijk. Zijn coaching bracht me het strategisch inzicht dat ik nodig had voor mijn volgende carrièrestap.", author: "Jan Peeters, CEO TechSolutions" },
-  { text: "De sessies over Situationeel Leiderschap waren een absolute eye-opener voor ons hele managementteam. Prof. Poelaert weet feilloos academische kennis aan praktische bedrijfsvoering te koppelen.", author: "Marie Dupont, HR Director" },
-  { text: "Zijn vermogen om snel tot de kern van een organisatieprobleem te komen is indrukwekkend. Ludo's coaching bracht precies de rust en richting die ons veranderingstraject nodig had.", author: "Tom Vandevelde, Managing Partner" },
-  { text: "Dankzij het advies van Ludo hebben we onze interne communicatiestructuren fundamenteel kunnen verbeteren. Een uitzonderlijk klankbord voor elke ondernemer die vooruit wil.", author: "Sarah Martens, Operations Manager" }
+  {
+    author: "Frederik Lievrouw, Logistics Manager",
+    text: "Ludo Poelaert leidde ons team in in de techniek van situationeel leiderschap en bracht direct structuur, rust en motivatie. Zijn inzichten lieten me inzien hoe ik mijn leiderschapsstijl haarscherp kon aanpassen aan het ontwikkelingsniveau van elke medewerker."
+  },
+  {
+    author: "Dr. Erik Van Holsbeek, Orthopedist AZ Delta / E.Z.",
+    text: "De coaching van Ludo is een enorme opsteker geweest en veranderde mijn visie op praktijkvoering grondig. Dankzij zijn advies over leiderschap en transparante communicatie runnen we nu een uiterst efficiënte praktijk met een hecht en gelukkig team."
+  },
+  {
+    author: "Robin Demeeter, CEO Causamatics",
+    text: "Het advies van Ludo brengt een zeldzame combinatie van diepe academische kennis en directe praktijkrelevantie. Zijn lessen en inzichten hebben ons vanaf het eerste moment met volle goesting geholpen om ons bedrijf strategisch verder te bouwen."
+  },
+  {
+    author: "Jolien Vanderstappen, Kinesitherapeut & Praktijkhouder",
+    text: "Dankzij het persoonlijke advies en de beheer-tools van Prof. Poelaert ben ik gegroeid van een eenmanszaak naar een bloeiende groepspraktijk met 6 collega's. Ik heb nog geen seconde spijt gehad van zijn coaching; het heeft mijn zaak naar een hoger niveau getild."
+  },
+  {
+    author: "Hendrik Maes, Oprichter 'In Balans'",
+    text: "Ludo neemt geen blad voor de mond en snijdt meteen naar de kern van wat er beter kan. Door zijn beproefde leiderschapsmethode en cijfermatige transparantie hebben we een sterk merk opgebouwd en groeien we elk kwartaal."
+  },
+  {
+    author: "Egwin Ponette, Osteopaat Osteoponette",
+    text: "Zijn coaching veranderde mijn wereld ten goede en hielp me van constante operationele druk naar een heldere visie en missie. Collega's tonen meer betrokkenheid en respect, en de praktijk is uitgegroeid tot een geoliede organisatie."
+  }
 ];
 
 function App() {
@@ -207,18 +236,50 @@ function App() {
           </div>
         </section>
 
-        {/* Testimonials */}
+        {/* Testimonials & Clients */}
         <section id="referenties" className="section" style={{ backgroundColor: 'white' }}>
           <div className="container">
-            <h2 style={{ marginBottom: '3rem' }}>Referenties</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            <h2 style={{ marginBottom: '3rem' }}>Wat Klanten Zeggen</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', marginBottom: '5rem' }}>
               {TESTIMONIALS.map((t, idx) => (
-                <div key={idx} className="testimonial">
-                  <p>"{t.text}"</p>
-                  <cite>- {t.author}</cite>
+                <div key={idx} className="testimonial" style={{ borderLeft: '4px solid var(--color-accent)', paddingLeft: '1.5rem', backgroundColor: '#fafafa', padding: '1.5rem', borderRadius: '0 8px 8px 0' }}>
+                  <p style={{ fontStyle: 'italic', fontSize: '1.05rem', color: '#333', marginBottom: '0.8rem' }}>"{t.text}"</p>
+                  <cite style={{ fontWeight: 'bold', color: 'var(--color-primary)', fontStyle: 'normal' }}>— {t.author}</cite>
                 </div>
               ))}
             </div>
+
+            <h2 style={{ marginBottom: '1.5rem', textTransform: 'uppercase', fontSize: '1.2rem', letterSpacing: '2px', color: '#888' }}>
+              Organisaties & Bedrijven die beroep deden op Ludo Poelaert
+            </h2>
+            <p style={{ marginBottom: '2.5rem', color: '#666' }}>
+              Een greep uit de bedrijven, overheidsinstanties, ziekenhuizen en praktijken die gebruik maakten van coaching, advies en praktijkmanagement:
+            </p>
+
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', 
+              gap: '1rem' 
+            }}>
+              {CLIENTS.map((client, idx) => (
+                <div key={idx} style={{ 
+                  backgroundColor: '#f5f5f7', 
+                  padding: '1rem 1.2rem', 
+                  borderRadius: '6px', 
+                  fontSize: '0.95rem', 
+                  fontWeight: 500, 
+                  color: '#222',
+                  border: '1px solid #e5e5e7',
+                  display: 'flex',
+                  alignItems: 'center'
+                }}>
+                  <span style={{ color: 'var(--color-accent)', marginRight: '8px' }}>•</span> {client}
+                </div>
+              ))}
+            </div>
+            <p style={{ marginTop: '2rem', fontSize: '0.9rem', color: '#777', fontStyle: 'italic' }}>
+              ...en talloze zelfstandigen met een praktijk of eenmanszaak. Op aanvraag kunnen referenties persoonlijk gecontacteerd worden.
+            </p>
           </div>
         </section>
       </main>
