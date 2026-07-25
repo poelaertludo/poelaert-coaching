@@ -48,7 +48,7 @@ const TESTIMONIALS = [
     text: "Ludo Poelaert leidde ons team in in de techniek van situationeel leiderschap en bracht direct structuur, rust en motivatie. Zijn inzichten lieten me inzien hoe ik mijn leiderschapsstijl haarscherp kon aanpassen aan het ontwikkelingsniveau van elke medewerker."
   },
   {
-    author: "Dr. Erik Van Holsbeek, Orthopedist AZ Delta / E.Z.",
+    author: "Dr. Karl Dujardin, Diensthoofd Cardiologie, Ondervoorzitter Medische Raad AZ Delta",
     text: "De coaching van Ludo is een enorme opsteker geweest en veranderde mijn visie op praktijkvoering grondig. Dankzij zijn advies over leiderschap en transparante communicatie runnen we nu een uiterst efficiënte praktijk met een hecht en gelukkig team."
   },
   {
