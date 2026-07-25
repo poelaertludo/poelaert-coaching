@@ -26,7 +26,7 @@ const CLIENTS = [
   "AZ Delta (Roeselare)", "Sonaca", "Denys (Bouwfirma)", "Air Belgium International",
   "Christelijke Mutualiteiten (CM)", "KLAV", "Howest", "Veronove", "Causamatics",
   "Flanders International College for Osteopathy", "VVT", "UGain", "Timmermans",
-  "IZIDOC", "OsteoSoft", "AZ Delta", "Sunair", "Team Consult"
+  "IZIDOC", "OsteoSoft", "Sunair", "Team Consult"
 ];
 
 const TESTIMONIALS = [
