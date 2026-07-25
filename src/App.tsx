@@ -34,7 +34,7 @@ const COACHING_SERVICES = [
 ];
 
 const CLIENTS = [
-  "Bpost", "Proximus", "Biotronik", "PUV KULeuven", "Adecco (BeNeLux)", "Apple Computer BeNeLux", "Barry Callebaut",
+  "Bpost", "Proximus", "Biotronik", "PUC KULeuven", "Adecco (BeNeLux)", "Apple Computer BeNeLux", "Barry Callebaut",
   "UGent", "Vrije Universiteit Brussel", "De Vlaamse Gemeenschap", "Stad Gent",
   "AZ Delta (Roeselare)", "Sonaca", "Denys (Bouwfirma)", "Air Belgium International",
   "Christelijke Mutualiteiten (CM)", "KLAV", "Howest", "Veronove", "Causamatics",
@@ -43,6 +43,14 @@ const CLIENTS = [
 ];
 
 const TESTIMONIALS = [
+  {
+    author: "Paul Meuwissen, Directeur KLAV",
+    text: "De coaching van Prof. Poelaert bracht onmiddellijk helderheid en dynamiek in ons organisatiemodel. Zijn pragmatische aanpak en diepgaande bedrijfskundige inzichten hebben onze werking duurzaam versterkt."
+  },
+  {
+    author: "Vincent Koningsveld, Voorzitter Raad van Bestuur VVT",
+    text: "Ludo verstaat als geen ander de kunst om complexe leiderschapsvraagstukken te vertalen naar effectieve beslissingen. Zijn strategisch advies gaf ons bestuur het nodige klankbord om de organisatie toekomstbestendig te sturen."
+  },
   {
     author: "Frederik Lievrouw, Logistics Manager",
     text: "Ludo Poelaert leidde ons team in in de techniek van situationeel leiderschap en bracht direct structuur, rust en motivatie. Zijn inzichten lieten me inzien hoe ik mijn leiderschapsstijl haarscherp kon aanpassen aan het ontwikkelingsniveau van elke medewerker."
