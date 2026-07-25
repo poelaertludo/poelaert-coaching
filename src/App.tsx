@@ -34,7 +34,7 @@ const COACHING_SERVICES = [
 ];
 
 const CLIENTS = [
-  "Bpost", "Proximus", "Biotronik", "Adecco (BeNeLux)", "Apple Computer BeNeLux", "Barry Callebaut",
+  "Bpost", "Proximus", "Biotronik", "PUV KULeuven", "Adecco (BeNeLux)", "Apple Computer BeNeLux", "Barry Callebaut",
   "UGent", "Vrije Universiteit Brussel", "De Vlaamse Gemeenschap", "Stad Gent",
   "AZ Delta (Roeselare)", "Sonaca", "Denys (Bouwfirma)", "Air Belgium International",
   "Christelijke Mutualiteiten (CM)", "KLAV", "Howest", "Veronove", "Causamatics",
