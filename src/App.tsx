@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ShoppingCart, X } from 'lucide-react';
+import coverBoek from './assets/CoverBoekPapa.png';
 
 const MODELS = [
   { name: 'Process Communicatie', desc: 'Inzicht in persoonlijkheidsstructuren en communicatiestijlen om effectiever samen te werken.' },
@@ -180,7 +181,7 @@ function App() {
                 <h3 style={{ marginBottom: '1rem' }}>Bedrijfskunde de essentie</h3>
                 <p className="text-muted" style={{ marginBottom: '2rem' }}>Vierde druk</p>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                  <img src="/CoverBoekPapa.png" alt="Bedrijfskunde de essentie - Vierde druk" style={{ maxHeight: '380px', maxWidth: '100%', objectFit: 'contain', borderRadius: '6px', boxShadow: '0 10px 25px rgba(0,0,0,0.18)' }} />
+                  <img src={coverBoek} alt="Bedrijfskunde de essentie - Vierde druk" style={{ maxHeight: '380px', maxWidth: '100%', objectFit: 'contain', borderRadius: '6px', boxShadow: '0 10px 25px rgba(0,0,0,0.18)' }} />
                 </div>
               </div>
             </div>
