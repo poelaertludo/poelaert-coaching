@@ -251,7 +251,7 @@ function App() {
                   border: '1px solid #eaeaef',
                   display: 'flex',
                   flexDirection: 'column',
-                  justify: 'space-between'
+                  justifyContent: 'space-between'
                 }}>
                   <p style={{ fontStyle: 'italic', color: '#444', fontSize: '0.98rem', marginBottom: '1rem', lineHeight: '1.6' }}>
                     "{review.text}"
