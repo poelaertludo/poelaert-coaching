@@ -114,14 +114,15 @@ a:hover {
 }
 
 .btn-accent {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  border-color: #000000;
+  color: #000000;
+  background: transparent;
 }
 
 .btn-accent:hover {
-  background: var(--color-accent);
-  color: var(--color-bg);
-  border-color: var(--color-accent);
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
 }
 
 /* Header & Nav */

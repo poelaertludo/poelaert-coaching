@@ -183,7 +183,7 @@ function App() {
                 </p>
                 <p style={{ marginBottom: '0.5rem' }}>
                   🎓 <strong>Wetenschappelijk coördinator</strong> van de post-academische opleiding:<br />
-                  <em>“Effectief leiderschap: Essentiële toolkit voor ambitieuze managers”</em> aan de UGent (<a href="https://www.ugain.ugent.be/leiderschap2026.htm" target="_blank" rel="noopener noreferrer" style={{ color: '#111111', textDecoration: 'underline' }}>Bekijk UGent opleiding</a>)
+                  <em>“Effectief leiderschap: Essentiële toolkit voor ambitieuze managers”</em> aan de UGent (<a href="https://www.ugain.ugent.be/leiderschap2026.htm" target="_blank" rel="noopener noreferrer" style={{ color: '#000000', textDecoration: 'underline', fontWeight: 600 }}>Bekijk UGent opleiding</a>)
                 </p>
                 <p style={{ marginBottom: '0.5rem' }}>
                   💼 Coach voor zelfstandigen, overheden en bedrijfsleiders.
@@ -197,8 +197,8 @@ function App() {
               </div>
 
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap', marginTop: '2rem' }}>
-                <a href="#coaching" className="btn btn-accent">Vraag Coaching Aan</a>
-                <a href="https://www.linkedin.com/in/poelaert" target="_blank" rel="noopener noreferrer" className="btn" style={{ border: '1px solid #111111', color: '#111111' }}>
+                <a href="#coaching" className="btn btn-accent" style={{ border: '1px solid #000000', color: '#000000' }}>Vraag Coaching Aan</a>
+                <a href="https://www.linkedin.com/in/poelaert" target="_blank" rel="noopener noreferrer" className="btn" style={{ border: '1px solid #000000', color: '#000000' }}>
                   LinkedIn Profiel
                 </a>
               </div>
