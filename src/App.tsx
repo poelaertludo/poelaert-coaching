@@ -172,18 +172,18 @@ function App() {
           <div className="grid-2">
             <div className="hero-text" style={{ textAlign: 'left' }}>
               <h2 style={{ textAlign: 'left', color: 'var(--color-text)', marginBottom: '0.3rem' }}>Ludo Poelaert</h2>
-              <h3 className="text-accent" style={{ marginBottom: '1.5rem', fontWeight: 400, fontSize: '1.15rem', lineHeight: '1.4' }}>
+              <h3 style={{ marginBottom: '1.5rem', fontWeight: 400, fontSize: '1.15rem', lineHeight: '1.4', color: '#111111' }}>
                 Professor Emeritus bedrijfseconomie, bedrijfsmanagement en ondernemerschap, UGent
               </h3>
 
-              <div style={{ marginBottom: '1.5rem', fontSize: '0.95rem', lineHeight: '1.6', color: '#444' }}>
+              <div style={{ marginBottom: '1.5rem', fontSize: '0.95rem', lineHeight: '1.6', color: '#111111' }}>
                 <p style={{ marginBottom: '0.5rem' }}>
                   <strong>Faculteit Ingenieurswetenschappen en Architectuur (FEA)</strong><br />
                   Vakgroep Industriële Systemen en Productontwerp (EA18)
                 </p>
                 <p style={{ marginBottom: '0.5rem' }}>
                   🎓 <strong>Wetenschappelijk coördinator</strong> van de post-academische opleiding:<br />
-                  <em>“Effectief leiderschap: Essentiële toolkit voor ambitieuze managers”</em> aan de UGent (<a href="https://www.ugain.ugent.be/leiderschap2026.htm" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent)', textDecoration: 'underline' }}>Bekijk UGent opleiding</a>)
+                  <em>“Effectief leiderschap: Essentiële toolkit voor ambitieuze managers”</em> aan de UGent (<a href="https://www.ugain.ugent.be/leiderschap2026.htm" target="_blank" rel="noopener noreferrer" style={{ color: '#111111', textDecoration: 'underline' }}>Bekijk UGent opleiding</a>)
                 </p>
                 <p style={{ marginBottom: '0.5rem' }}>
                   💼 Coach voor zelfstandigen, overheden en bedrijfsleiders.
@@ -198,7 +198,7 @@ function App() {
 
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap', marginTop: '2rem' }}>
                 <a href="#coaching" className="btn btn-accent">Vraag Coaching Aan</a>
-                <a href="https://www.linkedin.com/in/poelaert" target="_blank" rel="noopener noreferrer" className="btn" style={{ border: '1px solid #0077b5', color: '#0077b5' }}>
+                <a href="https://www.linkedin.com/in/poelaert" target="_blank" rel="noopener noreferrer" className="btn" style={{ border: '1px solid #111111', color: '#111111' }}>
                   LinkedIn Profiel
                 </a>
               </div>

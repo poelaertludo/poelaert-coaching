@@ -4,11 +4,11 @@
   --font-serif: 'Merriweather', serif;
   --font-sans: 'Lato', sans-serif;
   
-  --color-bg: #fdfbf7;
-  --color-text: #333333;
-  --color-text-muted: #666666;
-  --color-accent: #cc9e00; /* Gold-like accent from Luc Maskens site */
-  --color-border: #e6e0d4;
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-text-muted: #555555;
+  --color-accent: #111111;
+  --color-border: #e5e5e5;
   
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
