@@ -64,7 +64,7 @@ const TESTIMONIALS = [
     text: "Ludo neemt geen blad voor de mond en snijdt meteen naar de kern van wat er beter kan. Door zijn beproefde leiderschapsmethode en cijfermatige transparantie hebben we een sterk merk opgebouwd en groeien we elk kwartaal."
   },
   {
-    author: "Egwin Ponette, Osteopaat Osteoponette",
+    author: "Egwin Ponette, Osteopaat Osteolab",
     text: "Zijn coaching veranderde mijn wereld ten goede en hielp me van constante operationele druk naar een heldere visie en missie. Collega's tonen meer betrokkenheid en respect, en de praktijk is uitgegroeid tot een geoliede organisatie."
   }
 ];
