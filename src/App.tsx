@@ -52,28 +52,48 @@ const TESTIMONIALS = [
     text: "Ludo verstaat als geen ander de kunst om complexe leiderschapsvraagstukken te vertalen naar effectieve beslissingen. Zijn strategisch advies gaf ons bestuur het nodige klankbord om de organisatie toekomstbestendig te sturen."
   },
   {
-    author: "Frederik Lievrouw, Logistics Manager",
-    text: "Ludo Poelaert leidde ons team in in de techniek van situationeel leiderschap en bracht direct structuur, rust en motivatie. Zijn inzichten lieten me inzien hoe ik mijn leiderschapsstijl haarscherp kon aanpassen aan het ontwikkelingsniveau van elke medewerker."
-  },
-  {
     author: "Dr. Karl Dujardin, Diensthoofd Cardiologie, Ondervoorzitter Medische Raad AZ Delta",
     text: "De coaching van Ludo is een enorme opsteker geweest en veranderde mijn visie op praktijkvoering grondig. Dankzij zijn advies over leiderschap en transparante communicatie runnen we nu een uiterst efficiënte praktijk met een hecht en gelukkig team."
+  },
+  {
+    author: "Frederik Lievrouw, Logistics Manager",
+    text: "Ludo Poelaert leidde ons team in in de techniek van situationeel leiderschap en bracht direct structuur, rust en motivatie. Zijn inzichten lieten me inzien hoe ik mijn leiderschapsstijl haarscherp kon aanpassen aan het ontwikkelingsniveau van elke medewerker."
   },
   {
     author: "Robin Demeeter, CEO Causamatics",
     text: "Het advies van Ludo brengt een zeldzame combinatie van diepe academische kennis en directe praktijkrelevantie. Zijn lessen en inzichten hebben ons vanaf het eerste moment met volle goesting geholpen om ons bedrijf strategisch verder te bouwen."
   },
   {
-    author: "Jolien Vanderstappen, Kinesitherapeut & Praktijkhouder",
-    text: "Dankzij het persoonlijke advies en de beheer-tools van Prof. Poelaert ben ik gegroeid van een eenmanszaak naar een bloeiende groepspraktijk met 6 collega's. Ik heb nog geen seconde spijt gehad van zijn coaching; het heeft mijn zaak naar een hoger niveau getild."
+    author: "Christopher Read, D.O. Osteopaat & Bedrijfsleider",
+    text: "Jouw coaching is verrijkend, helder en geeft schitterende resultaten. Op minder dan 9 uur heb jij mijn business in kaart gebracht en samen hebben we een verkoopstrategie bepaald die uitstekend heeft gewerkt."
   },
   {
-    author: "Hendrik Maes, Oprichter 'In Balans'",
-    text: "Ludo neemt geen blad voor de mond en snijdt meteen naar de kern van wat er beter kan. Door zijn beproefde leiderschapsmethode en cijfermatige transparantie hebben we een sterk merk opgebouwd en groeien we elk kwartaal."
+    author: "Jolien Vanderstappen, Kinesitherapeut Ninove",
+    text: "Dankzij het persoonlijke advies en de beheer-tools van Prof. Poelaert ben ik gegroeid van een eenmanszaak naar een bloeiende GCV met 6 collega's. Ik heb nog geen minuut spijt van zijn coaching; het bracht me structuur en succes."
+  },
+  {
+    author: "Hendrik Maes, Praktijkhouder 'In Balans' Haacht",
+    text: "Ludo neemt geen blad voor de mond en snijdt meteen naar de kern. Door zijn beproefde methode van leiderschap en cijfermatige transparantie hebben we een sterk merk opgebouwd en groeien we elk kwartaal."
   },
   {
     author: "Egwin Ponette, Osteopaat Osteolab",
     text: "Zijn coaching veranderde mijn wereld ten goede en hielp me van constante operationele druk naar een heldere visie en missie. Collega's tonen meer betrokkenheid en respect, en de praktijk is uitgegroeid tot een geoliede organisatie."
+  },
+  {
+    author: "Frank Demeester, Praktijkhouder Zele",
+    text: "Ludo gaf mij persoonlijk advies over mijn praktijk met een positief inspirerende methode. De beslissing om hem in te schakelen is wellicht mijn beste zakelijke beslissing geweest van de afgelopen jaren."
+  },
+  {
+    author: "Hans Schallier, D.O. Osteopaat",
+    text: "Ik wil Ludo van harte bedanken voor de boeiende tweedaagse 'Praktijkmanagement'. Het was voor mij een echte eye-opener die op een uiterst enthousiaste en meeslepende manier gebracht werd."
+  },
+  {
+    author: "Jeroen Smesman, Kinesitherapeut Ninove",
+    text: "Mijn praktijk is ondertussen ettelijke malen beter gemanaged dan voordien. Ik volg nauwkeurig Ludo's adviezen en bel hem geregeld; hij is voor mij een uiterst betrouwbaar klankbord dat het verschil maakt."
+  },
+  {
+    author: "Benjamin Micholt, Oprichter Micholt Innovations",
+    text: "Ludo heeft mij gecoacht en bracht zinvolle, eenvoudige structuur in mijn onderneming. Dankzij zijn begeleiding kreeg ik echt plezier in beursdeelnames en het bezoeken van professionele klanten."
   }
 ];
 
