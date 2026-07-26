@@ -294,13 +294,17 @@ function App() {
                 </p>
 
                 <p style={{ marginBottom: '1rem' }}>
-                  Sinds 21 jaar coacht Ludo zorgpraktijken, multidisciplinaire kinepraktijken, en groepspraktijken van artsen en tandartsen. Ludo brengt rust in het hoofd van de praktijkhouder door concreet no-nonsense advies inzake praktijkleiderschap en praktijkmanagement. Hij helpt hen met de ontwikkeling van hun organisatie, zodat zij de focus houden op zorgverlening, hun medewerkers tevreden zijn en de praktijk financieel gezond is. Hij coacht ook tal van bedrijfsleiders, directiecomités en verschillende diensthoofden van gerenommeerde ziekenhuizen in België.
+                  Sinds 21 jaar coacht Ludo zorgpraktijken, multidisciplinaire kinepraktijken, en groepspraktijken van artsen en tandartsen. Ludo brengt rust in het hoofd van de praktijkhouder door concreet no-nonsense advies inzake praktijkleiderschap en praktijkmanagement. Hij helpt hen met de ontwikkeling van hun organisatie, zodat zij de focus houden op zorgverlening, hun medewerkers tevreden zijn en de praktijk financieel gezond is.
                 </p>
 
-                <p style={{ marginBottom: '0.4rem' }}>
-                  🏆 Certified Partner Management Drives.
+                <p style={{ marginBottom: '1.5rem' }}>
+                  Hij coacht ook tal van bedrijfsleiders, directiecomités en verschillende diensthoofden van gerenommeerde ziekenhuizen in België.
                 </p>
-                <p style={{ marginTop: '0.8rem' }}>
+
+                <p style={{ marginTop: '1.5rem', marginBottom: '0.6rem' }}>
+                  🏆 <strong>Ludo is Certified Partner Management Drives.</strong>
+                </p>
+                <p style={{ marginTop: '0.6rem' }}>
                   📖 Inmiddels verscheen de 4de druk van het handboek <strong>“Bedrijfskunde, de essentie”</strong>.
                 </p>
               </div>
