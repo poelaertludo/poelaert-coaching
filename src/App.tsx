@@ -489,7 +489,7 @@ function App() {
             </div>
 
             <h2 style={{ marginBottom: '1.5rem', textTransform: 'uppercase', fontSize: '1.2rem', letterSpacing: '2px', color: '#888' }}>
-              Organisaties & Bedrijven die beroep deden op Ludo Poelaert
+              Organisaties & Bedrijven die beroep deden en doen op Prof.Em. ir. Ludo Poelaert
             </h2>
             <p style={{ marginBottom: '2.5rem', color: '#666' }}>
               Een greep uit de bedrijven, overheidsinstanties, ziekenhuizen en praktijken die gebruik maakten van coaching, advies en praktijkmanagement:
