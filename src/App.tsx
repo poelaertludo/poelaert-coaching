@@ -271,22 +271,36 @@ function App() {
                 Professor Emeritus bedrijfseconomie, bedrijfsmanagement en ondernemerschap, UGent
               </h3>
 
-              <div style={{ marginBottom: '1.5rem', fontSize: '0.95rem', lineHeight: '1.6', color: '#111111' }}>
-                <p style={{ marginBottom: '0.5rem' }}>
+              <div style={{ marginBottom: '1.5rem', fontSize: '0.96rem', lineHeight: '1.7', color: '#111111' }}>
+                <p style={{ marginBottom: '0.8rem' }}>
                   <strong>Faculteit Ingenieurswetenschappen en Architectuur (FEA)</strong><br />
                   Vakgroep Industriële Systemen en Productontwerp (EA18)
                 </p>
-                <p style={{ marginBottom: '0.5rem' }}>
+                <p style={{ marginBottom: '1.2rem' }}>
                   🎓 <strong>Wetenschappelijk coördinator</strong> van de post-academische opleiding:<br />
                   <em>“Effectief leiderschap: Essentiële toolkit voor ambitieuze managers”</em> aan de UGent (<a href="https://www.ugain.ugent.be/leiderschap2026.htm" target="_blank" rel="noopener noreferrer" style={{ color: '#000000', textDecoration: 'underline', fontWeight: 600 }}>Bekijk UGent opleiding</a>)
                 </p>
-                <p style={{ marginBottom: '0.5rem' }}>
-                  💼 Coach voor zelfstandigen, overheden en bedrijfsleiders.
+
+                <p style={{ marginBottom: '1rem' }}>
+                  Ludo Poelaert coacht tal van bedrijfsleiders en zelfstandigen, met een gerichte expertise in de medische en zorgsector. Zijn enthousiasmerende coaching-stijl is stilaan een begrip geworden. Wie iets bruikbaars wil leren over zichzelf en wie succesvol wil leren zaken doen in de zorgsector, zit bij hem aan het juiste adres.
                 </p>
-                <p style={{ marginBottom: '0.5rem' }}>
+
+                <p style={{ marginBottom: '1rem' }}>
+                  Hij kreeg de kans zich te vervolmaken aan gerenommeerde managementscholen zoals de <strong>Vlerick Business School</strong>, de <strong>London Business School</strong> en <strong>INSEAD (Fontainebleau)</strong>. Daar kwam hij in aanraking met de sociale psychologie en begreep onmiddellijk het fundament daarvan: de combinatie van succesvol business doen binnen een sociaal-empathisch kader maakt zijn aanpak uniek.
+                </p>
+
+                <p style={{ marginBottom: '1rem' }}>
+                  Hij vervulde achtereenvolgens belangrijke rollen bij <strong>Apple Computer</strong>, <strong>Adecco</strong> en <strong>Barry Callebaut</strong>. Als professor aan de UGent doceert Ludo management in al zijn aspecten, telkens met bijzondere aandacht voor de mens achter de business.
+                </p>
+
+                <p style={{ marginBottom: '1rem' }}>
+                  Sinds 21 jaar coacht Ludo zorgpraktijken, multidisciplinaire kinepraktijken, en groepspraktijken van artsen en tandartsen. Ludo brengt rust in het hoofd van de praktijkhouder door concreet no-nonsense advies inzake praktijkleiderschap en praktijkmanagement. Hij helpt hen met de ontwikkeling van hun organisatie, zodat zij de focus houden op zorgverlening, hun medewerkers tevreden zijn en de praktijk financieel gezond is.
+                </p>
+
+                <p style={{ marginBottom: '0.4rem' }}>
                   🏆 Certified Partner Management Drives.
                 </p>
-                <p style={{ marginTop: '1rem' }}>
+                <p style={{ marginTop: '0.8rem' }}>
                   📖 Inmiddels verscheen de 4de druk van het handboek <strong>“Bedrijfskunde, de essentie”</strong>.
                 </p>
               </div>
