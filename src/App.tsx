@@ -313,7 +313,7 @@ function App() {
         <section id="modellen" className="section" style={{ backgroundColor: '#fff', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
           <div className="container">
             <h2 style={{ marginBottom: '3rem' }}>Gebruikte Modellen</h2>
-            <div className="grid-3">
+            <div className="masonry-grid">
               {MODELS.map((model, index) => (
                 <div key={index} className="model-card">
                   <h3>{model.name}</h3>
