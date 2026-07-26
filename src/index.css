@@ -339,6 +339,51 @@ a:hover {
   line-height: 1.6;
 }
 
+/* Model Hover Preview */
+.model-hover-preview {
+  margin-top: 1rem;
+  border-top: 1px dashed #e2e2e8;
+  padding-top: 0.75rem;
+}
+
+.hover-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.3s ease;
+}
+
+.model-card:hover .hover-badge {
+  color: #000;
+}
+
+.hover-image-wrapper {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease, margin-top 0.3s ease;
+  margin-top: 0;
+  border-radius: 6px;
+}
+
+.model-card:hover .hover-image-wrapper {
+  max-height: 600px;
+  opacity: 1;
+  margin-top: 0.75rem;
+}
+
+.hover-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  border: 1px solid #dcdce2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
 /* Testimonials */
 .testimonial {
   text-align: center;

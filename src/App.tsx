@@ -18,7 +18,8 @@ const BOOK_REVIEWS = [
 const MODELS = [
   { 
     name: 'Process Communicatie', 
-    desc: 'Ik schets jouw persoonlijk profiel en leer je jezelf beter kennen. Nog sterker: ik leer je anderen haarfijn te lezen en zo krijg je meer van hen gedaan in een correcte, gebalanceerde samenwerking!' 
+    desc: 'Ik schets jouw persoonlijk profiel en leer je jezelf beter kennen. Nog sterker: ik leer je anderen haarfijn te lezen en zo krijg je meer van hen gedaan in een correcte, gebalanceerde samenwerking!',
+    image: 'pcm_profile.png'
   },
   { 
     name: 'JoHari Venster', 
@@ -379,6 +380,14 @@ function App() {
                 <div key={index} className="model-card">
                   <h3>{model.name}</h3>
                   <p>{model.desc}</p>
+                  {model.image && (
+                    <div className="model-hover-preview">
+                      <div className="hover-badge">🔍 Beweeg over kaart voor profiel / diagram</div>
+                      <div className="hover-image-wrapper">
+                        <img src={model.image} alt={`Profilering ${model.name}`} />
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
