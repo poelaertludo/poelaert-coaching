@@ -108,10 +108,14 @@ const CLIENTS = [
   "Christelijke Mutualiteiten (CM)", "KLAV (Koninklijk Limburgs Apothekers Verbond)", "APB (Algemene Pharmaceutische Bond)", 
   "Howest", "Hogeschool Gent (Departement Lerarenopleiding)", "Veronove", "Causamatics",
   "Flanders International College for Osteopathy", "VVT (Vlaamse Vereniging van Tandartsen)", "Philippus Neri GGZ Waas en Dender", 
-  "UGain", "Timmermans", "IZIDOC", "OsteoSoft", "Sunair", "Team Consult"
+  "Osteopaat Vlaanderen", "UGain", "Timmermans", "IZIDOC", "OsteoSoft", "Sunair", "Team Consult"
 ];
 
 const TESTIMONIALS = [
+  {
+    author: "Robin Demeeter en Jonathan Tresignie, Oprichters Osteopaat Vlaanderen",
+    text: "De strategische coaching van Prof. Poelaert bracht direct helderheid in onze organisatie. Zijn begeleiding en inzichten boden ons een sterk fundament om Osteopaat Vlaanderen met vertrouwen en structuur verder uit te bouwen."
+  },
   {
     author: "Paul Meuwissen, Directeur KLAV (Koninklijk Limburgs Apothekers Verbond)",
     text: "De coaching van Prof. Poelaert bracht onmiddellijk helderheid en dynamiek in ons organisatiemodel. Zijn pragmatische aanpak en diepgaande bedrijfskundige inzichten hebben onze werking duurzaam versterkt."
