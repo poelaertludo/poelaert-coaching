@@ -16,14 +16,38 @@ const BOOK_REVIEWS = [
 ];
 
 const MODELS = [
-  { name: 'Process Communicatie', desc: 'Inzicht in persoonlijkheidsstructuren en communicatiestijlen om effectiever samen te werken.' },
-  { name: 'JoHari Venster', desc: 'Een model om de communicatie en het bewustzijn tussen individuen in een groep te verbeteren.' },
-  { name: 'Stress Managementmodel', desc: 'Technieken en kaders om stressoren te identificeren en gezond te reguleren.' },
-  { name: 'Situationeel Leiderschap', desc: 'De leiderschapsstijl aanpassen aan de taakvolwassenheid van de medewerker.' },
-  { name: 'Kotter (Veranderingsmanagement)', desc: 'Het 8-stappenplan om succesvol en duurzaam organisatorische veranderingen door te voeren.' },
-  { name: 'Business Model Canvas', desc: 'Een visueel overzicht van de bouwstenen van een onderneming of project.' },
-  { name: '9-Krachten Model van Porter', desc: 'Strategisch model om de concurrentieomgeving en winstpotentieel te analyseren (voorheen 5-krachten).' },
-  { name: 'Earned Value Management', desc: 'Projectmanagement-techniek om projectprestaties en voortgang objectief te meten.' }
+  { 
+    name: 'Process Communicatie', 
+    desc: 'Ik schets jouw persoonlijk profiel en leer je jezelf beter kennen. Nog sterker: ik leer je anderen haarfijn te lezen en zo krijg je meer van hen gedaan in een correcte, gebalanceerde samenwerking!' 
+  },
+  { 
+    name: 'JoHari Venster', 
+    desc: 'Samen verkleinen we jouw blinde vlekken. Ik help je te ontdekken hoe anderen jouw leiderschap ervaren, zodat het vertrouwen en het bewustzijn binnen jouw team sterk groeit.' 
+  },
+  { 
+    name: 'Stress Managementmodel', 
+    desc: 'Stress is een signaal dat sturing vraagt. Ik reik je haarscherpe kaders en technieken aan om stressoren in jouw organisatie tijdig te identificeren en gezond te reguleren.' 
+  },
+  { 
+    name: 'Situationeel Leiderschap', 
+    desc: 'Eén leiderschapsstijl werkt niet voor iedereen. Ik leer je om jouw sturing flexibel aan te passen aan de taakvolwassenheid en motivatie van elke medewerker voor direct resultaat.' 
+  },
+  { 
+    name: 'Kotter (Veranderingsmanagement)', 
+    desc: 'Verandering stuit vaak op weerstand. Met dit beproefde 8-stappenplan begeleid ik je om organisatorische transformaties gestructureerd, gedragen en duurzaam door te voeren.' 
+  },
+  { 
+    name: 'Business Model Canvas', 
+    desc: 'Samen brengen we de kern van jouw onderneming terug tot de essentie. Ik help je om alle cruciale bouwstenen van je verdienmodel visueel en strategisch helder te stellen.' 
+  },
+  { 
+    name: '9-Krachten Model van Porter', 
+    desc: 'Begrijp de krachten die jouw markt beheersen. Ik analyseer samen met jou de concurrentieomgeving en het winstpotentieel van je zaak voor een sterke strategische voorsprong.' 
+  },
+  { 
+    name: 'Earned Value Management', 
+    desc: 'Meten is weten in projectmanagement. Ik geef je de exacte tools om de voortgang, budgetten en prestaties van je projecten objectief te bewaken en tijdig bij te sturen op cijfers.' 
+  }
 ];
 
 const COACHING_SERVICES = [
