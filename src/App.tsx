@@ -145,8 +145,8 @@ const TESTIMONIALS = [
     text: "Jouw coaching is verrijkend, helder en geeft schitterende resultaten. Jouw training heeft tientallen medewerkers ge-enthousiasmeerd en een echte omslag is gemaakt in ons bedrijf."
   },
   {
-    author: "Jolien Vanderstappen, Kinesitherapeut Ninove",
-    text: "Dankzij het persoonlijke advies en de beheer-tools van Prof. Poelaert ben ik gegroeid van een eenmanszaak naar een bloeiende GCV met 6 collega's. Ik heb nog geen minuut spijt van zijn coaching; het bracht me structuur en succes."
+    author: "Ode, Kathleen Vanden Borre",
+    text: "Dankzij het persoonlijke advies en de beheer-tools van Prof. Poelaert ben ik gegroeid in leidinggeven met grote effectiviteit. Ik heb nog geen minuut spijt van zijn coaching: het bracht me structuur, rust en succes."
   },
   {
     author: "Hendrik Maes, Praktijkhouder 'In Balans' Haacht",
