@@ -131,8 +131,8 @@ const TESTIMONIALS = [
     text: "Het advies van Ludo brengt een zeldzame combinatie van diepe academische kennis en directe praktijkrelevantie. Zijn lessen en inzichten hebben ons vanaf het eerste moment met volle goesting geholpen om ons bedrijf strategisch verder te bouwen."
   },
   {
-    author: "Christopher Read, D.O. Osteopaat & Bedrijfsleider",
-    text: "Jouw coaching is verrijkend, helder en geeft schitterende resultaten. Op minder dan 9 uur heb jij mijn business in kaart gebracht en samen hebben we een verkoopstrategie bepaald die uitstekend heeft gewerkt."
+    author: "Birgit Willems, Denys (Specialistische bouwfirma)",
+    text: "Jouw coaching is verrijkend, helder en geeft schitterende resultaten. Jouw training heeft tientallen medewerkers ge-enthousiasmeerd en een echte omslag is gemaakt in ons bedrijf."
   },
   {
     author: "Jolien Vanderstappen, Kinesitherapeut Ninove",
