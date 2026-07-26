@@ -114,7 +114,7 @@ const CLIENTS = [
 const TESTIMONIALS = [
   {
     author: "Robin Demeeter en Jonathan Tresignie, Oprichters Osteopaat Vlaanderen",
-    text: "Ludo's concreet advies hebben we omgezet in een werkende \"beroepsvereniging\" voor onze metier van osteopaten."
+    text: "Ludo's business-aanvoelen in een wereld van empathie maakte het verschil. Inmiddels is onze vereniging uitgegroeid tot de grootste groep osteopaten in Vlaanderen. Elke dag nog kunnen we beroep doen op Ludo's waardevolle inzichten in marketing en mensenkennis."
   },
   {
     author: "Paul Meuwissen, Directeur KLAV (Koninklijk Limburgs Apothekers Verbond)",
