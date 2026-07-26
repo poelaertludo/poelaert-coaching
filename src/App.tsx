@@ -114,7 +114,7 @@ const CLIENTS = [
 const TESTIMONIALS = [
   {
     author: "Robin Demeeter en Jonathan Tresignie, Oprichters Osteopaat Vlaanderen",
-    text: "De strategische coaching van Prof. Poelaert bracht direct helderheid in onze organisatie. Zijn begeleiding en inzichten boden ons een sterk fundament om Osteopaat Vlaanderen met vertrouwen en structuur verder uit te bouwen."
+    text: "Ludo's concreet advies hebben we omgezet in een werkende \"beroepsvereniging\" voor onze metier van osteopaten."
   },
   {
     author: "Paul Meuwissen, Directeur KLAV (Koninklijk Limburgs Apothekers Verbond)",
