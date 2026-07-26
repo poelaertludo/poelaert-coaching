@@ -78,7 +78,7 @@ a:hover {
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 2.5rem;
 }
 
 .section {
@@ -503,7 +503,7 @@ a:hover {
   }
 
   .container {
-    padding: 0 1.25rem;
+    padding: 0 2.25rem;
   }
 
   .section {
@@ -520,7 +520,7 @@ a:hover {
   }
 
   .header-inner {
-    padding: 0.85rem 1.25rem;
+    padding: 1rem 2rem;
     align-items: flex-start;
   }
 
@@ -543,7 +543,7 @@ a:hover {
   }
 
   .nav-icons {
-    right: 1.25rem;
+    right: 2rem;
   }
 
   .nav {
