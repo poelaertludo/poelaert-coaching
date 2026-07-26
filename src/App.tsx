@@ -345,7 +345,7 @@ function App() {
         <section id="coaching" className="section container">
           <h2 style={{ marginBottom: '1rem' }}>Coaching Aanvragen</h2>
           <p className="text-center text-muted" style={{ marginBottom: '3rem', maxWidth: '600px', margin: '0 auto 3rem' }}>
-            Selecteer de gewenste coaching dienst. De aanvraag loopt via persoonlijk contact, er worden geen prijzen vooraf getoond.
+            Selecteer de gewenste coaching dienst. De aanvraag loopt via persoonlijk contact.
           </p>
           
           <div className="shop-grid">
@@ -353,7 +353,6 @@ function App() {
               <div key={service.id} className="shop-item">
                 <img src={service.image} alt={service.title} className="shop-item-image" />
                 <h3>{service.title}</h3>
-                <p className="shop-item-price">Prijs op aanvraag</p>
                 <button 
                   className="btn" 
                   style={{ marginTop: '1rem', width: '100%' }}
