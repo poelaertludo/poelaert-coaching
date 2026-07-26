@@ -178,6 +178,7 @@ function App() {
   const [isMenuOpen] = useState(false);
   const [cart, setCart] = useState<number[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [selectedModel, setSelectedModel] = useState<{ name: string; image: string } | null>(null);
 
   const addToCart = (id: number) => {
     if (!cart.includes(id)) {
@@ -386,12 +387,16 @@ function App() {
             <h2 style={{ marginBottom: '3rem' }}>Gebruikte Modellen</h2>
             <div className="masonry-grid">
               {MODELS.map((model, index) => (
-                <div key={index} className="model-card">
+                <div 
+                  key={index} 
+                  className="model-card"
+                  onClick={() => model.image && setSelectedModel({ name: model.name, image: model.image })}
+                >
                   <h3>{model.name}</h3>
                   <p>{model.desc}</p>
                   {model.image && (
                     <div className="model-hover-preview">
-                      <div className="hover-badge">🔍 Beweeg over kaart voor profiel / diagram</div>
+                      <div className="hover-badge">🔍 Beweeg over kaart / klik voor vergrootglas</div>
                       <div className="hover-image-wrapper">
                         <img src={model.image} alt={`Profilering ${model.name}`} />
                       </div>
@@ -401,6 +406,35 @@ function App() {
               ))}
             </div>
           </div>
+
+          {/* Model Lightbox Modal */}
+          {selectedModel && (
+            <div 
+              style={{
+                position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, 
+                backgroundColor: 'rgba(0, 0, 0, 0.82)', zIndex: 2000, 
+                display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1.5rem'
+              }}
+              onClick={() => setSelectedModel(null)}
+            >
+              <div 
+                style={{
+                  backgroundColor: '#fff', padding: '1.5rem', borderRadius: '12px', 
+                  maxWidth: '850px', width: '100%', maxHeight: '90vh', overflowY: 'auto',
+                  position: 'relative', boxShadow: '0 20px 40px rgba(0,0,0,0.3)'
+                }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+                  <h3 style={{ margin: 0, fontSize: '1.25rem' }}>{selectedModel.name}</h3>
+                  <button onClick={() => setSelectedModel(null)} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0.2rem' }}>
+                    <X size={24} />
+                  </button>
+                </div>
+                <img src={selectedModel.image} alt={selectedModel.name} style={{ width: '100%', height: 'auto', borderRadius: '8px', border: '1px solid #eee' }} />
+              </div>
+            </div>
+          )}
         </section>
 
         {/* Shop / Coaching Section */}
