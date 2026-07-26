@@ -120,7 +120,7 @@ const TESTIMONIALS = [
   },
   {
     author: "Dr. Karl Dujardin, Diensthoofd Cardiologie, Ondervoorzitter Medische Raad AZ Delta",
-    text: "De coaching van Ludo is een enorme opsteker geweest en veranderde mijn visie op praktijkvoering grondig. Dankzij zijn advies over leiderschap en transparante communicatie runnen we nu een uiterst efficiënte praktijk met een hecht en gelukkig team."
+    text: "De coaching van Ludo is een enorme opsteker geweest en veranderde mijn visie op het leiden van de dienst cardiologie grondig. Dankzij zijn advies over leiderschap en transparante communicatie runnen we nu een uiterst efficiënte dienst \"Hartziekten\" met een hecht en effectief team."
   },
   {
     author: "Frederik Lievrouw, Logistics Manager",
