@@ -255,7 +255,7 @@ function App() {
               </div>
             </div>
             <div style={{ paddingLeft: '2rem' }}>
-              <h2>Het Standaardwerk</h2>
+              <h2>Een Standaardwerk</h2>
               <p style={{ marginTop: '1rem' }}>
                 In de vierde, geactualiseerde druk van <strong>"Bedrijfskunde de essentie"</strong> biedt Prof. Ludo Poelaert een ongeëvenaard helder overzicht van de fundamenten van modern management en organisatie.
               </p>
