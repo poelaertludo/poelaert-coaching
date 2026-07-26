@@ -65,19 +65,28 @@ const CLIENTS = [
   "Bpost", "Proximus", "Biotronik", "PUC KULeuven", "Adecco (BeNeLux)", "Apple Computer BeNeLux", "Barry Callebaut",
   "UGent", "Vrije Universiteit Brussel", "De Vlaamse Gemeenschap", "Stad Gent",
   "AZ Delta (Roeselare)", "Sonaca", "Denys (Bouwfirma)", "Air Belgium International",
-  "Christelijke Mutualiteiten (CM)", "KLAV", "Howest", "Veronove", "Causamatics",
-  "Flanders International College for Osteopathy", "VVT", "UGain", "Timmermans",
-  "IZIDOC", "OsteoSoft", "Sunair", "Team Consult"
+  "Christelijke Mutualiteiten (CM)", "KLAV (Koninklijk Limburgs Apothekers Verbond)", "APB (Algemene Pharmaceutische Bond)", 
+  "Howest", "Hogeschool Gent (Departement Lerarenopleiding)", "Veronove", "Causamatics",
+  "Flanders International College for Osteopathy", "VVT (Vlaamse Vereniging van Tandartsen)", "Philippus Neri GGZ Waas en Dender", 
+  "UGain", "Timmermans", "IZIDOC", "OsteoSoft", "Sunair", "Team Consult"
 ];
 
 const TESTIMONIALS = [
   {
-    author: "Paul Meuwissen, Directeur KLAV",
+    author: "Paul Meuwissen, Directeur KLAV (Koninklijk Limburgs Apothekers Verbond)",
     text: "De coaching van Prof. Poelaert bracht onmiddellijk helderheid en dynamiek in ons organisatiemodel. Zijn pragmatische aanpak en diepgaande bedrijfskundige inzichten hebben onze werking duurzaam versterkt."
   },
   {
-    author: "Vincent Koningsveld, Voorzitter Raad van Bestuur VVT",
+    author: "Vincent Koningsveld, Voorzitter Raad van Bestuur VVT (Vlaamse Vereniging van Tandartsen)",
     text: "Ludo verstaat als geen ander de kunst om complexe leiderschapsvraagstukken te vertalen naar effectieve beslissingen. Zijn strategisch advies gaf ons bestuur het nodige klankbord om de organisatie toekomstbestendig te sturen."
+  },
+  {
+    author: "Algemene Pharmaceutische Bond (APB)",
+    text: "Het strategisch advies en de leiderschapsbegeleiding van Prof. Poelaert boden onze organisatie waardevolle kaders en heldere inzichten binnen de farmaceutische sector."
+  },
+  {
+    author: "Philippus Neri GGZ Waas en Dender",
+    text: "Prof. Poelaert bracht waardevolle balans, leiderschapsinzichten en organisatiestructuur in onze gezondheidszorgorganisatie."
   },
   {
     author: "Dr. Karl Dujardin, Diensthoofd Cardiologie, Ondervoorzitter Medische Raad AZ Delta",
