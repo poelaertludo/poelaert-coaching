@@ -147,7 +147,7 @@ const TESTIMONIALS = [
     text: "Zijn coaching veranderde mijn wereld ten goede en hielp me van constante operationele druk naar een heldere visie en missie. Collega's tonen meer betrokkenheid en respect, en de praktijk is uitgegroeid tot een geoliede organisatie."
   },
   {
-    author: "Frank Demeester, Praktijkhouder Zele",
+    author: "Pieter Genbrugge, Manager bij Timmermans EHS (Eeklo)",
     text: "Ludo gaf mij persoonlijk advies over mijn praktijk met een positief inspirerende methode. De beslissing om hem in te schakelen is wellicht mijn beste zakelijke beslissing geweest van de afgelopen jaren."
   },
   {
