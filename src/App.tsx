@@ -270,21 +270,13 @@ function App() {
             <h3 style={{ textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1.1rem', color: '#888', marginBottom: '2rem', textAlign: 'center' }}>
               Wat lezers & experts zeggen over het boek
             </h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.5rem' }}>
+            <div className="masonry-grid">
               {BOOK_REVIEWS.map((review, idx) => (
-                <div key={idx} style={{ 
-                  backgroundColor: '#f9f9fb', 
-                  padding: '1.5rem', 
-                  borderRadius: '8px', 
-                  border: '1px solid #eaeaef',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'space-between'
-                }}>
-                  <p style={{ fontStyle: 'italic', color: '#444', fontSize: '0.98rem', marginBottom: '1rem', lineHeight: '1.6' }}>
+                <div key={idx} className="masonry-item">
+                  <p style={{ fontStyle: 'italic', color: '#333', fontSize: '0.98rem', marginBottom: '1rem', lineHeight: '1.6' }}>
                     "{review.text}"
                   </p>
-                  <cite style={{ fontWeight: 600, color: 'var(--color-primary)', fontStyle: 'normal', fontSize: '0.9rem' }}>
+                  <cite style={{ fontWeight: 600, color: '#111', fontStyle: 'normal', fontSize: '0.9rem', display: 'block' }}>
                     — {review.author}
                   </cite>
                 </div>
@@ -337,11 +329,11 @@ function App() {
         <section id="referenties" className="section" style={{ backgroundColor: 'white' }}>
           <div className="container">
             <h2 style={{ marginBottom: '3rem' }}>Wat Klanten Zeggen</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', marginBottom: '5rem' }}>
+            <div className="masonry-grid" style={{ marginBottom: '4rem' }}>
               {TESTIMONIALS.map((t, idx) => (
-                <div key={idx} className="testimonial" style={{ borderLeft: '4px solid var(--color-accent)', paddingLeft: '1.5rem', backgroundColor: '#fafafa', padding: '1.5rem', borderRadius: '0 8px 8px 0' }}>
-                  <p style={{ fontStyle: 'italic', fontSize: '1.05rem', color: '#333', marginBottom: '0.8rem' }}>"{t.text}"</p>
-                  <cite style={{ fontWeight: 'bold', color: 'var(--color-primary)', fontStyle: 'normal' }}>— {t.author}</cite>
+                <div key={idx} className="masonry-item" style={{ borderLeft: '4px solid #111111' }}>
+                  <p style={{ fontStyle: 'italic', fontSize: '1.02rem', color: '#222', marginBottom: '0.8rem', lineHeight: '1.6' }}>"{t.text}"</p>
+                  <cite style={{ fontWeight: 'bold', color: '#111', fontStyle: 'normal', display: 'block' }}>— {t.author}</cite>
                 </div>
               ))}
             </div>
