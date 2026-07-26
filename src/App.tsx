@@ -47,6 +47,10 @@ const MODELS = [
   { 
     name: 'Earned Value Management', 
     desc: 'Meten is weten in projectmanagement. Ik geef je de exacte tools om de voortgang, budgetten en prestaties van je projecten objectief te bewaken en tijdig bij te sturen op cijfers.' 
+  },
+  { 
+    name: 'Financieel beheer ontmaskerd!', 
+    desc: 'Voor velen is financiën een raadsel en ondoorgrondelijk moeilijk. Ik leer je in een mum van tijd balanslezen, kosten berekenen en samen met jou maken we de ratio-analyse van jouw onderneming!' 
   }
 ];
 
