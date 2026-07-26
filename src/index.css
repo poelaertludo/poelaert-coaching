@@ -375,8 +375,8 @@ a:hover {
 
 @media (min-width: 768px) {
   .shop-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 850px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    max-width: 1200px;
     margin: 0 auto;
   }
 }

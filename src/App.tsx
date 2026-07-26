@@ -59,10 +59,36 @@ const MODELS = [
 ];
 
 const COACHING_SERVICES = [
-  { id: 1, title: 'Individuele Executive Coaching', image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' },
-  { id: 2, title: 'Team Coaching & Dynamiek', image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' },
-  { id: 3, title: 'Leiderschapsontwikkeling', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' },
-  { id: 4, title: 'Veranderingsmanagement Sessies', image: 'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' }
+  { 
+    id: 1, 
+    title: 'Individuele Executive Coaching', 
+    desc: 'Persoonlijke 1-op-1 begeleiding voor leiders en ondernemers gericht op leiderschap, strategische visie en operationele rust.',
+    image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
+  },
+  { 
+    id: 2, 
+    title: 'Team Coaching & Dynamiek', 
+    desc: 'Versterk onderling vertrouwen, communicatiestijlen en de gezamenlijke slagkracht van je directie of afdeling.',
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
+  },
+  { 
+    id: 3, 
+    title: 'Leiderschapsontwikkeling', 
+    desc: 'Master de technieken van situationeel leiderschap en leef je rol uit met haarscherpe sturing en balans.',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
+  },
+  { 
+    id: 4, 
+    title: 'Veranderingsmanagement Sessies', 
+    desc: 'Begeleiding bij organisatorische transformaties volgens het 8-stappenplan om verandering gedragen door te voeren.',
+    image: 'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
+  },
+  { 
+    id: 5, 
+    title: 'Persoonlijke Finance Training', 
+    desc: 'Leer alles over balansen, jaarrekeningen, kostprijsberekening en investeringsanalyse. Ludo leert je in een mum van tijd een grondige ratio-analyse te maken van een onderneming. De Balanscentrale van de Nationale Bank van België en Yahoo Finance hebben binnenkort geen geheimen meer voor jou!',
+    image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
+  }
 ];
 
 const CLIENTS = [
@@ -350,9 +376,16 @@ function App() {
           
           <div className="shop-grid">
             {COACHING_SERVICES.map(service => (
-              <div key={service.id} className="shop-item">
-                <img src={service.image} alt={service.title} className="shop-item-image" />
-                <h3>{service.title}</h3>
+              <div key={service.id} className="shop-item" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div>
+                  <img src={service.image} alt={service.title} className="shop-item-image" />
+                  <h3>{service.title}</h3>
+                  {service.desc && (
+                    <p style={{ fontSize: '0.92rem', color: '#555', marginTop: '0.5rem', marginBottom: '1.2rem', lineHeight: '1.55' }}>
+                      {service.desc}
+                    </p>
+                  )}
+                </div>
                 <button 
                   className="btn" 
                   style={{ marginTop: '1rem', width: '100%' }}
