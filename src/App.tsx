@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ShoppingCart, X } from 'lucide-react';
+import { ShoppingCart, X, Menu } from 'lucide-react';
 import coverBoek from './assets/CoverBoekPapa.png';
 import papaPhoto from './assets/Papa_Photo.png';
 
@@ -179,7 +179,7 @@ const TESTIMONIALS = [
 ];
 
 function App() {
-  const [isMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [cart, setCart] = useState<number[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [selectedModel, setSelectedModel] = useState<{ name: string; image: string } | null>(null);
@@ -217,15 +217,18 @@ function App() {
           
           <nav>
             <ul className={`nav ${isMenuOpen ? 'open' : ''}`}>
-              <li><a href="#over" className="nav-link">Over</a></li>
-              <li><a href="#boek" className="nav-link">Boek</a></li>
-              <li><a href="#modellen" className="nav-link">Modellen</a></li>
-              <li><a href="#coaching" className="nav-link">Coaching Aanvragen</a></li>
-              <li><a href="#referenties" className="nav-link">Referenties</a></li>
+              <li><a href="#over" className="nav-link" onClick={() => setIsMenuOpen(false)}>Over</a></li>
+              <li><a href="#boek" className="nav-link" onClick={() => setIsMenuOpen(false)}>Boek</a></li>
+              <li><a href="#modellen" className="nav-link" onClick={() => setIsMenuOpen(false)}>Modellen</a></li>
+              <li><a href="#coaching" className="nav-link" onClick={() => setIsMenuOpen(false)}>Coaching Aanvragen</a></li>
+              <li><a href="#referenties" className="nav-link" onClick={() => setIsMenuOpen(false)}>Referenties</a></li>
             </ul>
           </nav>
 
           <div className="nav-icons">
+            <button className="mobile-menu-toggle" aria-label="Menu openen" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? <X size={26} color="var(--color-text)" /> : <Menu size={26} color="var(--color-text)" />}
+            </button>
             <div className="cart-icon-wrapper" onClick={() => setIsCartOpen(!isCartOpen)}>
               <ShoppingCart size={24} color="var(--color-text)" />
               {cart.length > 0 && <span className="cart-badge">{cart.length}</span>}
