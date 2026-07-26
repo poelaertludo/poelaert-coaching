@@ -51,6 +51,10 @@ const MODELS = [
   { 
     name: 'Financieel beheer ontmaskerd!', 
     desc: 'Voor velen is financiën een raadsel en ondoorgrondelijk moeilijk. Ik leer je in een mum van tijd balanslezen, kosten berekenen en samen met jou maken we de ratio-analyse van jouw onderneming!' 
+  },
+  { 
+    name: 'De 4 levensposities! Een echte keuze voor succes', 
+    desc: 'Ik leer je inzien vanuit welke levenspositie jij en je teamleden communiceren. Met dit krachtige model van Thomas Harris help ik je om bewust te kiezen voor een constructieve, "I\'m OK, You\'re OK" grondhouding die relaties en samenwerking transformeert!' 
   }
 ];
 
