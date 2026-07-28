@@ -23,48 +23,39 @@ const MODELS = [
   },
   { 
     name: 'JoHari Venster', 
-    desc: 'Samen verkleinen we jouw blinde vlekken. Ik help je te ontdekken hoe anderen jouw leiderschap ervaren, zodat het vertrouwen en het bewustzijn binnen jouw team sterk groeit.',
-    image: 'johari_window.jpg'
+    desc: 'Samen verkleinen we jouw blinde vlekken. Ik help je te ontdekken hoe anderen jouw leiderschap ervaren, zodat het vertrouwen en het bewustzijn binnen jouw team sterk groeit.' 
   },
   { 
     name: 'Stress Managementmodel', 
-    desc: 'Stress is een signaal dat sturing vraagt. Ik reik je haarscherpe kaders en technieken aan om stressoren in jouw organisatie tijdig te identificeren en gezond te reguleren.',
-    image: 'stress_model.jpg'
+    desc: 'Stress is een signaal dat sturing vraagt. Ik reik je haarscherpe kaders en technieken aan om stressoren in jouw organisatie tijdig te identificeren en gezond te reguleren.' 
   },
   { 
     name: 'Situationeel Leiderschap', 
-    desc: 'Eén leiderschapsstijl werkt niet voor iedereen. Ik leer je om jouw sturing flexibel aan te passen aan de taakvolwassenheid en motivatie van elke medewerker voor direct resultaat.',
-    image: 'situational_leadership.jpg'
+    desc: 'Eén leiderschapsstijl werkt niet voor iedereen. Ik leer je om jouw sturing flexibel aan te passen aan de taakvolwassenheid en motivatie van elke medewerker voor direct resultaat.' 
   },
   { 
     name: 'Kotter (Veranderingsmanagement)', 
-    desc: 'Verandering stuit vaak op weerstand. Met dit beproefde 8-stappenplan begeleid ik je om organisatorische transformaties gestructureerd, gedragen en duurzaam door te voeren.',
-    image: 'kotter_change.jpg'
+    desc: 'Verandering stuit vaak op weerstand. Met dit beproefde 8-stappenplan begeleid ik je om organisatorische transformaties gestructureerd, gedragen en duurzaam door te voeren.' 
   },
   { 
     name: 'Business Model Canvas', 
-    desc: 'Samen brengen we de kern van jouw onderneming terug tot de essentie. Ik help je om alle cruciale bouwstenen van je verdienmodel visueel en strategisch helder te stellen.',
-    image: 'business_model_canvas.jpg'
+    desc: 'Samen brengen we de kern van jouw onderneming terug tot de essentie. Ik help je om alle cruciale bouwstenen van je verdienmodel visueel en strategisch helder te stellen.' 
   },
   { 
     name: '9-Krachten Model van Porter', 
-    desc: 'Begrijp de krachten die jouw markt beheersen. Ik analyseer samen met jou de concurrentieomgeving en het winstpotentieel van je zaak voor een sterke strategische voorsprong.',
-    image: 'porters_forces.jpg'
+    desc: 'Begrijp de krachten die jouw markt beheersen. Ik analyseer samen met jou de concurrentieomgeving en het winstpotentieel van je zaak voor een sterke strategische voorsprong.' 
   },
   { 
     name: 'Earned Value Management', 
-    desc: 'Meten is weten in projectmanagement. Ik geef je de exacte tools om de voortgang, budgetten en prestaties van je projecten objectief te bewaken en tijdig bij te sturen op cijfers.',
-    image: 'earned_value_management.jpg'
+    desc: 'Meten is weten in projectmanagement. Ik geef je de exacte tools om de voortgang, budgetten en prestaties van je projecten objectief te bewaken en tijdig bij te sturen op cijfers.' 
   },
   { 
     name: 'Financieel beheer ontmaskerd!', 
-    desc: 'Voor velen is financiën een raadsel en ondoorgrondelijk moeilijk. Ik leer je in een mum van tijd balanslezen, kosten berekenen en samen met jou maken we de ratio-analyse van jouw onderneming!',
-    image: 'financial_ratios.jpg'
+    desc: 'Voor velen is financiën een raadsel en ondoorgrondelijk moeilijk. Ik leer je in een mum van tijd balanslezen, kosten berekenen en samen met jou maken we de ratio-analyse van jouw onderneming!' 
   },
   { 
     name: 'De 4 levensposities! Een echte keuze voor succes', 
-    desc: 'Ik leer je inzien vanuit welke levenspositie jij en je teamleden communiceren. Met dit krachtige model van Thomas Harris help ik je om bewust te kiezen voor een constructieve, "I\'m OK, You\'re OK" grondhouding die relaties en samenwerking transformeert!',
-    image: 'life_positions_harris.jpg'
+    desc: 'Ik leer je inzien vanuit welke levenspositie jij en je teamleden communiceren. Met dit krachtige model van Thomas Harris help ik je om bewust te kiezen voor een constructieve, "I\'m OK, You\'re OK" grondhouding die relaties en samenwerking transformeert!' 
   }
 ];
 
