@@ -303,11 +303,11 @@ function App() {
                 </p>
 
                 <p style={{ marginBottom: '1rem' }}>
-                  Sinds 21 jaar coacht Ludo zorgpraktijken, multidisciplinaire kinepraktijken, en groepspraktijken van artsen en tandartsen. Ludo brengt rust in het hoofd van de praktijkhouder door concreet no-nonsense advies inzake praktijkleiderschap en praktijkmanagement. Hij helpt hen met de ontwikkeling van hun organisatie, zodat zij de focus houden op zorgverlening, hun medewerkers tevreden zijn en de praktijk financieel gezond is.
+                  Sinds 21 jaar coacht Ludo zorgpraktijken, multidisciplinaire kinepraktijken, en groepspraktijken van artsen en tandartsen. Ludo brengt rust in het hoofd van de praktijkhouder door concreet no-nonsense advies inzake praktijkleiderschap en praktijkmanagement. Hij helpt hen met de ontwikkeling van hun organisatie, zodat zij de focus houden op zorgverlening, hun medewerkers tevreden zijn en de praktijk financieel gezond is. Ludo begeleidt verschillende diensthoofden van gerenommeerde ziekenhuizen in België.
                 </p>
 
                 <p style={{ marginBottom: '1.5rem' }}>
-                  Hij coacht ook tal van bedrijfsleiders, directiecomités en verschillende diensthoofden van gerenommeerde ziekenhuizen in België.
+                  Hij coacht ook tal van bedrijfsleiders, directiecomités uit de industrie.
                 </p>
 
                 <p style={{ marginTop: '1.5rem', marginBottom: '0.6rem' }}>
