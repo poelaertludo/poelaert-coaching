@@ -101,7 +101,7 @@ const COACHING_SERVICES = [
   }
 ];
 
-const CLIENTS: { name: string; logo?: string }[] = [
+const CLIENTS: { name: string; logo: string }[] = [
   { name: "Bpost", logo: "bpost.svg" },
   { name: "Proximus", logo: "proximus.svg" },
   { name: "Biotronik", logo: "biotronik.svg" },
@@ -117,23 +117,23 @@ const CLIENTS: { name: string; logo?: string }[] = [
   { name: "Sonaca", logo: "sonaca.svg" },
   { name: "Air Belgium International", logo: "air_belgium.svg" },
   { name: "Christelijke Mutualiteiten (CM)", logo: "cm.svg" },
-  { name: "APB (Algemene Pharmaceutische Bond)", logo: "apb.png" },
+  { name: "APB (Algemene Pharmaceutische Bond)", logo: "apb.svg" },
   { name: "Howest", logo: "howest.svg" },
   { name: "Hogeschool Gent (HoGent)", logo: "hogent.svg" },
-  { name: "VVT (Vlaamse Vereniging van Tandartsen)", logo: "vvt.png" },
-  { name: "KLAV (Koninklijk Limburgs Apothekers Verbond)" },
-  { name: "Denys (Bouwfirma)" },
-  { name: "Veronove" },
-  { name: "Causamatics" },
-  { name: "Flanders International College for Osteopathy" },
-  { name: "Philippus Neri GGZ Waas en Dender" },
-  { name: "Osteopaat Vlaanderen" },
-  { name: "UGain" },
-  { name: "Timmermans" },
-  { name: "IZIDOC" },
-  { name: "OsteoSoft" },
-  { name: "Sunair" },
-  { name: "Team Consult" }
+  { name: "VVT (Vlaamse Vereniging van Tandartsen)", logo: "vvt.svg" },
+  { name: "KLAV (Koninklijk Limburgs Apothekers Verbond)", logo: "klav.svg" },
+  { name: "Denys (Bouwfirma)", logo: "denys.svg" },
+  { name: "Veronove", logo: "veronove.svg" },
+  { name: "Causamatics", logo: "causamatics.svg" },
+  { name: "Flanders International College for Osteopathy", logo: "fico.svg" },
+  { name: "Philippus Neri GGZ Waas en Dender", logo: "philippus_neri.svg" },
+  { name: "Osteopaat Vlaanderen", logo: "osteopaat_vlaanderen.svg" },
+  { name: "UGain", logo: "ugain.svg" },
+  { name: "Timmermans", logo: "timmermans.svg" },
+  { name: "IZIDOC", logo: "izidoc.svg" },
+  { name: "OsteoSoft", logo: "osteosoft.svg" },
+  { name: "Sunair", logo: "sunair.svg" },
+  { name: "Team Consult", logo: "team_consult.svg" }
 ];
 
 const TESTIMONIALS = [
@@ -525,57 +525,31 @@ function App() {
               gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', 
               gap: '1.25rem' 
             }}>
-              {CLIENTS.map((client, idx) => (
-                <div key={idx} style={{ 
-                  backgroundColor: '#f5f5f7', 
-                  padding: '1.1rem 1.3rem', 
-                  borderRadius: '10px', 
-                  fontSize: '0.92rem', 
-                  fontWeight: 600, 
-                  color: '#222',
-                  border: '1px solid #e5e5e7',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.85rem',
-                  boxShadow: '0 2px 6px rgba(0,0,0,0.02)',
-                  transition: 'transform 0.2s ease, boxShadow 0.2s ease'
-                }}>
-                  {client.logo ? (
-                    <div style={{ 
-                      width: '42px', 
-                      height: '42px', 
-                      display: 'flex', 
-                      alignItems: 'center', 
-                      justifyContent: 'center', 
-                      flexShrink: 0, 
-                      backgroundColor: '#ffffff', 
-                      borderRadius: '8px', 
-                      padding: '5px', 
-                      border: '1px solid #eaeaea',
-                      boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
-                    }}>
-                      <img src={`logos/${client.logo}`} alt={client.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+              {CLIENTS.map((client, idx) => {
+                const logoUrl = `${import.meta.env.BASE_URL}logos/${client.logo}`;
+                return (
+                  <div 
+                    key={idx} 
+                    className="client-card"
+                    onClick={() => setSelectedModel({ name: client.name, image: logoUrl })}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                      <span style={{ fontSize: '0.95rem', fontWeight: 600, color: '#111', lineHeight: '1.3' }}>{client.name}</span>
                     </div>
-                  ) : (
-                    <div style={{ 
-                      width: '42px', 
-                      height: '42px', 
-                      display: 'flex', 
-                      alignItems: 'center', 
-                      justifyContent: 'center', 
-                      flexShrink: 0, 
-                      backgroundColor: '#e5e5eb', 
-                      borderRadius: '8px', 
-                      fontSize: '0.85rem', 
-                      color: '#444', 
-                      fontWeight: 700 
-                    }}>
-                      {client.name.substring(0, 2).toUpperCase()}
+                    <div style={{ fontSize: '0.78rem', color: '#777', marginTop: '0.4rem', display: 'flex', alignItems: 'center', gap: '0.3rem', fontWeight: 500 }}>
+                      <span>🔍 Beweeg over naam voor logo</span>
                     </div>
-                  )}
-                  <span style={{ lineHeight: '1.3' }}>{client.name}</span>
-                </div>
-              ))}
+
+                    {/* Floating Logo Overlay on Hover */}
+                    <div className="client-hover-preview">
+                      <img src={logoUrl} alt={`Logo ${client.name}`} />
+                      <div style={{ fontSize: '0.72rem', color: '#666', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic', fontWeight: 600 }}>
+                        {client.name}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
             <p style={{ marginTop: '2rem', fontSize: '0.9rem', color: '#777', fontStyle: 'italic' }}>
               ...en talloze zelfstandigen met een praktijk of eenmanszaak. Op aanvraag kunnen referenties persoonlijk gecontacteerd worden.
