@@ -133,6 +133,12 @@ const COACHING_SERVICES = [
     title: 'Persoonlijke Finance Training', 
     desc: 'Leer alles over balansen, jaarrekeningen, kostprijsberekening en investeringsanalyse. Ludo leert je in een mum van tijd een grondige ratio-analyse te maken van een onderneming. De Balanscentrale van de Nationale Bank van België en Yahoo Finance hebben binnenkort geen geheimen meer voor jou!',
     image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
+  },
+  { 
+    id: 6, 
+    title: 'Persoonlijk Leiderschap', 
+    desc: 'Ludo begeleidt jou in een traject van persoonlijk leiderschap: wat zijn jouw waarden, wat is jouw missie en wat is jouw visie. Inzicht in jezelf en anderen beter leren lezen, geeft RUST en doet je als mens groeien.',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
   }
 ];
 
