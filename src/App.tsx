@@ -101,14 +101,39 @@ const COACHING_SERVICES = [
   }
 ];
 
-const CLIENTS = [
-  "Bpost", "Proximus", "Biotronik", "PUC KULeuven", "Adecco (BeNeLux)", "Apple Computer BeNeLux", "Barry Callebaut",
-  "UGent", "Vrije Universiteit Brussel", "De Vlaamse Gemeenschap", "Stad Gent",
-  "AZ Delta (Roeselare)", "Sonaca", "Denys (Bouwfirma)", "Air Belgium International",
-  "Christelijke Mutualiteiten (CM)", "KLAV (Koninklijk Limburgs Apothekers Verbond)", "APB (Algemene Pharmaceutische Bond)", 
-  "Howest", "Hogeschool Gent (Departement Lerarenopleiding)", "Veronove", "Causamatics",
-  "Flanders International College for Osteopathy", "VVT (Vlaamse Vereniging van Tandartsen)", "Philippus Neri GGZ Waas en Dender", 
-  "Osteopaat Vlaanderen", "UGain", "Timmermans", "IZIDOC", "OsteoSoft", "Sunair", "Team Consult"
+const CLIENTS: { name: string; logo?: string }[] = [
+  { name: "Bpost", logo: "bpost.svg" },
+  { name: "Proximus", logo: "proximus.svg" },
+  { name: "Biotronik", logo: "biotronik.svg" },
+  { name: "PUC KULeuven", logo: "kuleuven.svg" },
+  { name: "Adecco (BeNeLux)", logo: "adecco.svg" },
+  { name: "Apple Computer BeNeLux", logo: "apple.svg" },
+  { name: "Barry Callebaut", logo: "barry_callebaut.svg" },
+  { name: "UGent", logo: "ugent.svg" },
+  { name: "Vrije Universiteit Brussel", logo: "vub.svg" },
+  { name: "De Vlaamse Gemeenschap", logo: "vlaamse_overheid.svg" },
+  { name: "Stad Gent", logo: "stad_gent.svg" },
+  { name: "AZ Delta (Roeselare)", logo: "az_delta.svg" },
+  { name: "Sonaca", logo: "sonaca.svg" },
+  { name: "Air Belgium International", logo: "air_belgium.svg" },
+  { name: "Christelijke Mutualiteiten (CM)", logo: "cm.svg" },
+  { name: "APB (Algemene Pharmaceutische Bond)", logo: "apb.png" },
+  { name: "Howest", logo: "howest.svg" },
+  { name: "Hogeschool Gent (HoGent)", logo: "hogent.svg" },
+  { name: "VVT (Vlaamse Vereniging van Tandartsen)", logo: "vvt.png" },
+  { name: "KLAV (Koninklijk Limburgs Apothekers Verbond)" },
+  { name: "Denys (Bouwfirma)" },
+  { name: "Veronove" },
+  { name: "Causamatics" },
+  { name: "Flanders International College for Osteopathy" },
+  { name: "Philippus Neri GGZ Waas en Dender" },
+  { name: "Osteopaat Vlaanderen" },
+  { name: "UGain" },
+  { name: "Timmermans" },
+  { name: "IZIDOC" },
+  { name: "OsteoSoft" },
+  { name: "Sunair" },
+  { name: "Team Consult" }
 ];
 
 const TESTIMONIALS = [
@@ -489,7 +514,7 @@ function App() {
             </div>
 
             <h2 style={{ marginBottom: '1.5rem', textTransform: 'uppercase', fontSize: '1.2rem', letterSpacing: '2px', color: '#888' }}>
-              Organisaties & Bedrijven die beroep deden en doen op Prof.Em. ir. Ludo Poelaert
+              Organisaties & Bedrijven die beroep deden en doen op Prof. Em. ir. Ludo Poelaert
             </h2>
             <p style={{ marginBottom: '2.5rem', color: '#666' }}>
               Een greep uit de bedrijven, overheidsinstanties, ziekenhuizen en praktijken die gebruik maakten van coaching, advies en praktijkmanagement:
@@ -497,22 +522,58 @@ function App() {
 
             <div style={{ 
               display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', 
-              gap: '1rem' 
+              gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', 
+              gap: '1.25rem' 
             }}>
               {CLIENTS.map((client, idx) => (
                 <div key={idx} style={{ 
                   backgroundColor: '#f5f5f7', 
-                  padding: '1rem 1.2rem', 
-                  borderRadius: '6px', 
-                  fontSize: '0.95rem', 
-                  fontWeight: 500, 
+                  padding: '1.1rem 1.3rem', 
+                  borderRadius: '10px', 
+                  fontSize: '0.92rem', 
+                  fontWeight: 600, 
                   color: '#222',
                   border: '1px solid #e5e5e7',
                   display: 'flex',
-                  alignItems: 'center'
+                  alignItems: 'center',
+                  gap: '0.85rem',
+                  boxShadow: '0 2px 6px rgba(0,0,0,0.02)',
+                  transition: 'transform 0.2s ease, boxShadow 0.2s ease'
                 }}>
-                  <span style={{ color: 'var(--color-accent)', marginRight: '8px' }}>•</span> {client}
+                  {client.logo ? (
+                    <div style={{ 
+                      width: '42px', 
+                      height: '42px', 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      justifyContent: 'center', 
+                      flexShrink: 0, 
+                      backgroundColor: '#ffffff', 
+                      borderRadius: '8px', 
+                      padding: '5px', 
+                      border: '1px solid #eaeaea',
+                      boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
+                    }}>
+                      <img src={`logos/${client.logo}`} alt={client.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                    </div>
+                  ) : (
+                    <div style={{ 
+                      width: '42px', 
+                      height: '42px', 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      justifyContent: 'center', 
+                      flexShrink: 0, 
+                      backgroundColor: '#e5e5eb', 
+                      borderRadius: '8px', 
+                      fontSize: '0.85rem', 
+                      color: '#444', 
+                      fontWeight: 700 
+                    }}>
+                      {client.name.substring(0, 2).toUpperCase()}
+                    </div>
+                  )}
+                  <span style={{ lineHeight: '1.3' }}>{client.name}</span>
                 </div>
               ))}
             </div>
