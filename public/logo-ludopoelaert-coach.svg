@@ -26,13 +26,13 @@
 
   <!-- Text Group -->
   <g transform="translate(125, 0)">
-    <!-- Name Header -->
-    <text x="0" y="32" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="18" font-weight="700" fill="#0B1E2D" letter-spacing="4">LUDO POELAERT</text>
+    <!-- Name Header in matching Gold -->
+    <text x="0" y="32" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="18" font-weight="700" fill="url(#goldGrad)" letter-spacing="4">LUDO POELAERT</text>
     
-    <!-- Subtitle -->
+    <!-- Subtitle in Gold -->
     <text x="0" y="58" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="22" font-weight="600" fill="url(#goldGrad)" letter-spacing="1">Coaching Academy</text>
     
-    <!-- Domain Tagline Pill / Subtitle -->
+    <!-- Domain Tagline Pill -->
     <g transform="translate(0, 72)">
       <rect x="0" y="0" width="200" height="24" rx="12" fill="#0B1E2D"/>
       <text x="100" y="16" font-family="'Plus Jakarta Sans', 'Inter', 'Helvetica', sans-serif" font-size="12" font-weight="600" fill="#D4AF37" text-anchor="middle" letter-spacing="1.5">ludopoelaert.be</text>
