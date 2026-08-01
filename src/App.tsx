@@ -284,7 +284,6 @@ function App() {
           <nav>
             <ul className={`nav ${isMenuOpen ? 'open' : ''}`}>
               <li><a href="#over" className="nav-link" onClick={() => setIsMenuOpen(false)}>Over</a></li>
-              <li><a href="#huisstijl" className="nav-link" onClick={() => setIsMenuOpen(false)}>Huisstijl & Visie</a></li>
               <li><a href="#boek" className="nav-link" onClick={() => setIsMenuOpen(false)}>Boek</a></li>
               <li><a href="#modellen" className="nav-link" onClick={() => setIsMenuOpen(false)}>Modellen</a></li>
               <li><a href="#coaching" className="nav-link" onClick={() => setIsMenuOpen(false)}>Coaching Aanvragen</a></li>
@@ -408,71 +407,6 @@ function App() {
             </div>
             <div>
               <img src={papaPhoto} alt="Ludo Poelaert" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px' }} />
-            </div>
-          </div>
-        </section>
-
-        {/* Huisstijl & Visie Section (van PDF) */}
-        <section id="huisstijl" className="section" style={{ backgroundColor: 'var(--color-cream)' }}>
-          <div className="container">
-            <div style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '0.85rem', fontWeight: '700', color: 'var(--color-gold)', textAlign: 'center', marginBottom: '0.5rem' }}>
-              Visuele Identiteit & Positionering
-            </div>
-            <h2 style={{ textAlign: 'center', marginBottom: '1rem', color: 'var(--color-navy-dark)' }}>
-              Herkenbaar zijn als Coach & Leider
-            </h2>
-            <p style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3.5rem', color: 'var(--color-text-muted)', fontSize: '1.05rem', lineHeight: '1.7' }}>
-              Een huisstijl is de visuele identiteit van jouw praktijk: het geheel van vaste vormgevingselementen waarmee je je naar buiten presenteert en herkenbaar maakt. Voor een coach of leider is dat cruciaal – mensen kiezen je op gevoel en vertrouwen. Een consistente stijl zorgt dat alles wat een cliënt van je ziet aanvoelt als één vertrouwd geheel.
-            </p>
-
-            <h3 style={{ textAlign: 'center', fontSize: '1.3rem', letterSpacing: '1px', marginBottom: '2rem', color: 'var(--color-navy)' }}>
-              Waarom een heldere huisstijl belangrijk is — 5 pijlers
-            </h3>
-
-            <div className="huisstijl-pijlers-grid">
-              <div className="pijler-card">
-                <div className="pijler-number">1</div>
-                <div className="pijler-content">
-                  <h4>Herkenbaarheid</h4>
-                  <p>Cliënten herkennen je meteen aan kleur, logo, typografie en een vaste, professionele uitstraling.</p>
-                </div>
-              </div>
-
-              <div className="pijler-card">
-                <div className="pijler-number">2</div>
-                <div className="pijler-content">
-                  <h4>Professionele uitstraling</h4>
-                  <p>Een consistente visuele stijl straalt onmiddellijk betrouwbaarheid, rust en de hoogste zorg uit.</p>
-                </div>
-              </div>
-
-              <div className="pijler-card">
-                <div className="pijler-number">3</div>
-                <div className="pijler-content">
-                  <h4>Onderscheid</h4>
-                  <p>Je valt op en positioneert jezelf haarscherp ten opzichte van andere coaches en adviseurs in de markt.</p>
-                </div>
-              </div>
-
-              <div className="pijler-card">
-                <div className="pijler-number">4</div>
-                <div className="pijler-content">
-                  <h4>Vertrouwen en binding</h4>
-                  <p>Visuele en inhoudelijke consistentie schept diep vertrouwen en versterkt de duurzame band met cliënten.</p>
-                </div>
-              </div>
-
-              <div className="pijler-card">
-                <div className="pijler-number">5</div>
-                <div className="pijler-content">
-                  <h4>Eenheid en efficiëntie</h4>
-                  <p>Alle uitingen sluiten naadloos op elkaar aan op de website, werkboeken, e-mails en presentaties.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="academy-tip-box" style={{ marginTop: '3rem' }}>
-              <strong>💡 Tip van de Academy:</strong> Begin klein – kies twee vaste hoofdkleuren, één prachtig lettertype en een authentieke toon. Consistentie is belangrijker dan complexiteit.
             </div>
           </div>
         </section>
