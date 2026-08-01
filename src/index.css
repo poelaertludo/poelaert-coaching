@@ -149,33 +149,36 @@ a:hover {
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  border: 1px solid var(--color-text);
-  background: transparent;
-  color: var(--color-text);
+  border: 1px solid var(--color-gold);
+  background: var(--color-gold);
+  color: var(--color-navy-dark);
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: var(--color-text);
-  color: var(--color-bg);
-  border-color: var(--color-text);
+  background: var(--color-navy-dark);
+  color: var(--color-gold-light);
+  border-color: var(--color-navy-dark);
+  box-shadow: 0 4px 14px rgba(11, 30, 45, 0.2);
 }
 
 .btn-accent {
-  border-color: #000000;
-  color: #000000;
-  background: transparent;
+  border-color: var(--color-gold);
+  color: var(--color-navy-dark);
+  background: var(--color-gold);
 }
 
 .btn-accent:hover {
-  background: #000000;
-  color: #ffffff;
-  border-color: #000000;
+  background: var(--color-navy-dark);
+  color: var(--color-gold-light);
+  border-color: var(--color-navy-dark);
 }
 
 /* Header & Nav */

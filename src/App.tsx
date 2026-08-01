@@ -518,7 +518,7 @@ function App() {
 
         {/* Shop / Coaching Section */}
         <section id="coaching" className="section container">
-          <h2 style={{ marginBottom: '1rem' }}>Coaching Aanvragen</h2>
+          <h2 style={{ marginBottom: '1rem', color: 'var(--color-gold)' }}>Coaching Aanvragen</h2>
           <p className="text-center text-muted" style={{ marginBottom: '3rem', maxWidth: '600px', margin: '0 auto 3rem' }}>
             Selecteer de gewenste coaching dienst. De aanvraag loopt via persoonlijk contact.
           </p>
@@ -550,18 +550,18 @@ function App() {
         {/* Testimonials & Clients */}
         <section id="referenties" className="section" style={{ backgroundColor: 'white' }}>
           <div className="container">
-            <h2 style={{ marginBottom: '3rem' }}>Wat Klanten Zeggen</h2>
+            <h2 style={{ marginBottom: '3rem', color: 'var(--color-gold)' }}>Wat Klanten Zeggen</h2>
             <div className="masonry-grid" style={{ marginBottom: '4rem' }}>
               {TESTIMONIALS.map((t, idx) => (
-                <div key={idx} className="masonry-item" style={{ borderLeft: '4px solid #111111' }}>
+                <div key={idx} className="masonry-item" style={{ borderLeft: '4px solid var(--color-gold)' }}>
                   <p style={{ fontStyle: 'italic', fontSize: '1.02rem', color: '#222', marginBottom: '0.8rem', lineHeight: '1.6' }}>"{t.text}"</p>
                   <cite style={{ fontWeight: 'bold', color: '#111', fontStyle: 'normal', display: 'block' }}>— {t.author}</cite>
                 </div>
               ))}
             </div>
 
-            <h2 style={{ marginBottom: '1.5rem', textTransform: 'uppercase', fontSize: '1.2rem', letterSpacing: '2px', color: '#888' }}>
-              Organisaties & Bedrijven die beroep deden en doen op Prof. Em. ir. Ludo Poelaert
+            <h2 style={{ marginBottom: '1.5rem', fontSize: '2.2rem', color: 'var(--color-gold)', textAlign: 'center', lineHeight: '1.3' }}>
+              Organisaties & Bedrijven<br />die beroep deden en doen op Prof. Em. ir. Ludo Poelaert
             </h2>
             <p style={{ marginBottom: '2.5rem', color: '#666' }}>
               Een greep uit de bedrijven, overheidsinstanties, ziekenhuizen en praktijken die gebruik maakten van coaching, advies en praktijkmanagement:
