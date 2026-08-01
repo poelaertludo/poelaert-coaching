@@ -1,0 +1,527 @@
+
+
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title> Error 404</title>
+    <link rel="stylesheet" type="text/css" href="/css/print.css?v=cB5vDPcSeCQqhXjdw6cXyMIamSm2k-107YGOdZYntIA" media="print">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css?v=gw2ultXFnkPH-A1vQrvYGpV65moDUZmeLbD2X-7SWos" />
+    <link rel="stylesheet" href="/lib/vue-datepicker/dist/main.min.css?v=NrXmjDPcRjdVxW2XEr5CStc2e0s2jp738f9IHt0KPLw" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css?v=j7uqvhacHS_VQ467cIJaohjesHt2v5lQk7fiIH_qPl4" />
+    <link rel="stylesheet" href="/css/site.css?v=VzQSHukDj-0riYclS99txROPYD1pef4rlJpadVX04pc" />
+    <link rel="stylesheet" href="/css/search.css?v=ifZzJTxU8yhfPb9-3uab8OqcVt9YsguAm6o-ms5CZgE" />
+    <link rel="stylesheet" href="/css/side-nav.css?v=e5aUsG1BqXOWKTeESx-fBNyaoAGk_mb6DKjE_QkUXb4" />
+    <link rel="stylesheet" href="/css/shared/partials/search-popup.css?v=rhl2pf-f9NmNMA2IjcEI22tXSVKeWCDUHs8uhFCn2mQ" />
+    <link rel="stylesheet" href="/css/shared/partials/cookie-popup.css?v=T96eP1i6MhBip9J-9CLW0SdE1_g-mo6sP2GUGbg9_WM" />
+    <link rel="stylesheet" href="/css/shared/partials/press.css?v=CdQoTnhZhhoKiEr7PiBZnGtIXHIDsaYk8_q_AmAF0Ac" />
+    <link rel="stylesheet" href="/css/shared/partials/back-to-top.css?v=bWqHIc-rBduj5zTCLfperETLk4RJa6gtZMQqJKrYHqM" />
+    <link rel="stylesheet" href="/css/shared/components/quote.css?v=eaekxSPAqCKW7Fly-4xZZpnjgPJUrlBv3b0brh6-_3k" />
+    <link rel="stylesheet" href="/css/shared/components/article-cta.css?v=eNPSRIBXW6X5YwSC5onsYiBdYkCNTBOnlNIgKe9L_xI" />
+    <link rel="stylesheet" href="/css/shared/components/mission-statement.css?v=VqPvl7gU9CEsIm0vX38qrYJjW3ywUbpsFIkB5F_EVIY" />
+    <link rel="stylesheet" href="/css/shared/components/bullets.css?v=Y1OnC4ToFesOxVhGPs2zblNuBu_uu-2HjoUfRckLOIQ" />
+    <link rel="stylesheet" href="/css/shared/components/steps.css?v=mV6lUuIrTFVL2BTAwvrKHA5Ku6yf8_g50Q-ftOvUX4U" />
+    <link rel="stylesheet" href="/css/shared/components/links.css?v=thmGba8oeQAm8Z5fUJZMXEb4y_3oNQwB8_-aVmROaeA" />
+    <link rel="stylesheet" href="/css/shared/components/footnote.css?v=t7ZUbS1w_KWrcSwNqj2GmL9qJJ0u7V07p8sVBJFy8Xw" />
+    <link rel="stylesheet" href="/css/shared/components/anchor-tags.css?v=C9UeFfylMGEFkFgroxWQKq6d_KkB-ZEvxG3GeLGdqVQ" />
+    <link rel="stylesheet" href="/css/shared/components/paragraph.css?v=3xJK5TKRx4s9R_TWSGiaAvDtQEXJv_cer-Th-g2ZtlU" />
+    <link rel="stylesheet" href="/css/shared/components/two-columns.css?v=IlZfAvRyjVv0lW6vemx-QMePv_ysVqUmkGYe-dzgq2A" />
+    <link rel="stylesheet" href="/css/shared/components/faq.css?v=4qJVoLnU0Woy13Nt8LeC8jhPG-QdvMP0_E_L6ftJpjw" />
+    <link rel="stylesheet" href="/css/shared/components/images.css?v=1SJ0xAKoKPQRQLWvEhrBV2o9mYlyy8ASSjpNAwB_7t4" />
+    <link rel="stylesheet" href="/css/shared/components/signature.css?v=vXc_QCKZkgY4cN4PDc2lmYKM-PZcfdIH_7YKVxULNho" />
+    <link rel="stylesheet" href="/css/shared/components/highlight.css?v=JP4YP6kVwbvBij8RIxwLcJj5IlI0TMRw2ilI6FvicFI" />
+    <link rel="stylesheet" href="/css/shared/components/table.css?v=_rB4pJuc0npBC4rL7Ve7uHdOOzFv6ivj4nXw__NueVY" />
+    <link rel="stylesheet" href="/css/shared/components/location.css?v=DcBLKKRor-Gw6GO9b3iWPNUSH_eGcfgm2ABdfpqunKs" />
+    <link rel="stylesheet" href="/css/shared/components/pages-and-documents.css?v=wG3z3tBwEccZoi-96xUCt97DS6h1M5C_8qTfMRU0yzU" />
+    <link rel="stylesheet" href="/css/shared/components/bio.css?v=eGQj-p4BzdKdhm92v8XWLItQpRiLtVsjT9LqsNTIUXw" />
+    <link rel="stylesheet" href="/css/shared/components/article/tile.css?v=RA1rvc7bHaR21VJVGim4_b2tU-VFjXNJUrPGHzXxr6E" />
+    <link rel="stylesheet" href="/css/shared/components/header.css?v=RDHZ3qAIZgNvz2Xud7JsBwwIJBxbPXWTrO-YOUQtckc" />
+    <link rel="stylesheet" href="/css/shared/partials/feed-item.css?v=HzAl5i9Hl0GCxuZdYdeqMMlKYmEMqjGBF_RMbjYUzxM" />
+    <link rel="stylesheet" href="/css/shared/partials/ads.css?v=ltz1Ki0Y4uP_tNAwhGe2_FOhPm5MJP5NdEz8NG-krCo" />
+    <link rel="stylesheet" href="/css/shared/partials/cta.css?v=nn7S1m297Vv3f2iZFVpf5CvN_o8AV8LKL2zOramDl3k" />
+    <link rel="stylesheet" href="/css/shared/carousel-multiple-items.css?v=2ewVp5uT0qCUF8gEL_7UiPyx-ZrX1gEqipyuXZovciQ" />
+    <link rel="stylesheet" href="/css/overview.css?v=aAAEO_lmD2o6Vv5qNkU5J0E8TdT7ipyMbWk3O438au8" />
+    <link rel="stylesheet" href="/css/dimensions/small.css?v=gcy24I8Nd-bRk50z1cDEXVcN3PxUc8EN2dQ0xFBQVZ4" />
+    <link rel="stylesheet" href="/css/dimensions/medium.css?v=ys7IPxFViMDRH2WgYoTZ9khkyjO4Ri9r-G97d1XTfTI" />
+    <link rel="stylesheet" href="/css/dimensions/large.css?v=0sQoHTTxCOE9B5pb98fh7Gzgkz4NfOvu8ABN0VmZY84" />
+    <link rel="stylesheet" href="/css/shared/components/contact.css?v=iHOPDLu37w7QoMk27QQkdM2RqNIu8OGnwkgJRz_FU_Q" />
+    <link rel="stylesheet" href="/css/animations.css?v=ItQNlaQN0MYPeK7S-ZeQIMEdhTva_oIp57P-OTEvYzw" />
+    <link rel="stylesheet" href="/css/toolbar.css?v=JhO3vWQVzlgo7el5Iila2-3bLQ962JZ7_kikDggxxUM" />
+    
+</head>
+
+<body>
+    <script defer src="https://toolbar.apb.be/toolbar.js?culture=nl-BE&app=apbbe&showSearchButton=true&showLanguageToggle=true&showMenuBars=true&urlOtherLanguage=%23&t=639211854828570520"></script>
+    <div id="claimslist" class="d-none">
+        PUBLIC, PUBLIC
+    </div>
+    
+
+
+
+<header id="main-header">
+    <div class="collapse bg-white border-top" id="header-menu">
+        <div class="container-large py-4">
+            <div class="d-flex d-sm-none gap-3 align-items-center mb-4">
+                <form method="get" class="search-bar col" action="/nl-BE/Zoeken">
+                    <input class="py-2" name="query" placeholder="Geef een zoekterm in" />
+                    <button class="button" type="submit">
+                        <span class="fa fa-search"></span>
+                    </button>
+                </form>
+
+                <hr />
+
+                <div id="mobile-language-toggle" class="tb-dropdown col-auto">
+                    <button class="tb-button">NL</button>
+                    <div class="tb-dropdown-menu">
+                        <a>FR</a>
+                    </div>
+                </div>
+            </div>
+
+        <div class="h3 nav-title-item">
+            <span class="me-2">MyAPB</span>
+                <span class="fa fa-lock-keyhole lock-icon"></span>
+        </div>
+        <div class="navigation-items">
+            <a class="navigation-item " href="/nl-BE/Applicatie" data-restricted="true">
+                <img class="hover-green  svg-black" style="width:0.9rem;height:0.9rem; margin-right:3px" src="/img/apps.svg?v=U3PMw7FhFFPVtfRfGw1-fAam_Jn4jCWcjvH-1-8uxvY" />
+                <span>Applicaties</span>
+            </a>
+            <a class="navigation-item " href="/nl-BE/Toolbox" data-restricted="true">
+                <img class="hover-green  svg-black" style="width:1.2rem;height:1.2rem" src="/img/tools.svg?v=pQ355m7yrdu9WacBkr-33FgYcT9ht6i5PCS7PLksJMs" />
+                <span>Toolboxen</span>
+            </a>
+            <a class="navigation-item " href="/nl-BE/Documentatie" data-restricted="true">
+                <img class="hover-green  svg-black" style="width:1.1rem;height:1.1rem" src="/img/Documentatie.svg?v=f-PaPlVGv5oUO6yTctG8WDxlkbLbkXLOGDOUuI_Q714" />
+                <span>Documentatie</span>
+            </a>
+            <a class="navigation-item " href="/nl-BE/Reglementatie" data-restricted="true">
+                <img class="hover-green  svg-black" style="width:1.1rem;height:1.1rem" src="/img/Reglementen.svg?v=6G7_EeOyrqcvYDvY4W3b6HI8FHNJJkBQKIvc4dD-DZo" />
+                <span>Reglementering</span>
+            </a>
+        </div>
+
+            <div class="small-nav-screen">
+                <div class="accordion accordion-nav" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-0">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-0" aria-expanded="false" aria-controls="collapse-0">
+                                    <h2>Wie zijn we</h2>
+                                    <span class="menu-chevron"></span>
+                                </button>
+                            </h2>
+                            <div id="collapse-0" class="accordion-collapse collapse" aria-labelledby="heading-0" data-bs-parent="#accordionExample">
+                                <div class="accordion-body nav-item-accordion">
+                                        <a class="d-block pb-1 nav-link-item" href="/nl-BE/AboutUs">Over ons</a>
+                                        <a class="d-block pb-1 nav-link-item" href="/nl-BE/pharmacy">De officina-apotheek</a>
+                                        <a class="d-block pb-1 nav-link-item" href="/nl-BE/DGO">Dienst Geneesmiddelenonderzoek</a>
+                                        <a class="d-block pb-1 nav-link-item" href="/nl-BE/Werken-bij-APB">Werken bij APB</a>
+                                    <a class="cta cta-nav te" href="/nl-BE/AboutUs">Ontdek APB</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                                    <h2>Actualiteit</h2>
+                                    <span class="menu-chevron"></span>
+                                </button>
+                            </h2>
+                            <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#accordionExample">
+                                <div class="accordion-body nav-item-accordion">
+                                        <a class="d-block pb-1 nav-link-item" href="/nl-BE/Pers">APB in de pers</a>
+                                        <a class="d-block pb-1 nav-link-item" href="/nl-BE/Overzicht/actualiteit~ACT?sub=APBNEWS">APBnews</a>
+                                        <a class="d-block pb-1 nav-link-item" href="/nl-BE/Recall">Intrekkingen</a>
+                                    <a class="cta cta-nav te" href="/nl-BE/Overzicht/actualiteit~ACT">Alle actualiteit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                    <h2>Contact</h2>
+                                    <span class="menu-chevron"></span>
+                                </button>
+                            </h2>
+                            <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionExample">
+                                <div class="accordion-body nav-item-accordion">
+                                        <a class="d-block pb-1 nav-link-item" href="https://www.apb.be/nl-BE/Artikel/hoe-kom-je-naar-apb~2169NL">Hoe kom je naar APB?</a>
+                                    <a class="cta cta-nav te" href="/nl-BE/contact">Contacteer ons</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="large-nav-screen">
+                <hr />
+
+                <div class="justify-content-between top-nav-items">
+                        <div class="top-nav-item top-nav-last-item">
+                            <div>
+                                <div class="h3 nav-title-item">Wie zijn we</div>
+                                    <a class="d-block pb-1" href="/nl-BE/AboutUs">Over ons</a>
+                                    <a class="d-block pb-1" href="/nl-BE/pharmacy">De officina-apotheek</a>
+                                    <a class="d-block pb-1" href="/nl-BE/DGO">Dienst Geneesmiddelenonderzoek</a>
+                                    <a class="d-block pb-1" href="/nl-BE/Werken-bij-APB">Werken bij APB</a>
+                                    <a data-matomo="menu" class="mt-2 cta" href="/nl-BE/AboutUs">Ontdek APB</a>
+                            </div>
+                        </div>
+                        <div class="top-nav-item top-nav-last-item">
+                            <div>
+                                <div class="h3 nav-title-item">Actualiteit</div>
+                                    <a class="d-block pb-1" href="/nl-BE/Pers">APB in de pers</a>
+                                    <a class="d-block pb-1" href="/nl-BE/Overzicht/actualiteit~ACT?sub=APBNEWS">APBnews</a>
+                                    <a class="d-block pb-1" href="/nl-BE/Recall">Intrekkingen</a>
+                                    <a data-matomo="menu" class="mt-2 cta" href="/nl-BE/Overzicht/actualiteit~ACT">Alle actualiteit</a>
+                            </div>
+                        </div>
+                        <div class="top-nav-item top-nav-last-item">
+                            <div>
+                                <div class="h3 nav-title-item">Contact</div>
+                                    <a class="d-block pb-1" href="https://www.apb.be/nl-BE/Artikel/hoe-kom-je-naar-apb~2169NL">Hoe kom je naar APB?</a>
+                                    <a data-matomo="menu" class="mt-2 cta" href="/nl-BE/contact">Contacteer ons</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<script>
+    function setToolbarNotificationCookie(dateUpdated) {
+        var expiration_date = new Date();
+        expiration_date.setHours(23);
+        expiration_date.setMinutes(59);
+        expiration_date.setSeconds(59);
+        expiration_date.setMilliseconds(999);
+        document.cookie = `toolbarNotification=${dateUpdated};secure;path=/;expires=" + ${expiration_date.toUTCString()}`;
+        $('#toolbarMessage').addClass('d-none');
+    }
+</script>
+
+
+
+    <a class="d-none" id="culture-switcher-url" href="/fr-BE/Error/NotFound"></a>
+
+    <main data-category="" role="main" id="main-block">
+
+        <div class="position-relative grid-one-area header-ball"></div>
+        <div class="position-relative grid-one-area">
+            <div class="main-ball"></div>
+        </div>
+
+                <div class="position-relative grid-one-area">
+<div class="container-small mt-3">
+
+    <div class="breadcrumb">
+        <p><a href="/nl-BE">Homepage</a></p>
+        <p>404</p>
+    </div>
+    <h1>404 - Pagina niet gevonden</h1>
+    <p>Oeps! We kunnen de pagina die je zoekt niet vinden. Misschien vind je de gewenste informatie via onze zoekbalk.</p>
+</div>
+<div class="content mt-5">
+    <div class="container-medium text-center">
+        <div class="tile">
+            <div class="container-small mt-3">
+                
+
+
+
+<form method="get" action="/nl-BE/Zoeken">
+    <div class="search-bar">
+        <input id="search-input" v-model="query" type="text" name="query" placeholder="Geef een zoekterm in">
+        <button class="button" type="submit"><i class="fas fa-search"></i></button>
+    </div>
+</form>
+
+
+<h3 class="mt-4">Ga meteen naar...</h3>
+
+<div class="search-popup-links">
+        <div class="search-popup-link">
+            <a data-matomo="overlay" href="/nl-BE/Overzicht/Actualiteit~ACT?sub=APBNEWS" class="cta">APBnews</a>
+        </div>
+        <div class="search-popup-link">
+            <a data-matomo="overlay" href="/nl-BE/Recall" class="cta">Intrekkingen</a>
+        </div>
+        <div class="search-popup-link">
+            <a data-matomo="overlay" href="/nl-BE/Werken-bij-APB" class="cta">Werken bij APB</a>
+        </div>
+        <div class="search-popup-link">
+            <a data-matomo="overlay" href="/nl-BE/DGO" class="cta">Dienst geneesmiddelen onderzoek</a>
+        </div>
+        <div class="search-popup-link">
+            <a data-matomo="overlay" href="/nl-BE/Contact" class="cta">Contact</a>
+        </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div></div>
+
+        
+
+<div id="main-footer" class="footer-wrapper">
+    <div class="parallax parallax--3 grid-one-area overflow-hidden">
+        <div class="footer-ball"></div>
+    </div>
+    
+    <footer class="grid-one-area">
+        <div class="container-large">
+            <div class="footer__navigation">
+                <div class="col-auto footer-image">
+                    <a href="/nl-BE"><img class="footer__logo" src="/img/APB_logo.svg?v=sxSAzEl-M8s_JIsPRBah1gmW5mc5nN1ggfzgVxZpXIk" /></a>
+                    <div class="socials">
+                        <a href="https://example.com" style="display:none"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://example.com" style="display:none"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                    <div class="col-auto footer-options">
+                        <div class="h3">Wie zijn we</div>
+                            <a class="d-table pb-1" href="/nl-BE/AboutUs">Over ons</a>
+                            <a class="d-table pb-1" href="/nl-BE/pharmacy">De officina-apotheek</a>
+                            <a class="d-table pb-1" href="/nl-BE/DGO">Dienst Geneesmiddelenonderzoek</a>
+                            <a class="d-table pb-1" href="/nl-BE/Werken-bij-APB">Werken bij APB</a>
+                        <a class="cta cta-nav" href="/nl-BE/AboutUs">Ontdek APB</a>
+                    </div>
+                    <div class="col-auto footer-options">
+                        <div class="h3">Actualiteit</div>
+                            <a class="d-table pb-1" href="/nl-BE/Pers">APB in de pers</a>
+                            <a class="d-table pb-1" href="/nl-BE/Overzicht/actualiteit~ACT?sub=APBNEWS">APBnews</a>
+                            <a class="d-table pb-1" href="/nl-BE/Recall">Intrekkingen</a>
+                        <a class="cta cta-nav" href="/nl-BE/Overzicht/actualiteit~ACT">Alle actualiteit</a>
+                    </div>
+                    <div class="col-auto footer-options">
+                        <div class="h3">Contact</div>
+                            <a class="d-table pb-1" href="https://www.apb.be/nl-BE/Artikel/hoe-kom-je-naar-apb~2169NL">Hoe kom je naar APB?</a>
+                        <a class="cta cta-nav" href="/nl-BE/contact">Contacteer ons</a>
+                    </div>
+            </div>
+
+            <hr />
+
+            <div class="footer__legal">
+                <span>&copy Algemene Pharmaceutische Bond</span>
+                    <a class="ms-4" href="/nl-BE/Artikel/Privacy-Policy~604NL">Privacybeleid</a>
+                    <a class="ms-4" href="/nl-BE/Artikel/Wettelijke%20vermeldingen~603NL">Wettelijke vermeldingen</a>
+                    <a class="ms-4" href="/nl-BE/Artikel/algemene-voorwaarden~613NL">Algemene voorwaarden</a>
+                <span class="mx-auto me-md-0 mt-3 mt-md-0">
+                    <span class="design-by">design by</span>
+                    <span class="align-middle">
+                        <span class="fak fa-kit fa-glue-icon"></span>
+                        <span class="fak fa-kit fa-glue"></span>
+                    </span>
+                </span>
+            </div>
+
+
+        </div>
+    </footer>
+</div>
+        <div class="back-to-top-container">
+    <a href="#main-block">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+</div>
+
+</partial>
+        
+
+
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="message-handling-container">
+                <p class="message-handling-message">
+                </p>
+            </div>
+            <div class="modal-header contact-header">
+                <h2 class="modal-title" id="contactModalLabel">Contact</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closeForm()"></button>
+            </div>
+            <div class="modal-body contact-body">
+                <p class="modal-subtitle mb-4">Interesse in ons aanbod? Vragen? Laat het ons weten via dit formulier. We nemen snel contact met je op!</p>
+
+                <form id="contactForm" data-ajax="true" data-ajax-success="contactOnSuccess" data-ajax-failure="contactOnFailed" method="post" onsubmit="disableSubmitButton()" action="/Contact/SendEmail?culture=nl-BE">
+                    <div class="mb-3">
+                        <label for="Name" class="required">Naam</label>
+                        <input class="mb-2" type="text" data-val="true" data-val-required="Gelieve je naam in te vullen" id="Name" name="Name" value="">
+                        <span class="text-danger field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="required">E-mail</label>
+                        <input class="mb-2" type="text" data-val="true" data-val-regex="Gelieve een geldig e-mailadres in te vullen" data-val-regex-pattern="^([a-zA-Z0-9_\-\.]&#x2B;)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]&#x2B;\.)&#x2B;))([a-zA-Z]{2,15}|[0-9]{1,3})(\]?)$" data-val-required="Gelieve een geldig e-mailadres in te vullen" id="Email" name="Email" value="">
+                        <span class="text-danger field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Message" class="required">Voer hier je bericht in</label>
+                        <textarea class="mb-2" rows="10" data-val="true" data-val-length="Je bericht kan max Voer hier je bericht in karakters bevatten." data-val-length-max="500" data-val-required="Gelieve een bericht in te vullen" id="Message" maxlength="500" name="Message">
+</textarea>
+                        <span class="text-danger field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="mb-3 d-flex">
+                        <input class="mb-2" type="checkbox" data-val="true" data-val-required="Gelieve akkoord te gaan" id="PrivacyPolicyAgreement" name="PrivacyPolicyAgreement" value="true">
+                        <label class="form-check-label ms-3 required" for="PrivacyPolicyAgreement">Ik ga akkoord met <a class="text-primary" href="https://prodsolutions.apb.be/nl-BE/Artikel/Privacy%20Policy~604NL" target="_blank">Privacybeleid</a></label>
+                    </div>
+
+                    <input type="hidden" id="ContactEmail" data-val="true" data-val-required="The ContactEmail field is required." name="ContactEmail" value="" />
+                    <input type="hidden" id="CaptchaResponse" data-val="true" data-val-required="The Captcha field is required." name="Captcha" value="" />
+                    <input type="hidden" id="captcha-id" value="6LeA_dcbAAAAALZGZ4tG5IX8AmzPZXUlVTrc1p78" />
+                    <div class="mb-3" id="captcha"></div>
+                    <button type="submit" id="contactFormSubmit" class="button">Verstuur</button>
+                    
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8H3RaP3LDtdGvMuYTu25aG0DGf7Jrik_Z5yASQ2eBp9SO_TS_RqYkc6xS_ZOwtI4SL9g8z9fRKFEzB07jFQrSi5UkZDq2Xhc8YdnT-xFG7bNzeRGegPejV3iBpwPBqyszbscHNYhR0TEw3jJz-wRZVo" /><input name="PrivacyPolicyAgreement" type="hidden" value="false"></form>
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+
+
+<div class="modal fade modal-auth" id="accessDeniedModal" tabindex="-1" aria-labelledby="accessDeniedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="message-handling-container">
+                <p class="message-handling-message">
+                </p>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="p-4">
+                        <button type="button" class="btn-close" style="float:right" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h2><i class="far fa-lock-keyhole lock-icon" style="font-size:x-large"></i> MyAPB</h2>
+                        <div class="mb-3">Om deze inhoud te bekijken moet je aangemeld zijn in MyAPB.</div>
+                        <div class="d-flex align-items-center">
+                            <input type="hidden" id="accessDeniedModalBaseUrl" value="http://www.apb.be" />
+                            <input type="hidden" id="accessDeniedModalLoginBaseUrl" value="https://sso.apb.be:443/LogonFlow/Logon?appname=apbbe&amp;culture=nl-BE" />
+
+                            <a href="https://sso.apb.be:443/LogonFlow/Logon?appname=apbbe&amp;culture=nl-BE&urlredirect=http://www.apb.be/nl-BE/Error/NotFound" id="accessDeniedModalLoginUrl" class="button me-3">Aanmelden</a>
+                            <a href="https://www.apb.be/nl-BE/Artikel/lid-zijn-bij-apb~1839NL" class="cta">Word lid van APB</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <div id="search-popup">
+    <div class="header-ball header-ball--landingpage"></div>
+    <div class="main-ball"></div>
+    <div class="content">
+        <div class="container-large">
+            <div class="d-flex py-5">
+                <button class="ms-auto btn-close" id="close-button" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="container-medium text-center">
+            <h2 class="h1">Waar ben je naar op zoek?</h2>
+            <div class="tile">
+                
+
+
+
+<form method="get" action="/nl-BE/Zoeken">
+    <div class="search-bar">
+        <input id="search-input" v-model="query" type="text" name="query" placeholder="Geef een zoekterm in">
+        <button class="button" type="submit"><i class="fas fa-search"></i></button>
+    </div>
+</form>
+
+
+<h3 class="mt-4">Ga meteen naar...</h3>
+
+<div class="search-popup-links">
+        <div class="search-popup-link">
+            <a data-matomo="overlay" href="/nl-BE/Overzicht/Actualiteit~ACT?sub=APBNEWS" class="cta">APBnews</a>
+        </div>
+        <div class="search-popup-link">
+            <a data-matomo="overlay" href="/nl-BE/Recall" class="cta">Intrekkingen</a>
+        </div>
+        <div class="search-popup-link">
+            <a data-matomo="overlay" href="/nl-BE/Werken-bij-APB" class="cta">Werken bij APB</a>
+        </div>
+        <div class="search-popup-link">
+            <a data-matomo="overlay" href="/nl-BE/DGO" class="cta">Dienst geneesmiddelen onderzoek</a>
+        </div>
+        <div class="search-popup-link">
+            <a data-matomo="overlay" href="/nl-BE/Contact" class="cta">Contact</a>
+        </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    
+
+    <div id="cookie-popup-wrapper">
+        <div id="cookie-popup-container">
+            <form id="cookie-popup" class="container-small" action="/nl-BE/Error/NotFound" method="post">
+                <h2 class="mb-0 text-black f-roboto">Cookies</h2>
+                <small>Deze website gebuikt cookies. Cookies zijn mini-bestandjes die op een apparaat dat met internet is verbonden (computer, smartphone, tablet, enz.) kunnen worden geplaatst om informatie te verzamelen of op te slaan over hoe gebruikers zich op een website gedragen. Ze worden voornamelijk om technische redenen gebruikt en ze verbeteren je surfervaring onze site.</small>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <button class="button button--small bg-white dark shadow px-3" value="no" type="button" disabled>Noodzakelijke cookies toestaan</button>
+                    <button class="button button--small shadow px-3" value="yes" type="button" disabled>Alle cookies aanvaarden</button>
+                </div>
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8H3RaP3LDtdGvMuYTu25aG0DGf7Jrik_Z5yASQ2eBp9SO_TS_RqYkc6xS_ZOwtI4SL9g8z9fRKFEzB07jFQrSi5UkZDq2Xhc8YdnT-xFG7bNzeRGegPejV3iBpwPBqyszbscHNYhR0TEw3jJz-wRZVo" /></form>
+        </div>
+    </div>
+
+
+    
+    
+        <script src="/lib/jquery/dist/jquery.min.js?v=82hEkGrSMJh3quMSG4f7FbngmAPLTDM63H4eNayS4Us"></script>
+        <script src="/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js?v=PAC000yuHt78nszJ2RO0OiDMu_uLzPLRlYTk8J3AO10"></script>
+        <script src="/lib/jquery-validation/dist/jquery.validate.min.js?v=eItLFOyfQ4d_OGzEnGchi2ZMVF8EhGgzS0k7fSOPifQ"></script>
+        <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js?v=9GycpJnliUjJDVDqP0UEu_bsm9U-3dnQUH8-3W10vkY"></script>
+        <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js?v=9a6PWZ8o-xGv_qmmi3Vbaz8n12NQC-piQpGfHva0k4k"></script>
+    
+
+    <script src="/js/site.js?v=ng6qyo_wdnriQw-e_ZdC3aJyty_9nbk5xJFT4EODsUo"></script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBEC8D1B79"></script>
+        <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-SBEC8D1B79');</script>
+
+    <script type="text/javascript">
+        const MatomoSetSiteId = '8';
+        const MatomoSetTagManagerEnv = 'YF8M5r5d';
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=captchaOnload&render=explicit" async defer></script>
+
+    <script src="/js/shared/contact-form.js?v=sGkpzQ2qrQbIPRBeH_WR-MLAll9nFI3u2-hn4ZZ7nU8"></script>
+
+        <script src="/js/matomo-base/index.js?v=k0zvTu9ZeY5XAaFTXUJCyMOrBBkWcXIS7HpAgXQNTWQ"></script>
+        <script src="/js/matomo-tag-manager/index.js?v=KpcXvvd-oOcbJE2OMmC0rK4ILPAbA5A5i9iQxiuTz10"></script>
+
+    
+
+        <style>
+            .onlyVisibleForAdmin {
+                display: none;
+            }
+        </style>
+
+</body>
+</html>
+

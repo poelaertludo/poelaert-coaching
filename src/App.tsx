@@ -3,6 +3,40 @@ import { ShoppingCart, X, Menu } from 'lucide-react';
 import coverBoek from './assets/CoverBoekPapa.png';
 import papaPhoto from './assets/Papa_Photo.png';
 
+// Logo Imports (Vite Bundled)
+import logoBpost from './assets/logos/bpost.svg';
+import logoProximus from './assets/logos/proximus.svg';
+import logoBiotronik from './assets/logos/biotronik.svg';
+import logoKuleuven from './assets/logos/kuleuven.svg';
+import logoAdecco from './assets/logos/adecco.svg';
+import logoApple from './assets/logos/apple.svg';
+import logoBarryCallebaut from './assets/logos/barry_callebaut.svg';
+import logoUgent from './assets/logos/ugent.svg';
+import logoVub from './assets/logos/vub.svg';
+import logoVlaamseOverheid from './assets/logos/vlaamse_overheid.svg';
+import logoStadGent from './assets/logos/stad_gent.svg';
+import logoAzDelta from './assets/logos/az_delta.svg';
+import logoSonaca from './assets/logos/sonaca.svg';
+import logoAirBelgium from './assets/logos/air_belgium.svg';
+import logoCm from './assets/logos/cm.svg';
+import logoApb from './assets/logos/apb.svg';
+import logoHowest from './assets/logos/howest.svg';
+import logoHogent from './assets/logos/hogent.svg';
+import logoVvt from './assets/logos/vvt.svg';
+import logoKlav from './assets/logos/klav.svg';
+import logoDenys from './assets/logos/denys.svg';
+import logoVeronove from './assets/logos/veronove.svg';
+import logoCausamatics from './assets/logos/causamatics.svg';
+import logoFico from './assets/logos/fico.svg';
+import logoPhilippusNeri from './assets/logos/philippus_neri.svg';
+import logoOsteopaatVlaanderen from './assets/logos/osteopaat_vlaanderen.svg';
+import logoUgain from './assets/logos/ugain.svg';
+import logoTimmermans from './assets/logos/timmermans.svg';
+import logoIzidoc from './assets/logos/izidoc.svg';
+import logoOsteosoft from './assets/logos/osteosoft.svg';
+import logoSunair from './assets/logos/sunair.svg';
+import logoTeamConsult from './assets/logos/team_consult.svg';
+
 const BOOK_REVIEWS = [
   { text: "Dit boek lijkt dik, maar leest als een trein...", author: "Robin Demeeter, ondernemer pur sang" },
   { text: "Als je het reilen en zeilen van een onderneming wil kennen, is dit boek echt de moeite.", author: "Prof. dr. Ronald Buyl" },
@@ -102,38 +136,38 @@ const COACHING_SERVICES = [
 ];
 
 const CLIENTS: { name: string; logo: string }[] = [
-  { name: "Bpost", logo: "bpost.svg" },
-  { name: "Proximus", logo: "proximus.svg" },
-  { name: "Biotronik", logo: "biotronik.svg" },
-  { name: "PUC KULeuven", logo: "kuleuven.svg" },
-  { name: "Adecco (BeNeLux)", logo: "adecco.svg" },
-  { name: "Apple Computer BeNeLux", logo: "apple.svg" },
-  { name: "Barry Callebaut", logo: "barry_callebaut.svg" },
-  { name: "UGent", logo: "ugent.svg" },
-  { name: "Vrije Universiteit Brussel", logo: "vub.svg" },
-  { name: "De Vlaamse Gemeenschap", logo: "vlaamse_overheid.svg" },
-  { name: "Stad Gent", logo: "stad_gent.svg" },
-  { name: "AZ Delta (Roeselare)", logo: "az_delta.svg" },
-  { name: "Sonaca", logo: "sonaca.svg" },
-  { name: "Air Belgium International", logo: "air_belgium.svg" },
-  { name: "Christelijke Mutualiteiten (CM)", logo: "cm.svg" },
-  { name: "APB (Algemene Pharmaceutische Bond)", logo: "apb.svg" },
-  { name: "Howest", logo: "howest.svg" },
-  { name: "Hogeschool Gent (HoGent)", logo: "hogent.svg" },
-  { name: "VVT (Vlaamse Vereniging van Tandartsen)", logo: "vvt.svg" },
-  { name: "KLAV (Koninklijk Limburgs Apothekers Verbond)", logo: "klav.svg" },
-  { name: "Denys (Bouwfirma)", logo: "denys.svg" },
-  { name: "Veronove", logo: "veronove.svg" },
-  { name: "Causamatics", logo: "causamatics.svg" },
-  { name: "Flanders International College for Osteopathy", logo: "fico.svg" },
-  { name: "Philippus Neri GGZ Waas en Dender", logo: "philippus_neri.svg" },
-  { name: "Osteopaat Vlaanderen", logo: "osteopaat_vlaanderen.svg" },
-  { name: "UGain", logo: "ugain.svg" },
-  { name: "Timmermans", logo: "timmermans.svg" },
-  { name: "IZIDOC", logo: "izidoc.svg" },
-  { name: "OsteoSoft", logo: "osteosoft.svg" },
-  { name: "Sunair", logo: "sunair.svg" },
-  { name: "Team Consult", logo: "team_consult.svg" }
+  { name: "Bpost", logo: logoBpost },
+  { name: "Proximus", logo: logoProximus },
+  { name: "Biotronik", logo: logoBiotronik },
+  { name: "PUC KULeuven", logo: logoKuleuven },
+  { name: "Adecco (BeNeLux)", logo: logoAdecco },
+  { name: "Apple Computer BeNeLux", logo: logoApple },
+  { name: "Barry Callebaut", logo: logoBarryCallebaut },
+  { name: "UGent", logo: logoUgent },
+  { name: "Vrije Universiteit Brussel", logo: logoVub },
+  { name: "De Vlaamse Gemeenschap", logo: logoVlaamseOverheid },
+  { name: "Stad Gent", logo: logoStadGent },
+  { name: "AZ Delta (Roeselare)", logo: logoAzDelta },
+  { name: "Sonaca", logo: logoSonaca },
+  { name: "Air Belgium International", logo: logoAirBelgium },
+  { name: "Christelijke Mutualiteiten (CM)", logo: logoCm },
+  { name: "APB (Algemene Pharmaceutische Bond)", logo: logoApb },
+  { name: "Howest", logo: logoHowest },
+  { name: "Hogeschool Gent (HoGent)", logo: logoHogent },
+  { name: "VVT (Vlaamse Vereniging van Tandartsen)", logo: logoVvt },
+  { name: "KLAV (Koninklijk Limburgs Apothekers Verbond)", logo: logoKlav },
+  { name: "Denys (Bouwfirma)", logo: logoDenys },
+  { name: "Veronove", logo: logoVeronove },
+  { name: "Causamatics", logo: logoCausamatics },
+  { name: "Flanders International College for Osteopathy", logo: logoFico },
+  { name: "Philippus Neri GGZ Waas en Dender", logo: logoPhilippusNeri },
+  { name: "Osteopaat Vlaanderen", logo: logoOsteopaatVlaanderen },
+  { name: "UGain", logo: logoUgain },
+  { name: "Timmermans", logo: logoTimmermans },
+  { name: "IZIDOC", logo: logoIzidoc },
+  { name: "OsteoSoft", logo: logoOsteosoft },
+  { name: "Sunair", logo: logoSunair },
+  { name: "Team Consult", logo: logoTeamConsult }
 ];
 
 const TESTIMONIALS = [
@@ -526,12 +560,11 @@ function App() {
               gap: '1.25rem' 
             }}>
               {CLIENTS.map((client, idx) => {
-                const logoUrl = `${import.meta.env.BASE_URL}logos/${client.logo}`;
                 return (
                   <div 
                     key={idx} 
                     className="client-card"
-                    onClick={() => setSelectedModel({ name: client.name, image: logoUrl })}
+                    onClick={() => setSelectedModel({ name: client.name, image: client.logo })}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
                       <span style={{ fontSize: '0.95rem', fontWeight: 600, color: '#111', lineHeight: '1.3' }}>{client.name}</span>
@@ -542,7 +575,7 @@ function App() {
 
                     {/* Floating Logo Overlay on Hover */}
                     <div className="client-hover-preview">
-                      <img src={logoUrl} alt={`Logo ${client.name}`} />
+                      <img src={client.logo} alt={`Logo ${client.name}`} />
                       <div style={{ fontSize: '0.72rem', color: '#666', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic', fontWeight: 600 }}>
                         {client.name}
                       </div>
