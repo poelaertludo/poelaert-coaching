@@ -611,9 +611,9 @@ function App() {
           <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.95rem', fontWeight: 500, letterSpacing: '1px' }}>
             <span>Ludo Poelaert Coaching Academy</span>
             <span style={{ color: 'var(--color-gold)' }}>•</span>
-            <a href="https://www.ludopoelaert.coach" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-gold-light)', textDecoration: 'underline' }}>www.ludopoelaert.coach</a>
+            <a href="https://www.ludopoelaert.be" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-gold-light)', textDecoration: 'underline' }}>www.ludopoelaert.be</a>
             <span style={{ color: 'var(--color-gold)' }}>•</span>
-            <a href="mailto:info@ludopoelaert.coach" style={{ color: '#ffffff', textDecoration: 'underline' }}>info@ludopoelaert.coach</a>
+            <a href="mailto:ludo.poelaert@ugent.be" style={{ color: '#ffffff', textDecoration: 'underline' }}>ludo.poelaert@ugent.be</a>
           </div>
 
           <div style={{ height: '1px', width: '100%', maxWidth: '600px', backgroundColor: 'rgba(255,255,255,0.15)', margin: '0.5rem 0' }}></div>
