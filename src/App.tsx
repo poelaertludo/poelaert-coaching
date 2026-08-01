@@ -35,7 +35,7 @@ import logoUgain from './assets/logos/ugain.svg';
 import logoTimmermans from './assets/logos/timmermans.svg';
 import logoIzidoc from './assets/logos/izidoc.svg';
 import logoOsteosoft from './assets/logos/osteosoft.svg';
-import logoSunair from './assets/logos/sunair.svg';
+import logoVitori from './assets/logos/vitori.svg';
 import logoTeamConsult from './assets/logos/team_consult.svg';
 
 const BOOK_REVIEWS = [
@@ -173,7 +173,7 @@ const CLIENTS: { name: string; logo: string }[] = [
   { name: "Timmermans", logo: logoTimmermans },
   { name: "IZIDOC", logo: logoIzidoc },
   { name: "OsteoSoft", logo: logoOsteosoft },
-  { name: "Sunair", logo: logoSunair },
+  { name: "Vitori (Kortrijk)", logo: logoVitori },
   { name: "Team Consult", logo: logoTeamConsult }
 ];
 
@@ -356,7 +356,7 @@ function App() {
         <section id="over" className="section container">
           <div className="grid-2">
             <div className="hero-text" style={{ textAlign: 'left' }}>
-              <h2 style={{ textAlign: 'left', color: 'var(--color-text)', marginBottom: '0.3rem' }}>Ludo Poelaert</h2>
+              <h2 style={{ textAlign: 'left', color: 'var(--color-gold)', marginBottom: '0.3rem', fontSize: '2.5rem', fontWeight: 700 }}>Ludo Poelaert</h2>
               <h3 style={{ marginBottom: '1.5rem', fontWeight: 400, fontSize: '1.15rem', lineHeight: '1.4', color: '#111111' }}>
                 Professor Emeritus bedrijfseconomie, bedrijfsmanagement en ondernemerschap, UGent
               </h3>
