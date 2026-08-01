@@ -356,7 +356,7 @@ function App() {
         <section id="over" className="section container">
           <div className="grid-2">
             <div className="hero-text" style={{ textAlign: 'left' }}>
-              <h2 style={{ textAlign: 'left', color: 'var(--color-gold)', marginBottom: '0.3rem', fontSize: '2.5rem', fontWeight: 700 }}>Ludo Poelaert</h2>
+              <h2 style={{ textAlign: 'left', color: 'var(--color-gold)', marginBottom: '0.3rem', fontSize: '2.2rem', fontWeight: 600 }}>Ludo Poelaert</h2>
               <h3 style={{ marginBottom: '1.5rem', fontWeight: 400, fontSize: '1.15rem', lineHeight: '1.4', color: '#111111' }}>
                 Professor Emeritus bedrijfseconomie, bedrijfsmanagement en ondernemerschap, UGent
               </h3>
