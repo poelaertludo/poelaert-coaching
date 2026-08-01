@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ShoppingCart, X, Menu } from 'lucide-react';
 import coverBoek from './assets/CoverBoekPapa.png';
 import papaPhoto from './assets/Papa_Photo.png';
+import logoLudoPoelaertCoach from './assets/logo-ludopoelaert-coach.svg';
 
 // Logo Imports (Vite Bundled)
 import logoBpost from './assets/logos/bpost.svg';
@@ -269,14 +270,21 @@ function App() {
     <>
       <header className="header">
         <div className="container header-inner">
-          <div className="logo text-center">
-            <h1>Ludo Poelaert</h1>
-            <div className="logo-subtitle">Professor Emeritus UGent | Coaching & Advies</div>
+          <div className="logo text-center flex flex-col items-center">
+            <a href="#" className="logo-link inline-block">
+              <img 
+                src={logoLudoPoelaertCoach} 
+                alt="Ludo Poelaert Coaching Academy - ludopoelaert.coach" 
+                className="logo-img" 
+              />
+            </a>
+            <div className="logo-payoff">Groei begint bij een heldere identiteit</div>
           </div>
           
           <nav>
             <ul className={`nav ${isMenuOpen ? 'open' : ''}`}>
               <li><a href="#over" className="nav-link" onClick={() => setIsMenuOpen(false)}>Over</a></li>
+              <li><a href="#huisstijl" className="nav-link" onClick={() => setIsMenuOpen(false)}>Huisstijl & Visie</a></li>
               <li><a href="#boek" className="nav-link" onClick={() => setIsMenuOpen(false)}>Boek</a></li>
               <li><a href="#modellen" className="nav-link" onClick={() => setIsMenuOpen(false)}>Modellen</a></li>
               <li><a href="#coaching" className="nav-link" onClick={() => setIsMenuOpen(false)}>Coaching Aanvragen</a></li>
@@ -400,6 +408,71 @@ function App() {
             </div>
             <div>
               <img src={papaPhoto} alt="Ludo Poelaert" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '8px' }} />
+            </div>
+          </div>
+        </section>
+
+        {/* Huisstijl & Visie Section (van PDF) */}
+        <section id="huisstijl" className="section" style={{ backgroundColor: 'var(--color-cream)' }}>
+          <div className="container">
+            <div style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '0.85rem', fontWeight: '700', color: 'var(--color-gold)', textAlign: 'center', marginBottom: '0.5rem' }}>
+              Visuele Identiteit & Positionering
+            </div>
+            <h2 style={{ textAlign: 'center', marginBottom: '1rem', color: 'var(--color-navy-dark)' }}>
+              Herkenbaar zijn als Coach & Leider
+            </h2>
+            <p style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3.5rem', color: 'var(--color-text-muted)', fontSize: '1.05rem', lineHeight: '1.7' }}>
+              Een huisstijl is de visuele identiteit van jouw praktijk: het geheel van vaste vormgevingselementen waarmee je je naar buiten presenteert en herkenbaar maakt. Voor een coach of leider is dat cruciaal – mensen kiezen je op gevoel en vertrouwen. Een consistente stijl zorgt dat alles wat een cliënt van je ziet aanvoelt als één vertrouwd geheel.
+            </p>
+
+            <h3 style={{ textAlign: 'center', fontSize: '1.3rem', letterSpacing: '1px', marginBottom: '2rem', color: 'var(--color-navy)' }}>
+              Waarom een heldere huisstijl belangrijk is — 5 pijlers
+            </h3>
+
+            <div className="huisstijl-pijlers-grid">
+              <div className="pijler-card">
+                <div className="pijler-number">1</div>
+                <div className="pijler-content">
+                  <h4>Herkenbaarheid</h4>
+                  <p>Cliënten herkennen je meteen aan kleur, logo, typografie en een vaste, professionele uitstraling.</p>
+                </div>
+              </div>
+
+              <div className="pijler-card">
+                <div className="pijler-number">2</div>
+                <div className="pijler-content">
+                  <h4>Professionele uitstraling</h4>
+                  <p>Een consistente visuele stijl straalt onmiddellijk betrouwbaarheid, rust en de hoogste zorg uit.</p>
+                </div>
+              </div>
+
+              <div className="pijler-card">
+                <div className="pijler-number">3</div>
+                <div className="pijler-content">
+                  <h4>Onderscheid</h4>
+                  <p>Je valt op en positioneert jezelf haarscherp ten opzichte van andere coaches en adviseurs in de markt.</p>
+                </div>
+              </div>
+
+              <div className="pijler-card">
+                <div className="pijler-number">4</div>
+                <div className="pijler-content">
+                  <h4>Vertrouwen en binding</h4>
+                  <p>Visuele en inhoudelijke consistentie schept diep vertrouwen en versterkt de duurzame band met cliënten.</p>
+                </div>
+              </div>
+
+              <div className="pijler-card">
+                <div className="pijler-number">5</div>
+                <div className="pijler-content">
+                  <h4>Eenheid en efficiëntie</h4>
+                  <p>Alle uitingen sluiten naadloos op elkaar aan op de website, werkboeken, e-mails en presentaties.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="academy-tip-box" style={{ marginTop: '3rem' }}>
+              <strong>💡 Tip van de Academy:</strong> Begin klein – kies twee vaste hoofdkleuren, één prachtig lettertype en een authentieke toon. Consistentie is belangrijker dan complexiteit.
             </div>
           </div>
         </section>
@@ -592,12 +665,21 @@ function App() {
       </main>
 
       <footer className="footer">
-        <div className="container">
-          <p>&copy; {new Date().getFullYear()} Ludo Poelaert. Alle rechten voorbehouden.</p>
-          <p style={{ marginTop: '0.8rem', fontSize: '0.88rem', color: '#aaa' }}>
-            E-mail: <a href="mailto:ludo.poelaert@ugent.be" style={{ color: '#fff', textDecoration: 'underline' }}>ludo.poelaert@ugent.be</a> | 
-            Mobiel: <a href="tel:+32477992597" style={{ color: '#fff', textDecoration: 'underline' }}>+32 477 99 25 97</a> | 
-            LinkedIn: <a href="https://www.linkedin.com/in/poelaert" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline' }}>in/poelaert</a>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
+          <img src={logoLudoPoelaertCoach} alt="Ludo Poelaert Coaching Academy" style={{ height: '56px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
+          
+          <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.95rem', fontWeight: 500, letterSpacing: '1px' }}>
+            <span>Ludo Poelaert Coaching Academy</span>
+            <span style={{ color: 'var(--color-gold)' }}>•</span>
+            <a href="https://www.ludopoelaert.coach" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-gold-light)', textDecoration: 'underline' }}>www.ludopoelaert.coach</a>
+            <span style={{ color: 'var(--color-gold)' }}>•</span>
+            <a href="mailto:info@ludopoelaert.coach" style={{ color: '#ffffff', textDecoration: 'underline' }}>info@ludopoelaert.coach</a>
+          </div>
+
+          <div style={{ height: '1px', width: '100%', maxWidth: '600px', backgroundColor: 'rgba(255,255,255,0.15)', margin: '0.5rem 0' }}></div>
+
+          <p style={{ fontSize: '0.88rem', color: 'rgba(255,255,255,0.7)' }}>
+            &copy; {new Date().getFullYear()} Prof. Em. ir. Ludo Poelaert | Alle rechten voorbehouden.
           </p>
         </div>
       </footer>
