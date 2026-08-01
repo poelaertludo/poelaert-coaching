@@ -605,9 +605,13 @@ function App() {
       </main>
 
       <footer className="footer">
-        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
-          <img src={logoLudoPoelaertCoach} alt="Ludo Poelaert Coaching Academy" style={{ height: '56px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+          <img src={logoLudoPoelaertCoach} alt="Ludo Poelaert Coaching Academy" style={{ height: '65px', width: 'auto' }} />
           
+          <div style={{ color: 'var(--color-gold-light)', fontSize: '1.05rem', fontStyle: 'italic', letterSpacing: '1.5px', marginTop: '-0.2rem', marginBottom: '0.5rem', fontWeight: 500 }}>
+            Ludo Poelaert doet mensen groeien
+          </div>
+
           <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.95rem', fontWeight: 500, letterSpacing: '1px' }}>
             <span>Ludo Poelaert Coaching Academy</span>
             <span style={{ color: 'var(--color-gold)' }}>•</span>
