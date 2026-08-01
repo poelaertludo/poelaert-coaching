@@ -278,7 +278,7 @@ function App() {
                 className="logo-img" 
               />
             </a>
-            <div className="logo-payoff">Groei begint bij een heldere identiteit</div>
+            <div className="logo-payoff">Ludo Poelaert doet mensen groeien</div>
           </div>
           
           <nav>
