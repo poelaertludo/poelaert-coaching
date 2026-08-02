@@ -761,6 +761,9 @@ a:hover {
 /* ==========================================
    Mobile / Responsive Optimization (<= 768px)
    ========================================== */
+/* ==========================================
+   Mobile / Responsive Optimization (<= 768px)
+   ========================================== */
 @media (max-width: 768px) {
   html {
     scroll-padding-top: 70px;
@@ -771,38 +774,37 @@ a:hover {
   }
 
   .container {
-    padding: 0 2.5rem !important;
+    padding: 0 1.25rem !important; /* Balanced 20px padding instead of 40px */
   }
 
   .section {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
     scroll-margin-top: 70px;
   }
 
   h1 {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
   }
 
   h2 {
     font-size: 1.55rem;
+    line-height: 1.3;
   }
 
   .header-inner {
-    padding: 1rem 2.5rem !important;
-    align-items: flex-start;
+    padding: 0.85rem 1.25rem !important;
+    align-items: center;
   }
 
-  .logo h1 {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    text-align: left;
+  .logo-img {
+    height: 52px;
   }
 
-  .logo-subtitle {
-    font-size: 0.75rem;
+  .logo-payoff {
+    font-size: 0.95rem;
     letter-spacing: 1px;
-    margin-bottom: 0;
-    text-align: left;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
   }
 
   .mobile-menu-toggle {
@@ -811,7 +813,7 @@ a:hover {
   }
 
   .nav-icons {
-    right: 2.5rem !important;
+    right: 1.25rem !important;
   }
 
   .nav {
@@ -842,7 +844,7 @@ a:hover {
   }
 
   .hero {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 
   .hero-image {
@@ -851,7 +853,7 @@ a:hover {
   }
 
   .hero-text p {
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
 
   .model-card {
@@ -859,38 +861,16 @@ a:hover {
     margin-bottom: 1.25rem;
   }
 
-  .hover-badge {
-    font-size: 0.8rem;
-    color: #000;
-    background: #f0f0f5;
-    padding: 0.4rem 0.6rem;
-    border-radius: 4px;
-    justify-content: center;
+  /* Make Coaching interest button always visible on mobile touch screens */
+  .shop-item-overlay {
+    opacity: 1;
+    visibility: visible;
+    background: rgba(11, 30, 45, 0.35);
   }
 
-  .hover-image-wrapper {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%);
-    width: 90vw;
-    max-width: 500px;
-    max-height: 80vh;
-    overflow-y: auto;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
-  }
-
-  .model-card:hover .hover-image-wrapper {
-    transform: translate(-50%, -50%);
-  }
-
-  .testimonial {
-    padding: 2.5rem 1.25rem;
-  }
-
-  .testimonial p {
-    font-size: 1.05rem;
-    line-height: 1.6;
+  .shop-item-overlay-btn {
+    padding: 0.65rem 1rem;
+    font-size: 0.88rem;
   }
 
   .shop-grid {
@@ -919,5 +899,37 @@ a:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+/* Extra small GSM phone screens (<= 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem !important; /* 16px side padding on small GSM screens */
+  }
+
+  .header-inner {
+    padding: 0.75rem 1rem !important;
+  }
+
+  .nav-icons {
+    right: 1rem !important;
+  }
+
+  .logo-img {
+    height: 46px;
+  }
+
+  .logo-payoff {
+    font-size: 0.88rem;
+    letter-spacing: 0.5px;
+  }
+
+  h1 {
+    font-size: 1.55rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
   }
 }
