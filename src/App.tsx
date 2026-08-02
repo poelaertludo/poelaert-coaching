@@ -29,13 +29,12 @@ import logoDenys from './assets/logos/denys.png';
 import logoVeronove from './assets/logos/veronove.png';
 import logoCausamatics from './assets/logos/causamatics.png';
 import logoFico from './assets/logos/fico.svg';
-import logoPhilippusNeri from './assets/logos/philippus_neri.svg';
+import logoPhilippusNeri from './assets/logos/philippus_neri.jpg';
 import logoOsteopaatVlaanderen from './assets/logos/osteopaat_vlaanderen.svg';
 import logoUgain from './assets/logos/ugain.svg';
 import logoTimmermans from './assets/logos/timmermans.svg';
-import logoIzidoc from './assets/logos/izidoc.svg';
-import logoVitori from './assets/logos/vitori.svg';
-import logoTeamConsult from './assets/logos/team_consult.svg';
+import logoIzidoc from './assets/logos/izidoc.webp';
+import logoVitori from './assets/logos/vitori.png';
 
 const BOOK_REVIEWS = [
   { text: "Dit boek lijkt dik, maar leest als een trein...", author: "Robin Demeeter, ondernemer pur sang" },
@@ -171,8 +170,7 @@ const CLIENTS: { name: string; logo: string }[] = [
   { name: "UGain", logo: logoUgain },
   { name: "Timmermans", logo: logoTimmermans },
   { name: "IZIDOC", logo: logoIzidoc },
-  { name: "Vitori (Kortrijk)", logo: logoVitori },
-  { name: "Team Consult", logo: logoTeamConsult }
+  { name: "Vitori (Kortrijk)", logo: logoVitori }
 ];
 
 const TESTIMONIALS = [
