@@ -69,7 +69,7 @@ const MODELS = [
   { 
     name: 'Situationeel Leiderschap', 
     desc: 'Eén leiderschapsstijl werkt niet voor iedereen. Ik leer je om jouw sturing flexibel aan te passen aan de taakvolwassenheid en motivatie van elke medewerker voor direct resultaat.',
-    image: 'situational_leadership.jpg'
+    image: 'situational_leadership.svg'
   },
   { 
     name: 'Kotter (Veranderingsmanagement)', 
