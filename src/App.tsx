@@ -5,10 +5,10 @@ import papaPhoto from './assets/Papa_Photo.png';
 import logoLudoPoelaertCoach from './assets/logo-ludopoelaert-coach.svg';
 
 // Logo Imports (Vite Bundled)
-import logoBpost from './assets/logos/bpost.svg';
-import logoProximus from './assets/logos/proximus.svg';
-import logoBiotronik from './assets/logos/biotronik.svg';
-import logoKuleuven from './assets/logos/kuleuven.svg';
+import logoBpost from './assets/logos/bpost.png';
+import logoProximus from './assets/logos/proximus.png';
+import logoBiotronik from './assets/logos/biotronik.png';
+import logoKuleuven from './assets/logos/kuleuven.png';
 import logoAdecco from './assets/logos/adecco.svg';
 import logoApple from './assets/logos/apple.svg';
 import logoBarryCallebaut from './assets/logos/barry_callebaut.svg';
@@ -317,7 +317,7 @@ function App() {
           padding: '2rem', display: 'flex', flexDirection: 'column'
         }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-            <h3>Jouw Aanvragen</h3>
+            <h3 style={{ textTransform: 'uppercase', letterSpacing: '1.5px', color: 'var(--color-navy-dark)' }}>JOUW INTERESSE</h3>
             <button onClick={() => setIsCartOpen(false)} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
               <X size={24} />
             </button>
@@ -337,7 +337,7 @@ function App() {
               </div>
               <div style={{ marginTop: '2rem' }}>
                 <button className="btn btn-accent" style={{ width: '100%' }} onClick={handleCheckout}>
-                  Contact Prof Poelaert for: Aanvraag
+                  Bij interesse, neem contact op met Ludo
                 </button>
               </div>
 
@@ -475,9 +475,10 @@ function App() {
                   <p>{model.desc}</p>
                   {model.image && (
                     <div className="model-hover-preview">
-                      <div className="hover-badge">🔍 Beweeg over kaart / klik voor vergrootglas</div>
                       <div className="hover-image-wrapper">
-                        <img src={model.image} alt={`Profilering ${model.name}`} />
+                        <div className="model-brand-tint">
+                          <img src={model.image} alt={`Profilering ${model.name}`} />
+                        </div>
                       </div>
                     </div>
                   )}
@@ -505,12 +506,14 @@ function App() {
                 onClick={(e) => e.stopPropagation()}
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-                  <h3 style={{ margin: 0, fontSize: '1.25rem' }}>{selectedModel.name}</h3>
+                  <h3 style={{ margin: 0, fontSize: '1.25rem', color: 'var(--color-gold-dark)' }}>{selectedModel.name}</h3>
                   <button onClick={() => setSelectedModel(null)} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0.2rem' }}>
                     <X size={24} />
                   </button>
                 </div>
-                <img src={selectedModel.image} alt={selectedModel.name} style={{ width: '100%', height: 'auto', borderRadius: '8px', border: '1px solid #eee' }} />
+                <div className="lightbox-brand-tint">
+                  <img src={selectedModel.image} alt={selectedModel.name} style={{ width: '100%', height: 'auto' }} />
+                </div>
               </div>
             </div>
           )}
@@ -518,30 +521,33 @@ function App() {
 
         {/* Shop / Coaching Section */}
         <section id="coaching" className="section container">
-          <h2 style={{ marginBottom: '1rem', color: 'var(--color-gold)' }}>Coaching Aanvragen</h2>
-          <p className="text-center text-muted" style={{ marginBottom: '3rem', maxWidth: '600px', margin: '0 auto 3rem' }}>
-            Selecteer de gewenste coaching dienst. De aanvraag loopt via persoonlijk contact.
-          </p>
+          <h2 style={{ marginBottom: '3rem', color: 'var(--color-gold)' }}>Coaching Aanvragen</h2>
           
           <div className="shop-grid">
             {COACHING_SERVICES.map(service => (
-              <div key={service.id} className="shop-item" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                <div>
-                  <img src={service.image} alt={service.title} className="shop-item-image" />
-                  <h3>{service.title}</h3>
-                  {service.desc && (
-                    <p style={{ fontSize: '0.92rem', color: '#555', marginTop: '0.5rem', marginBottom: '1.2rem', lineHeight: '1.55' }}>
-                      {service.desc}
-                    </p>
-                  )}
-                </div>
-                <button 
-                  className="btn" 
-                  style={{ marginTop: '1rem', width: '100%' }}
-                  onClick={() => addToCart(service.id)}
+              <div key={service.id} className="shop-item">
+                <div 
+                  className="shop-item-image-wrapper"
+                  onClick={() => {
+                    if (!cart.includes(service.id)) {
+                      addToCart(service.id);
+                    }
+                    setIsCartOpen(true);
+                  }}
                 >
-                  {cart.includes(service.id) ? 'Toegevoegd' : 'Voeg toe aan aanvraag'}
-                </button>
+                  <img src={service.image} alt={service.title} className="shop-item-image" />
+                  <div className="shop-item-overlay">
+                    <button className="shop-item-overlay-btn">
+                      Geïnteresseerd ? Klik !
+                    </button>
+                  </div>
+                </div>
+                <h3>{service.title}</h3>
+                {service.desc && (
+                  <p style={{ fontSize: '0.92rem', color: '#555', marginTop: '0.5rem', marginBottom: '1.2rem', lineHeight: '1.55' }}>
+                    {service.desc}
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -561,41 +567,31 @@ function App() {
             </div>
 
             <h2 style={{ marginBottom: '1.5rem', fontSize: '2.2rem', color: 'var(--color-gold)', textAlign: 'center', lineHeight: '1.3' }}>
-              Organisaties & Bedrijven<br />die beroep deden en doen op Prof. Em. ir. Ludo Poelaert
+              Organisaties &amp; Bedrijven<br />die beroep deden en doen op Prof. Em. ir. Ludo Poelaert
             </h2>
             <p style={{ marginBottom: '2.5rem', color: '#666' }}>
               Een greep uit de bedrijven, overheidsinstanties, ziekenhuizen en praktijken die gebruik maakten van coaching, advies en praktijkmanagement:
             </p>
 
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', 
-              gap: '1.25rem' 
-            }}>
-              {CLIENTS.map((client, idx) => {
-                return (
-                  <div 
-                    key={idx} 
-                    className="client-card"
-                    onClick={() => setSelectedModel({ name: client.name, image: client.logo })}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
-                      <span style={{ fontSize: '0.95rem', fontWeight: 600, color: '#111', lineHeight: '1.3' }}>{client.name}</span>
-                    </div>
-                    <div style={{ fontSize: '0.78rem', color: '#777', marginTop: '0.4rem', display: 'flex', alignItems: 'center', gap: '0.3rem', fontWeight: 500 }}>
-                      <span>🔍 Beweeg over naam voor logo</span>
-                    </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1.25rem' }}>
+              {CLIENTS.map((client, idx) => (
+                <div 
+                  key={idx} 
+                  className="client-card"
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                    <span style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--color-navy-dark)', lineHeight: '1.3' }}>{client.name}</span>
+                  </div>
 
-                    {/* Floating Logo Overlay on Hover */}
-                    <div className="client-hover-preview">
-                      <img src={client.logo} alt={`Logo ${client.name}`} />
-                      <div style={{ fontSize: '0.72rem', color: '#666', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic', fontWeight: 600 }}>
-                        {client.name}
-                      </div>
+                  {/* Floating Logo Overlay on Hover */}
+                  <div className="client-hover-preview">
+                    <img src={client.logo} alt={`Logo ${client.name}`} />
+                    <div style={{ fontSize: '0.72rem', color: 'var(--color-gold-dark)', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic', fontWeight: 600 }}>
+                      {client.name}
                     </div>
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
             <p style={{ marginTop: '2rem', fontSize: '0.9rem', color: '#777', fontStyle: 'italic' }}>
               ...en talloze zelfstandigen met een praktijk of eenmanszaak. Op aanvraag kunnen referenties persoonlijk gecontacteerd worden.
@@ -608,7 +604,7 @@ function App() {
         <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
           <img src={logoLudoPoelaertCoach} alt="Ludo Poelaert Coaching Academy" style={{ height: '65px', width: 'auto' }} />
           
-          <div style={{ color: 'var(--color-gold-light)', fontSize: '1.05rem', fontStyle: 'italic', letterSpacing: '1.5px', marginTop: '-0.2rem', marginBottom: '0.5rem', fontWeight: 500 }}>
+          <div style={{ color: 'var(--color-gold)', fontSize: '1.1rem', fontStyle: 'normal', fontWeight: 600, letterSpacing: '1.5px', marginTop: '0.2rem', marginBottom: '0.5rem' }}>
             Ludo Poelaert doet mensen groeien
           </div>
 

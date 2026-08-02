@@ -1,4 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
-    <rect width="300" height="100" rx="12" fill="#0f172a"/>
-    <text x="150" y="62" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#38bdf8" text-anchor="middle">causamatics</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="100%" height="100%">
+    <g transform="translate(10, 15)">
+      <circle cx="10" cy="15" r="6" fill="#00A896"/>
+      <circle cx="30" cy="8" r="4" fill="#028090"/>
+      <circle cx="28" cy="24" r="5" fill="#05668D"/>
+      <line x1="10" y1="15" x2="30" y2="8" stroke="#00A896" stroke-width="2"/>
+      <line x1="10" y1="15" x2="28" y2="24" stroke="#00A896" stroke-width="2"/>
+    </g>
+    <text x="50" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" fill="#028090" letter-spacing="1">Causamatics</text>
   </svg>

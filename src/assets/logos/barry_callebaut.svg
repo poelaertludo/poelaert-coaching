@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
-    <rect width="300" height="100" rx="12" fill="#3d2314"/>
-    <text x="150" y="48" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#d4af37" text-anchor="middle">BARRY</text>
-    <text x="150" y="74" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#ffffff" text-anchor="middle">CALLEBAUT</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="100%" height="100%">
+    <g transform="translate(10, 10)">
+      <path d="M 15 5 C 25 15, 25 25, 15 35 C 5 25, 5 15, 15 5 Z" fill="#3D2314"/>
+      <path d="M 25 10 C 35 20, 35 30, 25 40 C 15 30, 15 20, 25 10 Z" fill="#C49A45"/>
+    </g>
+    <text x="55" y="30" font-family="'Cinzel', serif" font-size="14" font-weight="700" fill="#3D2314" letter-spacing="1">BARRY CALLEBAUT</text>
+    <text x="55" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#C49A45" letter-spacing="2">CHOCOLATE ACADEMY</text>
   </svg>
