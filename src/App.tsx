@@ -168,7 +168,7 @@ const CLIENTS: { name: string; logo: string }[] = [
   { name: "Philippus Neri GGZ Waas en Dender", logo: logoPhilippusNeri },
   { name: "Osteopaat Vlaanderen", logo: logoOsteopaatVlaanderen },
   { name: "UGain", logo: logoUgain },
-  { name: "Timmermans", logo: logoTimmermans },
+  { name: "Timmerman", logo: logoTimmermans },
   { name: "IZIDOC", logo: logoIzidoc },
   { name: "Vitori (Kortrijk)", logo: logoVitori }
 ];
