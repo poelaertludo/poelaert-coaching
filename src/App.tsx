@@ -34,7 +34,6 @@ import logoOsteopaatVlaanderen from './assets/logos/osteopaat_vlaanderen.svg';
 import logoUgain from './assets/logos/ugain.svg';
 import logoTimmermans from './assets/logos/timmermans.svg';
 import logoIzidoc from './assets/logos/izidoc.svg';
-import logoOsteosoft from './assets/logos/osteosoft.svg';
 import logoVitori from './assets/logos/vitori.svg';
 import logoTeamConsult from './assets/logos/team_consult.svg';
 
@@ -172,7 +171,6 @@ const CLIENTS: { name: string; logo: string }[] = [
   { name: "UGain", logo: logoUgain },
   { name: "Timmermans", logo: logoTimmermans },
   { name: "IZIDOC", logo: logoIzidoc },
-  { name: "OsteoSoft", logo: logoOsteosoft },
   { name: "Vitori (Kortrijk)", logo: logoVitori },
   { name: "Team Consult", logo: logoTeamConsult }
 ];
