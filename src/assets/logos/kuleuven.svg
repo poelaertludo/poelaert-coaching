@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="100%" height="100%">
+    <rect x="10" y="8" width="200" height="44" rx="4" fill="#1D2A44"/>
+    <text x="30" y="37" font-family="'Cinzel', 'Georgia', serif" font-size="20" font-weight="700" fill="#FFFFFF" letter-spacing="2">KU LEUVEN</text>
+    <circle cx="180" cy="30" r="10" fill="#3A8BC8"/>
+    <path d="M 176 30 L 184 30 M 180 26 L 180 34" stroke="#FFFFFF" stroke-width="2"/>
+  </svg>
