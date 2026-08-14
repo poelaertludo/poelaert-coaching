@@ -2,6 +2,39 @@ import { useState } from 'react';
 import { ShoppingCart, X, Menu } from 'lucide-react';
 import coverBoek from './assets/CoverBoekPapa.png';
 import papaPhoto from './assets/Papa_Photo.png';
+import logoLudoPoelaertCoach from './assets/logo-ludopoelaert-coach.svg';
+
+// Logo Imports (Vite Bundled - Official Client Logos)
+import logoBpost from './assets/logos/bpost.png';
+import logoProximus from './assets/logos/proximus.png';
+import logoBiotronik from './assets/logos/biotronik.png';
+import logoKuleuven from './assets/logos/kuleuven.png';
+import logoAdecco from './assets/logos/adecco.svg';
+import logoApple from './assets/logos/apple.svg';
+import logoBarryCallebaut from './assets/logos/barry_callebaut.png';
+import logoUgent from './assets/logos/ugent.svg';
+import logoVub from './assets/logos/vub.png';
+import logoVlaamseOverheid from './assets/logos/vlaamse_overheid.png';
+import logoStadGent from './assets/logos/stad_gent.webp';
+import logoAzDelta from './assets/logos/az_delta.png';
+import logoSonaca from './assets/logos/sonaca.png';
+import logoAirBelgium from './assets/logos/air_belgium.svg';
+import logoCm from './assets/logos/cm.png';
+import logoApb from './assets/logos/apb.png';
+import logoHowest from './assets/logos/howest.jpg';
+import logoHogent from './assets/logos/hogent.png';
+import logoVvt from './assets/logos/vvt.png';
+import logoKlav from './assets/logos/klav.png';
+import logoDenys from './assets/logos/denys.png';
+import logoVeronove from './assets/logos/veronove.png';
+import logoCausamatics from './assets/logos/causamatics.png';
+import logoFico from './assets/logos/fico.svg';
+import logoPhilippusNeri from './assets/logos/philippus_neri.jpg';
+import logoOsteopaatVlaanderen from './assets/logos/osteopaat_vlaanderen.svg';
+import logoUgain from './assets/logos/ugain.svg';
+import logoTimmermans from './assets/logos/timmermans.svg';
+import logoIzidoc from './assets/logos/izidoc.webp';
+import logoVitori from './assets/logos/vitori.png';
 
 const BOOK_REVIEWS = [
   { text: "Dit boek lijkt dik, maar leest als een trein...", author: "Robin Demeeter, ondernemer pur sang" },
@@ -23,39 +56,48 @@ const MODELS = [
   },
   { 
     name: 'JoHari Venster', 
-    desc: 'Samen verkleinen we jouw blinde vlekken. Ik help je te ontdekken hoe anderen jouw leiderschap ervaren, zodat het vertrouwen en het bewustzijn binnen jouw team sterk groeit.' 
+    desc: 'Samen verkleinen we jouw blinde vlekken. Ik help je te ontdekken hoe anderen jouw leiderschap ervaren, zodat het vertrouwen en het bewustzijn binnen jouw team sterk groeit.',
+    image: 'johari_window.jpg'
   },
   { 
     name: 'Stress Managementmodel', 
-    desc: 'Stress is een signaal dat sturing vraagt. Ik reik je haarscherpe kaders en technieken aan om stressoren in jouw organisatie tijdig te identificeren en gezond te reguleren.' 
+    desc: 'Stress is een signaal dat sturing vraagt. Ik reik je haarscherpe kaders en technieken aan om stressoren in jouw organisatie tijdig te identificeren en gezond te reguleren.',
+    image: 'stress_model.jpg'
   },
   { 
     name: 'Situationeel Leiderschap', 
-    desc: 'Eén leiderschapsstijl werkt niet voor iedereen. Ik leer je om jouw sturing flexibel aan te passen aan de taakvolwassenheid en motivatie van elke medewerker voor direct resultaat.' 
+    desc: 'Eén leiderschapsstijl werkt niet voor iedereen. Ik leer je om jouw sturing flexibel aan te passen aan de taakvolwassenheid en motivatie van elke medewerker voor direct resultaat.',
+    image: 'situational_leadership.jpg'
   },
   { 
     name: 'Kotter (Veranderingsmanagement)', 
-    desc: 'Verandering stuit vaak op weerstand. Met dit beproefde 8-stappenplan begeleid ik je om organisatorische transformaties gestructureerd, gedragen en duurzaam door te voeren.' 
+    desc: 'Verandering stuit vaak op weerstand. Met dit beproefde 8-stappenplan begeleid ik je om organisatorische transformaties gestructureerd, gedragen en duurzaam door te voeren.',
+    image: 'kotter_change.jpg'
   },
   { 
     name: 'Business Model Canvas', 
-    desc: 'Samen brengen we de kern van jouw onderneming terug tot de essentie. Ik help je om alle cruciale bouwstenen van je verdienmodel visueel en strategisch helder te stellen.' 
+    desc: 'Samen brengen we de kern van jouw onderneming terug tot de essentie. Ik help je om alle cruciale bouwstenen van je verdienmodel visueel en strategisch helder te stellen.',
+    image: 'business_model_canvas.jpg'
   },
   { 
     name: '9-Krachten Model van Porter', 
-    desc: 'Begrijp de krachten die jouw markt beheersen. Ik analyseer samen met jou de concurrentieomgeving en het winstpotentieel van je zaak voor een sterke strategische voorsprong.' 
+    desc: 'Begrijp de krachten die jouw markt beheersen. Ik analyseer samen met jou de concurrentieomgeving en het winstpotentieel van je zaak voor een sterke strategische voorsprong.',
+    image: 'porters_forces.jpg'
   },
   { 
     name: 'Earned Value Management', 
-    desc: 'Meten is weten in projectmanagement. Ik geef je de exacte tools om de voortgang, budgetten en prestaties van je projecten objectief te bewaken en tijdig bij te sturen op cijfers.' 
+    desc: 'Meten is weten in projectmanagement. Ik geef je de exacte tools om de voortgang, budgetten en prestaties van je projecten objectief te bewaken en tijdig bij te sturen op cijfers.',
+    image: 'earned_value_management.jpg'
   },
   { 
     name: 'Financieel beheer ontmaskerd!', 
-    desc: 'Voor velen is financiën een raadsel en ondoorgrondelijk moeilijk. Ik leer je in een mum van tijd balanslezen, kosten berekenen en samen met jou maken we de ratio-analyse van jouw onderneming!' 
+    desc: 'Voor velen is financiën een raadsel en ondoorgrondelijk moeilijk. Ik leer je in een mum van tijd balanslezen, kosten berekenen en samen met jou maken we de ratio-analyse van jouw onderneming!',
+    image: 'financial_ratios.jpg'
   },
   { 
     name: 'De 4 levensposities! Een echte keuze voor succes', 
-    desc: 'Ik leer je inzien vanuit welke levenspositie jij en je teamleden communiceren. Met dit krachtige model van Thomas Harris help ik je om bewust te kiezen voor een constructieve, "I\'m OK, You\'re OK" grondhouding die relaties en samenwerking transformeert!' 
+    desc: 'Ik leer je inzien vanuit welke levenspositie jij en je teamleden communiceren. Met dit krachtige model van Thomas Harris help ik je om bewust te kiezen voor een constructieve, "I\'m OK, You\'re OK" grondhouding die relaties en samenwerking transformeert!',
+    image: 'life_positions_harris.jpg'
   }
 ];
 
@@ -89,17 +131,46 @@ const COACHING_SERVICES = [
     title: 'Persoonlijke Finance Training', 
     desc: 'Leer alles over balansen, jaarrekeningen, kostprijsberekening en investeringsanalyse. Ludo leert je in een mum van tijd een grondige ratio-analyse te maken van een onderneming. De Balanscentrale van de Nationale Bank van België en Yahoo Finance hebben binnenkort geen geheimen meer voor jou!',
     image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
+  },
+  { 
+    id: 6, 
+    title: 'Persoonlijk Leiderschap', 
+    desc: 'Ludo begeleidt jou in een traject van persoonlijk leiderschap: wat zijn jouw waarden, wat is jouw missie en wat is jouw visie. Inzicht in jezelf en anderen beter leren lezen, geeft RUST en doet je als mens groeien.',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
   }
 ];
 
-const CLIENTS = [
-  "Bpost", "Proximus", "Biotronik", "PUC KULeuven", "Adecco (BeNeLux)", "Apple Computer BeNeLux", "Barry Callebaut",
-  "UGent", "Vrije Universiteit Brussel", "De Vlaamse Gemeenschap", "Stad Gent",
-  "AZ Delta (Roeselare)", "Sonaca", "Denys (Bouwfirma)", "Air Belgium International",
-  "Christelijke Mutualiteiten (CM)", "KLAV (Koninklijk Limburgs Apothekers Verbond)", "APB (Algemene Pharmaceutische Bond)", 
-  "Howest", "Hogeschool Gent (Departement Lerarenopleiding)", "Veronove", "Causamatics",
-  "Flanders International College for Osteopathy", "VVT (Vlaamse Vereniging van Tandartsen)", "Philippus Neri GGZ Waas en Dender", 
-  "Osteopaat Vlaanderen", "UGain", "Timmermans", "IZIDOC", "OsteoSoft", "Sunair", "Team Consult"
+const CLIENTS: { name: string; logo: string }[] = [
+  { name: "Bpost", logo: logoBpost },
+  { name: "Proximus", logo: logoProximus },
+  { name: "Biotronik", logo: logoBiotronik },
+  { name: "PUC KULeuven", logo: logoKuleuven },
+  { name: "Adecco (BeNeLux)", logo: logoAdecco },
+  { name: "Apple Computer BeNeLux", logo: logoApple },
+  { name: "Barry Callebaut", logo: logoBarryCallebaut },
+  { name: "UGent", logo: logoUgent },
+  { name: "Vrije Universiteit Brussel", logo: logoVub },
+  { name: "De Vlaamse Gemeenschap", logo: logoVlaamseOverheid },
+  { name: "Stad Gent", logo: logoStadGent },
+  { name: "AZ Delta (Roeselare)", logo: logoAzDelta },
+  { name: "Sonaca", logo: logoSonaca },
+  { name: "Air Belgium International", logo: logoAirBelgium },
+  { name: "Christelijke Mutualiteiten (CM)", logo: logoCm },
+  { name: "APB (Algemene Pharmaceutische Bond)", logo: logoApb },
+  { name: "Howest", logo: logoHowest },
+  { name: "Hogeschool Gent (HoGent)", logo: logoHogent },
+  { name: "VVT (Vlaamse Vereniging van Tandartsen)", logo: logoVvt },
+  { name: "KLAV (Koninklijk Limburgs Apothekers Verbond)", logo: logoKlav },
+  { name: "Denys (Bouwfirma)", logo: logoDenys },
+  { name: "Veronove", logo: logoVeronove },
+  { name: "Causamatics", logo: logoCausamatics },
+  { name: "Flanders International College for Osteopathy", logo: logoFico },
+  { name: "Philippus Neri GGZ Waas en Dender", logo: logoPhilippusNeri },
+  { name: "Osteopaat Vlaanderen", logo: logoOsteopaatVlaanderen },
+  { name: "UGain", logo: logoUgain },
+  { name: "Timmerman", logo: logoTimmermans },
+  { name: "IZIDOC", logo: logoIzidoc },
+  { name: "Vitori (Kortrijk)", logo: logoVitori }
 ];
 
 const TESTIMONIALS = [
@@ -201,9 +272,15 @@ function App() {
     <>
       <header className="header">
         <div className="container header-inner">
-          <div className="logo text-center">
-            <h1>Ludo Poelaert</h1>
-            <div className="logo-subtitle">Professor Emeritus UGent | Coaching & Advies</div>
+          <div className="logo text-center flex flex-col items-center">
+            <a href="#" className="logo-link inline-block">
+              <img 
+                src={logoLudoPoelaertCoach} 
+                alt="Ludo Poelaert Coaching Academy - ludopoelaert.coach" 
+                className="logo-img" 
+              />
+            </a>
+            <div className="logo-payoff">Ludo Poelaert doet mensen groeien</div>
           </div>
           
           <nav>
@@ -236,7 +313,7 @@ function App() {
           padding: '2rem', display: 'flex', flexDirection: 'column'
         }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-            <h3>Jouw Aanvragen</h3>
+            <h3 style={{ textTransform: 'uppercase', letterSpacing: '1.5px', color: 'var(--color-navy-dark)' }}>JOUW INTERESSE</h3>
             <button onClick={() => setIsCartOpen(false)} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
               <X size={24} />
             </button>
@@ -256,7 +333,7 @@ function App() {
               </div>
               <div style={{ marginTop: '2rem' }}>
                 <button className="btn btn-accent" style={{ width: '100%' }} onClick={handleCheckout}>
-                  Contact Prof Poelaert for: Aanvraag
+                  Bij interesse, neem contact op met Ludo
                 </button>
               </div>
 
@@ -275,10 +352,12 @@ function App() {
         <section id="over" className="section container">
           <div className="grid-2">
             <div className="hero-text" style={{ textAlign: 'left' }}>
-              <h2 style={{ textAlign: 'left', color: 'var(--color-text)', marginBottom: '0.3rem' }}>Ludo Poelaert</h2>
-              <h3 style={{ marginBottom: '1.5rem', fontWeight: 400, fontSize: '1.15rem', lineHeight: '1.4', color: '#111111' }}>
-                Professor Emeritus bedrijfseconomie, bedrijfsmanagement en ondernemerschap, UGent
-              </h3>
+              <h1 style={{ textAlign: 'left', color: 'var(--color-navy-dark)', marginBottom: '0.3rem', fontSize: '2.4rem', fontWeight: 700, letterSpacing: '-0.02em' }}>
+                Prof. Em. ir. Ludo Poelaert
+              </h1>
+              <h2 style={{ textAlign: 'left', color: 'var(--color-gold)', marginBottom: '1.2rem', fontSize: '1.4rem', fontWeight: 600 }}>
+                Executive Coaching, Leiderschap & Financieel Beheer
+              </h2>
 
               <div style={{ marginBottom: '1.5rem', fontSize: '0.96rem', lineHeight: '1.7', color: '#111111' }}>
                 <p style={{ marginBottom: '0.8rem' }}>
@@ -303,11 +382,11 @@ function App() {
                 </p>
 
                 <p style={{ marginBottom: '1rem' }}>
-                  Sinds 21 jaar coacht Ludo zorgpraktijken, multidisciplinaire kinepraktijken, en groepspraktijken van artsen en tandartsen. Ludo brengt rust in het hoofd van de praktijkhouder door concreet no-nonsense advies inzake praktijkleiderschap en praktijkmanagement. Hij helpt hen met de ontwikkeling van hun organisatie, zodat zij de focus houden op zorgverlening, hun medewerkers tevreden zijn en de praktijk financieel gezond is.
+                  Sinds 21 jaar coacht Ludo zorgpraktijken, multidisciplinaire kinepraktijken, en groepspraktijken van artsen en tandartsen. Ludo brengt rust in het hoofd van de praktijkhouder door concreet no-nonsense advies inzake praktijkleiderschap en praktijkmanagement. Hij helpt hen met de ontwikkeling van hun organisatie, zodat zij de focus houden op zorgverlening, hun medewerkers tevreden zijn en de praktijk financieel gezond is. Ludo begeleidt verschillende diensthoofden van gerenommeerde ziekenhuizen in België.
                 </p>
 
                 <p style={{ marginBottom: '1.5rem' }}>
-                  Hij coacht ook tal van bedrijfsleiders, directiecomités en verschillende diensthoofden van gerenommeerde ziekenhuizen in België.
+                  Hij coacht ook tal van bedrijfsleiders, directiecomités uit de industrie.
                 </p>
 
                 <p style={{ marginTop: '1.5rem', marginBottom: '0.6rem' }}>
@@ -349,7 +428,7 @@ function App() {
               </div>
             </div>
             <div style={{ paddingLeft: '2rem' }}>
-              <h2>Een Standaardwerk</h2>
+              <h2 style={{ color: 'var(--color-gold)' }}>Een Standaardwerk</h2>
               <p style={{ marginTop: '1rem' }}>
                 In de vierde, geactualiseerde druk van <strong>"Bedrijfskunde de essentie"</strong> biedt Prof. Ludo Poelaert een ongeëvenaard helder overzicht van de fundamenten van modern management en organisatie.
               </p>
@@ -394,9 +473,10 @@ function App() {
                   <p>{model.desc}</p>
                   {model.image && (
                     <div className="model-hover-preview">
-                      <div className="hover-badge">🔍 Beweeg over kaart / klik voor vergrootglas</div>
                       <div className="hover-image-wrapper">
-                        <img src={model.image} alt={`Profilering ${model.name}`} />
+                        <div className="model-brand-tint">
+                          <img src={model.image} alt={`Profilering ${model.name}`} />
+                        </div>
                       </div>
                     </div>
                   )}
@@ -424,12 +504,14 @@ function App() {
                 onClick={(e) => e.stopPropagation()}
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-                  <h3 style={{ margin: 0, fontSize: '1.25rem' }}>{selectedModel.name}</h3>
+                  <h3 style={{ margin: 0, fontSize: '1.25rem', color: 'var(--color-gold-dark)' }}>{selectedModel.name}</h3>
                   <button onClick={() => setSelectedModel(null)} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0.2rem' }}>
                     <X size={24} />
                   </button>
                 </div>
-                <img src={selectedModel.image} alt={selectedModel.name} style={{ width: '100%', height: 'auto', borderRadius: '8px', border: '1px solid #eee' }} />
+                <div className="lightbox-brand-tint">
+                  <img src={selectedModel.image} alt={selectedModel.name} style={{ width: '100%', height: 'auto' }} />
+                </div>
               </div>
             </div>
           )}
@@ -437,30 +519,33 @@ function App() {
 
         {/* Shop / Coaching Section */}
         <section id="coaching" className="section container">
-          <h2 style={{ marginBottom: '1rem' }}>Coaching Aanvragen</h2>
-          <p className="text-center text-muted" style={{ marginBottom: '3rem', maxWidth: '600px', margin: '0 auto 3rem' }}>
-            Selecteer de gewenste coaching dienst. De aanvraag loopt via persoonlijk contact.
-          </p>
+          <h2 style={{ marginBottom: '3rem', color: 'var(--color-gold)' }}>Coaching Aanvragen</h2>
           
           <div className="shop-grid">
             {COACHING_SERVICES.map(service => (
-              <div key={service.id} className="shop-item" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                <div>
-                  <img src={service.image} alt={service.title} className="shop-item-image" />
-                  <h3>{service.title}</h3>
-                  {service.desc && (
-                    <p style={{ fontSize: '0.92rem', color: '#555', marginTop: '0.5rem', marginBottom: '1.2rem', lineHeight: '1.55' }}>
-                      {service.desc}
-                    </p>
-                  )}
-                </div>
-                <button 
-                  className="btn" 
-                  style={{ marginTop: '1rem', width: '100%' }}
-                  onClick={() => addToCart(service.id)}
+              <div key={service.id} className="shop-item">
+                <div 
+                  className="shop-item-image-wrapper"
+                  onClick={() => {
+                    if (!cart.includes(service.id)) {
+                      addToCart(service.id);
+                    }
+                    setIsCartOpen(true);
+                  }}
                 >
-                  {cart.includes(service.id) ? 'Toegevoegd' : 'Voeg toe aan aanvraag'}
-                </button>
+                  <img src={service.image} alt={service.title} className="shop-item-image" />
+                  <div className="shop-item-overlay">
+                    <button className="shop-item-overlay-btn">
+                      Geïnteresseerd ? Klik !
+                    </button>
+                  </div>
+                </div>
+                <h3>{service.title}</h3>
+                {service.desc && (
+                  <p style={{ fontSize: '0.92rem', color: '#555', marginTop: '0.5rem', marginBottom: '1.2rem', lineHeight: '1.55' }}>
+                    {service.desc}
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -469,41 +554,40 @@ function App() {
         {/* Testimonials & Clients */}
         <section id="referenties" className="section" style={{ backgroundColor: 'white' }}>
           <div className="container">
-            <h2 style={{ marginBottom: '3rem' }}>Wat Klanten Zeggen</h2>
+            <h2 style={{ marginBottom: '3rem', color: 'var(--color-gold)' }}>Wat Klanten Zeggen</h2>
             <div className="masonry-grid" style={{ marginBottom: '4rem' }}>
               {TESTIMONIALS.map((t, idx) => (
-                <div key={idx} className="masonry-item" style={{ borderLeft: '4px solid #111111' }}>
+                <div key={idx} className="masonry-item" style={{ borderLeft: '4px solid var(--color-gold)' }}>
                   <p style={{ fontStyle: 'italic', fontSize: '1.02rem', color: '#222', marginBottom: '0.8rem', lineHeight: '1.6' }}>"{t.text}"</p>
                   <cite style={{ fontWeight: 'bold', color: '#111', fontStyle: 'normal', display: 'block' }}>— {t.author}</cite>
                 </div>
               ))}
             </div>
 
-            <h2 style={{ marginBottom: '1.5rem', textTransform: 'uppercase', fontSize: '1.2rem', letterSpacing: '2px', color: '#888' }}>
-              Organisaties & Bedrijven die beroep deden en doen op Prof.Em. ir. Ludo Poelaert
+            <h2 style={{ marginBottom: '1.5rem', fontSize: '2.2rem', color: 'var(--color-gold)', textAlign: 'center', lineHeight: '1.3' }}>
+              Organisaties &amp; Bedrijven<br />die beroep deden en doen op Prof. Em. ir. Ludo Poelaert
             </h2>
             <p style={{ marginBottom: '2.5rem', color: '#666' }}>
               Een greep uit de bedrijven, overheidsinstanties, ziekenhuizen en praktijken die gebruik maakten van coaching, advies en praktijkmanagement:
             </p>
 
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', 
-              gap: '1rem' 
-            }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1.25rem' }}>
               {CLIENTS.map((client, idx) => (
-                <div key={idx} style={{ 
-                  backgroundColor: '#f5f5f7', 
-                  padding: '1rem 1.2rem', 
-                  borderRadius: '6px', 
-                  fontSize: '0.95rem', 
-                  fontWeight: 500, 
-                  color: '#222',
-                  border: '1px solid #e5e5e7',
-                  display: 'flex',
-                  alignItems: 'center'
-                }}>
-                  <span style={{ color: 'var(--color-accent)', marginRight: '8px' }}>•</span> {client}
+                <div 
+                  key={idx} 
+                  className="client-card"
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                    <span style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--color-navy-dark)', lineHeight: '1.3' }}>{client.name}</span>
+                  </div>
+
+                  {/* Floating Logo Overlay on Hover */}
+                  <div className="client-hover-preview">
+                    <img src={client.logo} alt={`Logo ${client.name}`} />
+                    <div style={{ fontSize: '0.72rem', color: 'var(--color-gold-dark)', textAlign: 'center', marginTop: '0.4rem', fontStyle: 'italic', fontWeight: 600 }}>
+                      {client.name}
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -515,12 +599,25 @@ function App() {
       </main>
 
       <footer className="footer">
-        <div className="container">
-          <p>&copy; {new Date().getFullYear()} Ludo Poelaert. Alle rechten voorbehouden.</p>
-          <p style={{ marginTop: '0.8rem', fontSize: '0.88rem', color: '#aaa' }}>
-            E-mail: <a href="mailto:ludo.poelaert@ugent.be" style={{ color: '#fff', textDecoration: 'underline' }}>ludo.poelaert@ugent.be</a> | 
-            Mobiel: <a href="tel:+32477992597" style={{ color: '#fff', textDecoration: 'underline' }}>+32 477 99 25 97</a> | 
-            LinkedIn: <a href="https://www.linkedin.com/in/poelaert" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline' }}>in/poelaert</a>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+          <img src={logoLudoPoelaertCoach} alt="Ludo Poelaert Coaching Academy" style={{ height: '65px', width: 'auto' }} />
+          
+          <div style={{ color: 'var(--color-gold)', fontSize: '1.1rem', fontStyle: 'normal', fontWeight: 600, letterSpacing: '1.5px', marginTop: '0.2rem', marginBottom: '0.5rem' }}>
+            Ludo Poelaert doet mensen groeien
+          </div>
+
+          <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.95rem', fontWeight: 500, letterSpacing: '1px' }}>
+            <span>Ludo Poelaert Coaching Academy</span>
+            <span style={{ color: 'var(--color-gold)' }}>•</span>
+            <a href="https://www.ludopoelaert.be" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-gold-light)', textDecoration: 'underline' }}>www.ludopoelaert.be</a>
+            <span style={{ color: 'var(--color-gold)' }}>•</span>
+            <a href="mailto:ludo.poelaert@ugent.be" style={{ color: '#ffffff', textDecoration: 'underline' }}>ludo.poelaert@ugent.be</a>
+          </div>
+
+          <div style={{ height: '1px', width: '100%', maxWidth: '600px', backgroundColor: 'rgba(255,255,255,0.15)', margin: '0.5rem 0' }}></div>
+
+          <p style={{ fontSize: '0.88rem', color: 'rgba(255,255,255,0.7)' }}>
+            &copy; {new Date().getFullYear()} Prof. Em. ir. Ludo Poelaert | Alle rechten voorbehouden.
           </p>
         </div>
       </footer>

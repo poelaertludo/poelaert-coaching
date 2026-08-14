@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 950" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07131E"/>
+      <stop offset="50%" stop-color="#0B1E2D"/>
+      <stop offset="100%" stop-color="#142C3E"/>
+    </linearGradient>
+    
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#C49A45"/>
+      <stop offset="100%" stop-color="#9A7B31"/>
+    </linearGradient>
+
+    <!-- Quadrant Card Gradients -->
+    <linearGradient id="s3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#5B21B6"/>
+    </linearGradient>
+
+    <linearGradient id="s2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+
+    <linearGradient id="s4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <linearGradient id="s1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.35"/>
+    </filter>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Arrow Markers -->
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#D4AF37"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="950" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Tech Lines -->
+  <path d="M 50 100 L 1150 100" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+  <path d="M 50 870 L 1150 870" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+  <!-- Main Title -->
+  <g transform="translate(600, 55)">
+    <text x="0" y="0" font-family="'Cinzel', 'Playfair Display', serif" font-size="34" font-weight="700" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="4" filter="url(#dropShadow)">SITUATIONAL LEADERSHIP® MODEL</text>
+    <text x="0" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#E2E8F0" text-anchor="middle" letter-spacing="2" opacity="0.8">HERSEY &amp; BLANCHARD LEADERSHIP MATRIX</text>
+  </g>
+
+  <!-- Main Graph Container -->
+  <g transform="translate(180, 110)">
+
+    <!-- Y-AXIS (Supportive Behavior) -->
+    <g transform="translate(0, 0)">
+      <line x1="0" y1="560" x2="0" y2="10" stroke="url(#goldGrad)" stroke-width="4" marker-end="url(#arrowHead)"/>
+      <text x="-40" y="280" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" fill="url(#goldGrad)" text-anchor="middle" transform="rotate(-90, -40, 280)" letter-spacing="3">SUPPORTIVE BEHAVIOR</text>
+      <text x="-15" y="555" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="end">LOW</text>
+      <text x="-15" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="end">HIGH</text>
+    </g>
+
+    <!-- X-AXIS (Directive Behavior) -->
+    <g transform="translate(0, 560)">
+      <line x1="0" y1="0" x2="840" y2="0" stroke="url(#goldGrad)" stroke-width="4" marker-end="url(#arrowHead)"/>
+      <text x="420" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="3">DIRECTIVE BEHAVIOR</text>
+      <text x="15" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="start">LOW</text>
+      <text x="825" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="end">HIGH</text>
+    </g>
+
+    <!-- QUADRANTS GRID (800x520) -->
+
+    <!-- TOP-LEFT: S3 SUPPORTING (Low Directive, High Supportive) -->
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="390" height="240" rx="16" fill="url(#s3Grad)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" filter="url(#dropShadow)"/>
+      <!-- Header Pill -->
+      <rect x="15" y="15" width="70" height="32" rx="8" fill="rgba(0,0,0,0.25)"/>
+      <text x="50" y="37" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="middle">S3</text>
+      <text x="100" y="38" font-family="'Cinzel', serif" font-size="22" font-weight="700" fill="#FFFFFF" letter-spacing="1">SUPPORTING</text>
+      <text x="100" y="56" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.85)">Low Directive, High Supportive</text>
+      
+      <!-- Bullet Points -->
+      <g transform="translate(25, 95)" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#FFFFFF">
+        <text x="0" y="0" font-weight="700">• Facilitating &amp; Encouraging</text>
+        <text x="0" y="26" font-size="12.5" fill="rgba(255,255,255,0.92)">Leader listens, shares decision-making,</text>
+        <text x="0" y="46" font-size="12.5" fill="rgba(255,255,255,0.92)">praises progress, and builds confidence.</text>
+      </g>
+    </g>
+
+    <!-- TOP-RIGHT: S2 COACHING (High Directive, High Supportive) -->
+    <g transform="translate(430, 20)">
+      <rect x="0" y="0" width="390" height="240" rx="16" fill="url(#s2Grad)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" filter="url(#dropShadow)"/>
+      <!-- Header Pill -->
+      <rect x="15" y="15" width="70" height="32" rx="8" fill="rgba(0,0,0,0.25)"/>
+      <text x="50" y="37" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="middle">S2</text>
+      <text x="100" y="38" font-family="'Cinzel', serif" font-size="22" font-weight="700" fill="#FFFFFF" letter-spacing="1">COACHING</text>
+      <text x="100" y="56" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.85)">High Directive, High Supportive</text>
+      
+      <!-- Bullet Points -->
+      <g transform="translate(25, 95)" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#FFFFFF">
+        <text x="0" y="0" font-weight="700">• Explaining &amp; Selling</text>
+        <text x="0" y="26" font-size="12.5" fill="rgba(255,255,255,0.92)">Leader makes decisions with input,</text>
+        <text x="0" y="46" font-size="12.5" fill="rgba(255,255,255,0.92)">explains "why", maintains dialogue.</text>
+      </g>
+    </g>
+
+    <!-- BOTTOM-LEFT: S4 DELEGATING (Low Directive, Low Supportive) -->
+    <g transform="translate(20, 280)">
+      <rect x="0" y="0" width="390" height="240" rx="16" fill="url(#s4Grad)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" filter="url(#dropShadow)"/>
+      <!-- Header Pill -->
+      <rect x="15" y="15" width="70" height="32" rx="8" fill="rgba(0,0,0,0.25)"/>
+      <text x="50" y="37" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="middle">S4</text>
+      <text x="100" y="38" font-family="'Cinzel', serif" font-size="22" font-weight="700" fill="#FFFFFF" letter-spacing="1">DELEGATING</text>
+      <text x="100" y="56" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.85)">Low Directive, Low Supportive</text>
+      
+      <!-- Bullet Points -->
+      <g transform="translate(25, 95)" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#FFFFFF">
+        <text x="0" y="0" font-weight="700">• Turning Over Responsibility</text>
+        <text x="0" y="26" font-size="12.5" fill="rgba(255,255,255,0.92)">Leader gives autonomy for decisions,</text>
+        <text x="0" y="46" font-size="12.5" fill="rgba(255,255,255,0.92)">problem-solving, and observes progress.</text>
+      </g>
+    </g>
+
+    <!-- BOTTOM-RIGHT: S1 DIRECTING (High Directive, Low Supportive) -->
+    <g transform="translate(430, 280)">
+      <rect x="0" y="0" width="390" height="240" rx="16" fill="url(#s1Grad)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" filter="url(#dropShadow)"/>
+      <!-- Header Pill -->
+      <rect x="15" y="15" width="70" height="32" rx="8" fill="rgba(0,0,0,0.25)"/>
+      <text x="50" y="37" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="middle">S1</text>
+      <text x="100" y="38" font-family="'Cinzel', serif" font-size="22" font-weight="700" fill="#FFFFFF" letter-spacing="1">DIRECTING</text>
+      <text x="100" y="56" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.85)">High Directive, Low Supportive</text>
+      
+      <!-- Bullet Points -->
+      <g transform="translate(25, 95)" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#FFFFFF">
+        <text x="0" y="0" font-weight="700">• Instructing &amp; Telling</text>
+        <text x="0" y="26" font-size="12.5" fill="rgba(255,255,255,0.92)">Leader provides specific instructions,</text>
+        <text x="0" y="46" font-size="12.5" fill="rgba(255,255,255,0.92)">defines roles, and monitors closely.</text>
+      </g>
+    </g>
+
+    <!-- LEADERSHIP STYLE CURVE (S1 -> S2 -> S3 -> S4) -->
+    <path d="M 625 380 C 625 100, 215 100, 215 380" fill="none" stroke="url(#goldGrad)" stroke-width="5" stroke-dasharray="8,6" opacity="0.85"/>
+
+  </g> <!-- End Main Graph -->
+
+  <!-- FOLLOWER DEVELOPMENT LEVEL (D) BAR (AT BOTTOM) -->
+  <g transform="translate(180, 685)">
+    <!-- Section Title -->
+    <text x="420" y="0" font-family="'Cinzel', serif" font-size="18" font-weight="700" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="2">DEVELOPMENT LEVEL OF FOLLOWER (D)</text>
+    
+    <!-- Chevrons Container -->
+    <g transform="translate(0, 20)">
+
+      <!-- D4: Left (under S4) -->
+      <g transform="translate(20, 0)">
+        <polygon points="0,0 185,0 200,35 185,70 0,70 15,35" fill="#059669" filter="url(#dropShadow)"/>
+        <text x="95" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">D4</text>
+        <text x="95" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.95)" text-anchor="middle">High Competence</text>
+        <text x="95" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="rgba(255,255,255,0.85)" text-anchor="middle">High Commitment</text>
+      </g>
+
+      <!-- D3: Mid-Left (under S3) -->
+      <g transform="translate(225, 0)">
+        <polygon points="0,0 185,0 200,35 185,70 0,70 15,35" fill="#D97706" filter="url(#dropShadow)"/>
+        <text x="95" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">D3</text>
+        <text x="95" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.95)" text-anchor="middle">High Competence</text>
+        <text x="95" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="rgba(255,255,255,0.85)" text-anchor="middle">Variable Commitment</text>
+      </g>
+
+      <!-- D2: Mid-Right (under S2) -->
+      <g transform="translate(430, 0)">
+        <polygon points="0,0 185,0 200,35 185,70 0,70 15,35" fill="#EA580C" filter="url(#dropShadow)"/>
+        <text x="95" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">D2</text>
+        <text x="95" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.95)" text-anchor="middle">Some Competence</text>
+        <text x="95" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="rgba(255,255,255,0.85)" text-anchor="middle">Low Commitment</text>
+      </g>
+
+      <!-- D1: Right (under S1) -->
+      <g transform="translate(635, 0)">
+        <polygon points="0,0 185,0 200,35 185,70 0,70 15,35" fill="#DC2626" filter="url(#dropShadow)"/>
+        <text x="95" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">D1</text>
+        <text x="95" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.95)" text-anchor="middle">Low Competence</text>
+        <text x="95" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="rgba(255,255,255,0.85)" text-anchor="middle">High Commitment</text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- High-Tech Inner Glow Overlay -->
+  <rect width="1200" height="950" fill="none" stroke="rgba(212,175,55,0.2)" stroke-width="2"/>
+</svg>

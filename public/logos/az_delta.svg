@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+    <rect width="300" height="100" rx="12" fill="#009688"/>
+    <polygon points="30,70 50,30 70,70" fill="#ffffff"/>
+    <text x="175" y="62" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#ffffff" text-anchor="middle">AZ Delta</text>
+  </svg>
