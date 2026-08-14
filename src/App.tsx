@@ -104,39 +104,39 @@ const MODELS = [
 const COACHING_SERVICES = [
   { 
     id: 1, 
-    title: 'Individuele Executive Coaching', 
-    desc: 'Persoonlijke 1-op-1 begeleiding voor leiders en ondernemers gericht op leiderschap, strategische visie en operationele rust.',
+    title: 'Executive Coaching van Bedrijfsleiders', 
+    desc: 'Persoonlijke 1-op-1 coaching van bedrijfsleiders, CEO\'s, directiecomités en KMO-ondernemers gericht op leiderschap, strategische visie en operationele rust.',
     image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
   },
   { 
     id: 2, 
+    title: 'Coaching van Zelfstandigen & Vrije Beroepen', 
+    desc: 'Doelgerichte coaching van zelfstandigen, praktijkhouders (artsen, tandartsen, kine, osteopaten) en vrije beroepen om te groeien in praktijkleiderschap, beheer en financiële gezonde groei.',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
+  },
+  { 
+    id: 3, 
     title: 'Team Coaching & Dynamiek', 
     desc: 'Versterk onderling vertrouwen, communicatiestijlen en de gezamenlijke slagkracht van je directie of afdeling.',
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
   },
   { 
-    id: 3, 
-    title: 'Leiderschapsontwikkeling', 
-    desc: 'Master de technieken van situationeel leiderschap en leef je rol uit met haarscherpe sturing en balans.',
+    id: 4, 
+    title: 'Leiderschapsontwikkeling & PCM', 
+    desc: 'Master de technieken van situationeel leiderschap en het Process Communication Model (PCM) voor haarscherpe sturing en balans.',
     image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
   },
   { 
-    id: 4, 
+    id: 5, 
     title: 'Veranderingsmanagement Sessies', 
     desc: 'Begeleiding bij organisatorische transformaties volgens het 8-stappenplan om verandering gedragen door te voeren.',
     image: 'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
   },
   { 
-    id: 5, 
+    id: 6, 
     title: 'Persoonlijke Finance Training', 
     desc: 'Leer alles over balansen, jaarrekeningen, kostprijsberekening en investeringsanalyse. Ludo leert je in een mum van tijd een grondige ratio-analyse te maken van een onderneming. De Balanscentrale van de Nationale Bank van België en Yahoo Finance hebben binnenkort geen geheimen meer voor jou!',
     image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
-  },
-  { 
-    id: 6, 
-    title: 'Persoonlijk Leiderschap', 
-    desc: 'Ludo begeleidt jou in een traject van persoonlijk leiderschap: wat zijn jouw waarden, wat is jouw missie en wat is jouw visie. Inzicht in jezelf en anderen beter leren lezen, geeft RUST en doet je als mens groeien.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80' 
   }
 ];
 
