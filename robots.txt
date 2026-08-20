@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://poelaertcoaching.be/sitemap.xml
+Sitemap: https://ludopoelaert.be/sitemap.xml
