@@ -5,6 +5,7 @@ import papaPhoto from './assets/Papa_Photo.png';
 import logoLudoPoelaertCoach from './assets/logo-ludopoelaert-coach.svg';
 import TrajectModal from './TrajectModal';
 import { TRAJECTEN } from './trajecten';
+import BlogSection from './BlogSection';
 
 // Logo Imports (Vite Bundled - Official Client Logos)
 import logoBpost from './assets/logos/bpost.png';
@@ -292,6 +293,7 @@ function App() {
               <li><a href="#over" className="nav-link" onClick={() => setIsMenuOpen(false)}>Over</a></li>
               <li><a href="#boek" className="nav-link" onClick={() => setIsMenuOpen(false)}>Boek</a></li>
               <li><a href="#modellen" className="nav-link" onClick={() => setIsMenuOpen(false)}>Modellen</a></li>
+              <li><a href="#inzichten" className="nav-link" onClick={() => setIsMenuOpen(false)}>Inzichten</a></li>
               <li><a href="#coaching" className="nav-link" onClick={() => setIsMenuOpen(false)}>Coaching Aanvragen</a></li>
               <li><a href="#referenties" className="nav-link" onClick={() => setIsMenuOpen(false)}>Referenties</a></li>
             </ul>
@@ -537,6 +539,9 @@ function App() {
             </div>
           )}
         </section>
+
+        {/* Blog / Inzichten & Publicaties Section */}
+        <BlogSection />
 
         {/* Shop / Coaching Section */}
         <section id="coaching" className="section container">
