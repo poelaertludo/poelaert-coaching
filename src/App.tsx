@@ -3,6 +3,8 @@ import { ShoppingCart, X, Menu } from 'lucide-react';
 import coverBoek from './assets/CoverBoekPapa.png';
 import papaPhoto from './assets/Papa_Photo.png';
 import logoLudoPoelaertCoach from './assets/logo-ludopoelaert-coach.svg';
+import TrajectModal from './TrajectModal';
+import { TRAJECTEN } from './trajecten';
 
 // Logo Imports (Vite Bundled - Official Client Logos)
 import logoBpost from './assets/logos/bpost.png';
@@ -57,47 +59,47 @@ const MODELS = [
   { 
     name: 'JoHari Venster', 
     desc: 'Samen verkleinen we jouw blinde vlekken. Ik help je te ontdekken hoe anderen jouw leiderschap ervaren, zodat het vertrouwen en het bewustzijn binnen jouw team sterk groeit.',
-    image: 'johari_window.jpg'
+    image: 'johari_window_nl.jpg'
   },
   { 
     name: 'Stress Managementmodel', 
     desc: 'Stress is een signaal dat sturing vraagt. Ik reik je haarscherpe kaders en technieken aan om stressoren in jouw organisatie tijdig te identificeren en gezond te reguleren.',
-    image: 'stress_model.jpg'
+    image: 'stress_model_nl.jpg'
   },
   { 
     name: 'Situationeel Leiderschap', 
     desc: 'Eén leiderschapsstijl werkt niet voor iedereen. Ik leer je om jouw sturing flexibel aan te passen aan de taakvolwassenheid en motivatie van elke medewerker voor direct resultaat.',
-    image: 'situational_leadership.jpg'
+    image: 'situational_leadership_nl.jpg'
   },
   { 
     name: 'Kotter (Veranderingsmanagement)', 
     desc: 'Verandering stuit vaak op weerstand. Met dit beproefde 8-stappenplan begeleid ik je om organisatorische transformaties gestructureerd, gedragen en duurzaam door te voeren.',
-    image: 'kotter_change.jpg'
+    image: 'kotter_change_nl.jpg'
   },
   { 
     name: 'Business Model Canvas', 
     desc: 'Samen brengen we de kern van jouw onderneming terug tot de essentie. Ik help je om alle cruciale bouwstenen van je verdienmodel visueel en strategisch helder te stellen.',
-    image: 'business_model_canvas.jpg'
+    image: 'business_model_canvas_nl.jpg'
   },
   { 
     name: '9-Krachten Model van Porter', 
     desc: 'Begrijp de krachten die jouw markt beheersen. Ik analyseer samen met jou de concurrentieomgeving en het winstpotentieel van je zaak voor een sterke strategische voorsprong.',
-    image: 'porters_forces.jpg'
+    image: 'porters_9_krachten_nl.jpg'
   },
   { 
-    name: 'Earned Value Management', 
+    name: 'Earned Value Management (Effectief projecten managen)', 
     desc: 'Meten is weten in projectmanagement. Ik geef je de exacte tools om de voortgang, budgetten en prestaties van je projecten objectief te bewaken en tijdig bij te sturen op cijfers.',
-    image: 'earned_value_management.jpg'
+    image: 'earned_value_management_nl.jpg'
   },
   { 
     name: 'Financieel beheer ontmaskerd!', 
     desc: 'Voor velen is financiën een raadsel en ondoorgrondelijk moeilijk. Ik leer je in een mum van tijd balanslezen, kosten berekenen en samen met jou maken we de ratio-analyse van jouw onderneming!',
-    image: 'financial_ratios.jpg'
+    image: 'financial_ratios_nl.jpg'
   },
   { 
     name: 'De 4 levensposities! Een echte keuze voor succes', 
     desc: 'Ik leer je inzien vanuit welke levenspositie jij en je teamleden communiceren. Met dit krachtige model van Thomas Harris help ik je om bewust te kiezen voor een constructieve, "I\'m OK, You\'re OK" grondhouding die relaties en samenwerking transformeert!',
-    image: 'life_positions_harris.jpg'
+    image: 'life_positions_harris_nl.jpg'
   }
 ];
 
@@ -256,6 +258,8 @@ function App() {
   const removeFromCart = (id: number) => {
     setCart(cart.filter(item => item !== id));
   };
+
+  const selectedTraject = selectedModel ? TRAJECTEN[selectedModel.name] : undefined;
 
   const getCartItems = () => {
     return cart.map(id => COACHING_SERVICES.find(s => s.id === id)!);
@@ -466,11 +470,19 @@ function App() {
               {MODELS.map((model, index) => (
                 <div 
                   key={index} 
-                  className="model-card"
+                  className={`model-card${TRAJECTEN[model.name] ? ' has-traject' : ''}`}
+                  onMouseMove={(e) => {
+                    const r = e.currentTarget.getBoundingClientRect();
+                    e.currentTarget.style.setProperty('--mx', `${e.clientX - r.left}px`);
+                    e.currentTarget.style.setProperty('--my', `${e.clientY - r.top}px`);
+                  }}
                   onClick={() => model.image && setSelectedModel({ name: model.name, image: model.image })}
                 >
                   <h3>{model.name}</h3>
                   <p>{model.desc}</p>
+                  {TRAJECTEN[model.name] && (
+                    <span className="model-traject-link">Bekijk het traject →</span>
+                  )}
                   {model.image && (
                     <div className="model-hover-preview">
                       <div className="hover-image-wrapper">
@@ -486,7 +498,16 @@ function App() {
           </div>
 
           {/* Model Lightbox Modal */}
-          {selectedModel && (
+          {selectedModel && selectedTraject && (
+            <TrajectModal
+              naam={selectedModel.name}
+              image={selectedModel.image}
+              traject={selectedTraject}
+              onClose={() => setSelectedModel(null)}
+            />
+          )}
+
+          {selectedModel && !selectedTraject && (
             <div 
               style={{
                 position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, 

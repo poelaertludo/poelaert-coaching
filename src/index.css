@@ -933,3 +933,212 @@ a:hover {
     font-size: 1.35rem;
   }
 }
+
+/* ===== Trajecten (venster achter de modelknoppen) ===== */
+.model-traject-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-gold-dark);
+  letter-spacing: 0.3px;
+}
+
+.traject-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 30, 45, 0.85);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.traject-modal {
+  position: relative;
+  background: var(--color-cream);
+  border-top: 5px solid var(--color-gold);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 820px;
+  max-height: 92vh;
+  overflow-y: auto;
+  padding: 2.2rem 2.4rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.traject-close {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-navy);
+  padding: 0.3rem;
+}
+
+.traject-eyebrow {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-gold-dark);
+  margin-bottom: 0.3rem;
+}
+
+.traject-title {
+  text-align: center;
+  color: var(--color-navy);
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.traject-intro {
+  text-align: center;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto 1.4rem;
+}
+
+.traject-cta {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  background: var(--color-navy);
+  color: #fff;
+  padding: 0.85rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid var(--color-gold);
+  transition: background 0.2s ease;
+}
+.traject-cta:hover { background: var(--color-navy-light); }
+.traject-cta:focus-visible,
+.traject-close:focus-visible,
+.traject-model summary:focus-visible { outline: 3px solid var(--color-gold-light); outline-offset: 3px; }
+
+.traject-h {
+  font-family: var(--font-serif);
+  color: var(--color-navy);
+  font-size: 1.15rem;
+  margin: 2rem 0 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--color-cream-border);
+}
+
+.traject-herken {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.8rem;
+}
+.traject-herken li {
+  background: var(--color-cream-card);
+  border: 1px solid var(--color-cream-border);
+  border-left: 4px solid var(--color-gold);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.traject-steps { list-style: none; display: grid; gap: 1rem; }
+.traject-steps li {
+  display: flex;
+  gap: 1rem;
+  background: #fff;
+  border: 1px solid var(--color-cream-border);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+}
+.traject-steps p { margin: 0.3rem 0 0; font-size: 0.95rem; color: #444; }
+.traject-step-nr {
+  flex: 0 0 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background: var(--color-navy);
+  color: var(--color-gold-light);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+}
+.traject-badge {
+  margin-left: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--color-gold-bg);
+  color: var(--color-gold-dark);
+  padding: 0.15rem 0.55rem;
+  border-radius: 99px;
+}
+
+.traject-leer { padding-left: 1.2rem; display: grid; gap: 0.35rem; }
+.traject-leer li::marker { color: var(--color-gold); }
+
+.traject-model { margin: 1.6rem 0; }
+.traject-model summary { cursor: pointer; font-weight: 600; color: var(--color-gold-dark); margin-bottom: 0.8rem; }
+
+@media (max-width: 600px) {
+  .traject-modal { padding: 1.6rem 1.2rem; }
+  .traject-title { font-size: 1.4rem; padding: 0 1.5rem; }
+}
+
+/* "Klik hier"-label dat de muiscursor volgt bij het hoveren over een model */
+@media (hover: hover) and (pointer: fine) {
+  .model-card::after {
+    content: 'Klik hier';
+    position: absolute;
+    left: var(--mx, 50%);
+    top: var(--my, 50%);
+    transform: translate(14px, 18px);
+    background: var(--color-navy);
+    color: var(--color-gold-light);
+    border: 1px solid var(--color-gold);
+    padding: 0.2rem 0.65rem;
+    border-radius: 99px;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    z-index: 200;
+  }
+  .model-card:hover::after { opacity: 1; }
+}
+
+/* Modellen met een traject: label verwijst naar het traject */
+@media (hover: hover) and (pointer: fine) {
+  .model-card.has-traject::after { content: 'Klik voor het traject'; }
+}
+
+/* Tool-blok in een traject */
+.traject-tool {
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  background: var(--color-navy);
+  color: #fff;
+  border-radius: 8px;
+  border-left: 5px solid var(--color-gold);
+}
+.traject-tool strong { display: block; font-family: var(--font-serif); font-size: 1.05rem; margin: 0.4rem 0 0.3rem; }
+.traject-tool p { margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+.traject-tool-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: var(--color-gold-bg);
+  color: var(--color-gold-light);
+  border: 1px solid var(--color-gold);
+  padding: 0.15rem 0.6rem;
+  border-radius: 99px;
+}
