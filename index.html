@@ -31,21 +31,82 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ludo Poelaert",
-      "honorificPrefix": "Prof. Em. ir.",
-      "jobTitle": "Professor Emeritus Bedrijfseconomie & Executive Coach",
-      "worksFor": {
-        "@type": "EducationalOrganization",
-        "name": "Universiteit Gent (UGent)"
-      },
-      "url": "https://ludopoelaert.be",
-      "image": "https://ludopoelaert.be/Papa_Photo.png",
-      "sameAs": [
-        "https://www.linkedin.com/in/poelaert",
-        "https://www.ugain.ugent.be/leiderschap2026.htm"
-      ],
-      "description": "Executive Coaching, Leiderschap & Praktijkmanagement voor bedrijfsleiders en zorgprofessionals."
+      "@graph": [
+        {
+          "@type": ["ProfessionalService", "LocalBusiness"],
+          "@id": "https://ludopoelaert.be/#business",
+          "name": "Ludo Poelaert - Executive Coaching",
+          "alternateName": "Prof. Em. ir. Ludo Poelaert | Executive Coaching & Advies",
+          "url": "https://ludopoelaert.be/",
+          "telephone": "+32477992597",
+          "priceRange": "$$",
+          "image": "https://ludopoelaert.be/Papa_Photo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Bronstraat 11",
+            "addressLocality": "Waarbeke",
+            "postalCode": "9506",
+            "addressRegion": "Oost-Vlaanderen",
+            "addressCountry": "BE"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.7853,
+            "longitude": 3.9686
+          },
+          "founder": {
+            "@id": "https://ludopoelaert.be/#person"
+          },
+          "areaServed": [
+            {
+              "@type": "Country",
+              "name": "België"
+            },
+            {
+              "@type": "Country",
+              "name": "Nederland"
+            }
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/poelaert",
+            "https://www.ugain.ugent.be/leiderschap2026.htm"
+          ],
+          "potentialAction": {
+            "@type": "ReserveAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://calendar.app.google/UEwvToJLxp8oqrS17",
+              "inLanguage": "nl-BE",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            },
+            "result": {
+              "@type": "Reservation",
+              "name": "Plan een gratis kennismaking van 20 minuten"
+            }
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ludopoelaert.be/#person",
+          "name": "Ludo Poelaert",
+          "honorificPrefix": "Prof. Em. ir.",
+          "jobTitle": "Professor Emeritus Bedrijfseconomie & Executive Coach",
+          "worksFor": {
+            "@type": "EducationalOrganization",
+            "name": "Universiteit Gent (UGent)"
+          },
+          "url": "https://ludopoelaert.be",
+          "image": "https://ludopoelaert.be/Papa_Photo.png",
+          "sameAs": [
+            "https://www.linkedin.com/in/poelaert",
+            "https://www.ugain.ugent.be/leiderschap2026.htm"
+          ],
+          "description": "Executive Coaching, Leiderschap & Praktijkmanagement voor bedrijfsleiders en zorgprofessionals."
+        }
+      ]
     }
     </script>
     <script type="module" crossorigin src="./assets/index-BuXpsyLl.js"></script>
