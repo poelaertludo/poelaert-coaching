@@ -743,7 +743,7 @@ function showFinal() {
 }
 
 /* ---------- Aanmelden & Event Listeners ---------- */
-function showApp() {
+function showApp(startLessonIndex = 0) {
   $("login").hidden = true; $("app").hidden = false;
   $("hello").textContent = user;
   
@@ -756,7 +756,7 @@ function showApp() {
       openLesson(0);
     };
   }
-  openLesson(0);
+  openLesson(startLessonIndex);
 }
 
 $("toggle-code").onclick = (e) => {
@@ -781,7 +781,72 @@ $("login-form").addEventListener("submit", (e) => {
 $("logout").onclick = () => {
   sessionStorage.removeItem("jr-user"); user = null;
   $("app").hidden = true; $("login").hidden = false; $("code").value = "";
+  if (window.history && window.history.replaceState) {
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
 };
 
-const saved = sessionStorage.getItem("jr-user");
-if (saved) { user = saved; showApp(); }
+// URL Query Parameters auto-login support (bv. ?name=WAARBEKE+SERVICES&code=ARTS2026&track=realtandarts&les=1)
+try {
+  let searchStr = window.location.search;
+  if (!searchStr && window.location.hash && window.location.hash.includes("?")) {
+    searchStr = window.location.hash.substring(window.location.hash.indexOf("?"));
+  }
+  const params = new URLSearchParams(searchStr);
+  const urlName = params.get("name") || params.get("arts") || params.get("dokter") || params.get("user");
+  const urlCode = params.get("code") || params.get("toegangscode");
+  const urlTrack = params.get("track") || params.get("traject");
+  const urlLes = params.get("les") || params.get("lesson");
+
+  if (urlTrack) {
+    const normTrack = urlTrack.toLowerCase();
+    if (normTrack.includes("real") || normTrack.includes("tand")) {
+      currentTrack = "realtandarts";
+    } else if (normTrack.includes("basis") || normTrack.includes("jans")) {
+      currentTrack = "basis";
+    }
+  }
+
+  let startLesson = 0;
+  if (urlLes) {
+    const num = parseInt(urlLes, 10);
+    if (!isNaN(num) && num >= 1 && num <= 7) {
+      startLesson = num - 1;
+    }
+  }
+
+  if (urlName) {
+    const cleanName = urlName.replace(/\+/g, " ").trim();
+    if ($("name")) $("name").value = cleanName;
+  }
+
+  if (urlCode) {
+    const cleanCode = urlCode.trim();
+    if ($("code")) $("code").value = cleanCode;
+    if (cleanCode.toUpperCase() === ACCESS_CODE) {
+      const cleanName = urlName ? urlName.replace(/\+/g, " ").trim() : "";
+      user = cleanName || "Dokter";
+      sessionStorage.setItem("jr-user", user);
+      showApp(startLesson);
+    } else {
+      const err = $("login-error");
+      if (err) {
+        err.textContent = "Onjuiste toegangscode in de link.";
+        err.hidden = false;
+      }
+    }
+  } else {
+    const saved = sessionStorage.getItem("jr-user");
+    if (saved) {
+      user = saved;
+      showApp(startLesson);
+    }
+  }
+} catch (e) {
+  console.warn("Fout bij auto-login:", e);
+  const saved = sessionStorage.getItem("jr-user");
+  if (saved) {
+    user = saved;
+    showApp();
+  }
+}
